@@ -3,6 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
     <script src="https://kit.fontawesome.com/0b904fb5b8.js" crossorigin="anonymous"></script>
+    <script src="lib/js/jquery.min.js"></script>
     <link rel="stylesheet" href="lib/css/bootstrap.min.css">
     <script src="lib/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
@@ -25,35 +26,35 @@
                 <div class="float-right">
                     <div style="min-width: 250px;">
                         <h2 class="p-1 font-weight-bold" style="background-color: yellow;">TYPE OF FILM</h2>
-                        <ul class="expanded">
-                            <li class="expandable">
+                        <ul class="dropdown-custom">
+                            <li class="dropdown-custom-item">
                                 PLAIN AND EMBOSSED FILM
-                              <ul class="">
-                                <li>Subitem 1.1</li>
-                                <li>Subitem 1.2</li>
-                              </ul>
                             </li>
-                            <li class="expandable">
+                            <ul style="display: none;">
+                              <li>Subitem 1.1</li>
+                              <li>Subitem 1.2</li>
+                            </ul>
+                            <li class="dropdown-custom-item">
                                 MATT OR GLOSS FILM
-                              <ul class="">
-                                <li>Subitem 2.1</li>
-                                <li>Subitem 2.2</li>
-                              </ul>
                             </li>
-                            <li class="expandable">
+                            <ul style="display: none;">
+                              <li>Subitem 2.1</li>
+                              <li>Subitem 2.2</li>
+                            </ul>
+                            <li class="dropdown-custom-item">
                                 PEARLISED BOPP FILM
-                              <ul class="">
-                                <li>Subitem 3.1</li>
-                                <li>Subitem 3.2</li>
-                              </ul>
                             </li>
-                            <li class="expandable">
+                            <ul style="display: none;">
+                              <li>Subitem 3.1</li>
+                              <li>Subitem 3.2</li>
+                            </ul>
+                            <li class="dropdown-custom-item">
                                 CPP FILM
-                              <ul class="">
-                                <li>Subitem 4.1</li>
-                                <li>Subitem 4.2</li>
-                              </ul>
                             </li>
+                            <ul style="display: none;">
+                              <li>Subitem 4.1</li>
+                              <li>Subitem 4.2</li>
+                            </ul>
                           </ul>
                     </div>
                 </div>
@@ -150,11 +151,15 @@
     </footer>
   </body>
   <script>
-    const expandIcons = document.querySelectorAll('.expandable');
+    const expandIcons = document.querySelectorAll('.dropdown-custom-item');
     expandIcons.forEach(icon => {
       icon.addEventListener('click', () => {
         const subList = icon.nextElementSibling;
-        subList.classList.toggle('visible');
+        if (subList.style.display == 'none') {
+            subList.style.display = 'block';
+        } else {
+            subList.style.display = 'none';
+        }
       });
     });
   </script>
