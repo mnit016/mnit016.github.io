@@ -13,3 +13,17 @@
 .border-dashed-bottom-1 {
     border-bottom: 1px dashed #333;
 }
+
+.text-end-with-arrow-right::after {
+    content: "\f30b"; /* Unicode for the desired icon (e.g., a font-awesome icon) */
+    font-family: FontAwesome; /* Use the font that contains the icon */
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+}
+
+.text-black {
+    color: #333 !important;
+}
