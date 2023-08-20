@@ -1,0 +1,31 @@
+.products li {
+    list-style: none;
+    position: relative;
+    padding-right: 20px; /* Create space for the icon */
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.products li:not(:last-child) {
+    border-bottom: 1px dashed #333;
+}
+
+.products ul {
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+.products li::after {
+    content: "\2b"; /* Unicode for the desired icon (e.g., a font-awesome icon) */
+    font-family: FontAwesome; /* Use the font that contains the icon */
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+}
+.expanded ul {
+display: none;
+}
+.expanded ul.visible {
+display: block;
+}

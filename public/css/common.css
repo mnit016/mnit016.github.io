@@ -1,0 +1,15 @@
+
+.center-div {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Adjust to your layout needs */
+}
+
+.w-85 {
+    width: 85%;
+}
+
+.border-dashed-bottom-1 {
+    border-bottom: 1px dashed #333;
+}
