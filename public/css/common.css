@@ -27,3 +27,7 @@
 .text-black {
     color: #333 !important;
 }
+
+.custom-background-color {
+    background-color: #9e0000 !important;
+}
