@@ -7,13 +7,13 @@
     <link href="css/style.css" rel="stylesheet"/>
     <link href="css/common.css" rel="stylesheet"/>
     <link rel="shortcut icon" href="" />
+    <link rel="stylesheet" href="./css/s.css" />
     <title>Euro | Sản Phẩm</title>
   </head>
   
   <body>
-    <nav style="height: 100px; width: 100%; background-color: brown;">
-        <h1> header </h1>
-    </nav>
+    <html-include src="./components/navbar.html"></html-include>
+
     <section style="height: 300px; width: 100%; background-color: black;">
         <h1 style="color: white;"> Sản Phẩm</h1>
     </section>
@@ -120,25 +120,14 @@
             </div>
         </div>
     </section>
-    <footer style="height: 300px; background-color: black;">
-        <div class="center-div">
-            <h1>Footer</h1>
-        </div>
+    
+    <footer>
+        <html-include src="./components/footer.html"></html-include>
     </footer>
   </body>
-  <script>
-    const expandIcons = document.querySelectorAll('.dropdown-custom-item');
-    expandIcons.forEach(icon => {
-      icon.addEventListener('click', () => {
-        const subList = icon.nextElementSibling;
-        if (subList.style.display == 'none') {
-            subList.style.display = 'block';
-        } else {
-            subList.style.display = 'none';
-        }
-      });
-    });
-  </script>
+ 
+
+  <script src="./js/script.js"></script>
   
   <script src="https://kit.fontawesome.com/0b904fb5b8.js" crossorigin="anonymous"></script>
   <script src="lib/js/jquery.min.js"></script>
