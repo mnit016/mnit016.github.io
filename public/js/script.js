@@ -20,15 +20,13 @@ class HTMLInclude extends HTMLElement {
 
 window.customElements.define("html-include", HTMLInclude);
 
-const expandIcons = document.querySelectorAll('.dropdown-custom-item');
-    expandIcons.forEach(icon => {
-      icon.addEventListener('click', () => {
-        const subList = icon.nextElementSibling;
-        if (subList.style.display == 'none') {
-            subList.style.display = 'block';
-        } else {
-            subList.style.display = 'none';
-        }
-      });
-    });
-    
+function expandMenu(e) {
+    console.log(e)
+    e.classList.toggle("active");
+    const subList = e.nextElementSibling;
+    if (subList.style.display == 'none') {
+        subList.style.display = 'block';
+    } else {
+        subList.style.display = 'none';
+    }
+}

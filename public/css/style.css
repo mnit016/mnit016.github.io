@@ -33,6 +33,6 @@
     font-size: 16px;
 }
 
-.dropdown-custom-menu {
-    display: none;
+.dropdown-custom-item.active::after {
+    content: "\f068" !important;
 }
