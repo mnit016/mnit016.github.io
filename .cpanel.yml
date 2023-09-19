@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - /bin/cp -a public/. /home/eurofilm/public_html/
+    
