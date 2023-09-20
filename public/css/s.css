@@ -11,7 +11,7 @@
 
 nav {
   height: 100px;
-  background-color: #4287f5;
+  background-color: white !important;
 }
 nav .row {
   padding-left: 0;
@@ -21,34 +21,40 @@ nav .col-3 {
   justify-content: center;
   align-items: center;
 }
-nav .col-3 img {
-  width: 50px;
-  height: 50px;
+nav img {
+  height: 80px;
+  width: auto;
+  margin-right: 10px;
 }
-nav .col-8 {
+nav .col-12 {
   height: 100px;
-  background-color: #4287f5 !important;
+  background-color: white !important;
   padding-left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-nav .col-8 ul {
+nav .col-12 ul {
   margin: 0 auto;
   margin-left: 0;
 }
-nav .col-8 li {
+nav .col-12 li {
   list-style-type: none;
-  margin-right: 25px;
+  border-left: solid #4287f5 1px;
+  text-align: center;
 }
-nav .col-8 a {
-  color: white;
+nav .col-12 a {
+  color: #4287f5;
+  font-weight: bold;
 }
-nav .col-8 button,
-nav .col-8 input {
-  background-color: #4287f5;
-  border: solid 2px white;
+nav .col-12 button,
+nav .col-12 input {
+  background-color: white;
+  border: solid 2px #4287f5;
   color: white !important;
+}
+nav .col-12 .nav-item {
+  border: none;
 }
 
 .home-video {

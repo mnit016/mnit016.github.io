@@ -13,7 +13,7 @@ $blue: #4287f5;
 
 nav {
     height: 100px;
-    background-color: $blue;
+    background-color: white !important;
 
     .row {
         padding-left: 0;
@@ -23,16 +23,17 @@ nav {
         display: flex;
         justify-content: center;
         align-items: center;
-
-        img {
-            width: 50px;
-            height: 50px;
-        }
     }
 
-    .col-8 {
+    img {
+        height: 80px;
+        width: auto;
+        margin-right: 10px;
+    }
+
+    .col-12 {
         height: 100px;
-        background-color: $blue !important;
+        background-color: white !important;
         padding-left: 0;
         display: flex;
         justify-content: center;
@@ -45,18 +46,23 @@ nav {
 
         li {
             list-style-type: none;
-            margin-right: 25px;
+            border-left: solid $blue 1px;
+            text-align: center;
         }
 
         a {
-            color: white;
+            color: $blue;
+            font-weight: bold;
         }
 
         button,
         input {
-            background-color: $blue;
-            border: solid 2px white;
+            background-color: white;
+            border: solid 2px $blue;
             color: white !important;
+        }
+        .nav-item {
+            border: none;
         }
     }
 }
@@ -87,7 +93,6 @@ nav {
         display: flex;
         justify-content: center;
 
-        
         img {
             width: 150px;
             height: auto;
@@ -98,7 +103,6 @@ nav {
         position: absolute;
         bottom: 50px;
     }
-
 }
 
 .home-why {
