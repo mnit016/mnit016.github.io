@@ -30,3 +30,18 @@ function expandMenu(e) {
         subList.style.display = 'none';
     }
 }
+
+$(document).ready(function(){
+    var width = document.getElementById('web-body').offsetWidth;
+    var windowWidth = $(document).outerWidth();
+    var r = windowWidth / width
+
+    $('#web-body').css({
+        '-webkit-transform': 'scale(' + r + ')',
+        '-moz-transform': 'scale(' + r + ')',
+        '-ms-transform': 'scale(' + r + ')',
+        '-o-transform': 'scale(' + r + ')',
+        'transform': 'scale(' + r + ')'
+    });
+
+});
