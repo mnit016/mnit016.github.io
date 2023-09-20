@@ -69,3 +69,39 @@ textarea {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+@font-face {
+    font-family: 'svn-Gotham-Book';
+    src: url(../font/content_font/SVN-Gotham\ Book.otf);
+}
+
+@font-face {
+    font-family: 'svn-Gotham-Black';
+    src: url(../font/content_font/SVN-Gotham\ Black.otf);
+}
+
+@font-face {
+    font-family: 'svn-Gotham';
+    src: url(../font/content_font/SVN-Gotham\ Regular.otf);
+}
+
+@font-face {
+    font-family: 'Compacta';
+    src: url(../font/main_font/CompactaBT.ttf);
+}
+
+.euro-font-title {
+    font-family: 'Compacta';
+}
+
+.euro-font-content {
+    font-family: 'svn-Gotham';
+}
+
+.euro-font-content-book {
+    font-family: 'svn-Gotham-Book';
+}
+
+.euro-font-content-black {
+    font-family: 'svn-Gotham-Black';
+}
