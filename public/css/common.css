@@ -37,10 +37,22 @@
 }
 
 .text-black {
-    color: #333 !important;
+    color: #000 !important;
 }
 
-.custom-background-color {
+.text-red {
+    color: #ea001b !important;
+}
+
+.background-red {
+    background-color: #ea001b !important;
+}
+
+.background-grey {
+    background-color: #ebebeb !important;
+}
+
+.background-blue {
     background-color: #0284fe !important;
 }
 
