@@ -4,10 +4,6 @@
   margin: 0;
 }
 
-.container {
-  max-width: 1500px !important;
-}
-
 .row {
   padding: 0;
   margin-left: 0 !important;
