@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+.container {
+  max-width: 1500px !important;
+}
+
 .row {
   padding: 0;
   margin: 0 !important;
@@ -58,35 +62,13 @@ nav .col-12 .nav-item {
 }
 
 .home-video {
-  background-color: black;
+  background-color: white;
   height: auto;
   width: 100%;
-  color: white;
-}
-.home-video .row {
-  padding: 0;
 }
 .home-video img {
   width: 100%;
   height: auto;
-}
-.home-video .col-lg-9 {
-  padding: 0;
-  background-color: #4287f5;
-}
-.home-video .col-3 {
-  padding-top: 100px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-.home-video .col-3 img {
-  width: 150px;
-  height: auto;
-}
-.home-video .home-video-text {
-  position: absolute;
-  bottom: 50px;
 }
 
 .home-why {
