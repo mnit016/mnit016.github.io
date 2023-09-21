@@ -33,7 +33,8 @@ nav img {
 nav .col-12 {
   height: 100px;
   background-color: white !important;
-  padding-left: 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
   display: flex;
   align-items: center;
 }
