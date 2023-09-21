@@ -12,18 +12,6 @@ $blue: #4287f5;
     margin-right: 0 !important;
 }
 
-@media only screen and (max-width: 1300px) {
-    // nav {
-    //     scale: 0.8;
-    // }
-}
-
-@media only screen and (max-width: 1400px) {
-    nav {
-    }
-}
-
-
 nav {
     height: 100px;
     width: 100vw;
@@ -223,7 +211,6 @@ nav {
     }
 
     p {
-        text-align: center;
         margin: 0;
     }
 }
