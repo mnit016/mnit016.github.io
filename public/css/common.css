@@ -70,6 +70,13 @@ textarea {
     background-size: cover;
 }
 
+.dropdown-icon-after::after {
+    content: "\f0d7";
+    font-family: FontAwesome;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
 @font-face {
     font-family: 'svn-Gotham-Book';
     src: url(../font/content_font/SVN-Gotham\ Book.otf);
@@ -105,3 +112,4 @@ textarea {
 .euro-font-content-black {
     font-family: 'svn-Gotham-Black';
 }
+
