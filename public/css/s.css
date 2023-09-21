@@ -38,13 +38,31 @@ nav .col-12 {
   align-items: center;
 }
 nav .col-12 ul {
-  margin: 0 auto;
-  margin-left: 0;
+  margin: auto;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 nav .col-12 li {
   list-style-type: none;
-  border-left: solid #4287f5 1px;
+  border-left: solid #4287f5 2px;
   text-align: center;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .col-12 li .dropdown-toggle::after {
+  border: none !important;
+  font: normal normal normal 14px/1 FontAwesome;
+  content: "\f107" !important;
+  /* the desired FontAwesome icon */
+  vertical-align: 0;
+  /* to center vertically */
+}
+nav .col-12 li img {
+  width: 10px;
+  height: 10px;
+  margin-left: -10px;
 }
 nav .col-12 a {
   color: #4287f5;
@@ -58,6 +76,11 @@ nav .col-12 input {
 }
 nav .col-12 .nav-item {
   border: none;
+}
+nav .col-12 .form-inline img {
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
 }
 
 .home-video {
