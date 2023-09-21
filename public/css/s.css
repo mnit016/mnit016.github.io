@@ -12,10 +12,19 @@
 
 nav {
   height: 100px;
+  width: 100vw;
   background-color: white !important;
 }
+nav .container {
+  max-width: 1600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 nav .row {
-  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 nav .col-3 {
   display: flex;
@@ -32,7 +41,6 @@ nav .col-12 {
   background-color: white !important;
   padding-left: 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 nav .col-12 ul {
