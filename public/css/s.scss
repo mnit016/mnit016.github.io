@@ -12,13 +12,35 @@ $blue: #4287f5;
     margin-right: 0 !important;
 }
 
+@media only screen and (max-width: 1300px) {
+    // nav {
+    //     scale: 0.8;
+    // }
+}
+
+@media only screen and (max-width: 1400px) {
+    nav {
+    }
+}
+
+
 nav {
     height: 100px;
+    width: 100vw;
     background-color: white !important;
 
 
+    .container {
+        max-width: 1400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .row {
-        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .col-3 {
@@ -38,7 +60,7 @@ nav {
         background-color: white !important;
         padding-left: 0;
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         align-items: center;
 
         ul {
@@ -63,6 +85,7 @@ nav {
             border: solid 2px $blue;
             color: white !important;
         }
+
         .nav-item {
             border: none;
         }
@@ -113,9 +136,11 @@ nav {
 
 .home-img {
     padding: 30px;
+
     .row {
         padding-top: -500px;
     }
+
     .big-img {
         height: 700px;
     }
@@ -190,6 +215,7 @@ nav {
         text-align: center;
         margin-top: 20px;
     }
+
     h3 {
         font-size: 1rem;
         text-align: center;
@@ -204,6 +230,7 @@ nav {
 
 .home-contact {
     margin-bottom: 50px;
+
     h1 {
         text-align: center;
         margin-bottom: 30px;
@@ -277,17 +304,20 @@ footer {
         h3 {
             text-align: center;
         }
+
         .holder {
             display: flex;
             align-items: center;
             margin-bottom: -70px;
         }
+
         .img {
             display: flex;
             align-items: center;
             justify-content: center;
             width: 50px;
         }
+
         img {
             width: 30px;
             height: 30px;
@@ -299,6 +329,7 @@ footer {
         h3 {
             text-align: center;
         }
+
         div {
             display: flex;
             padding: 10px;
