@@ -15,12 +15,6 @@ nav {
   width: 100vw;
   background-color: white !important;
 }
-nav .container {
-  max-width: 1600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 nav .row {
   display: flex;
   justify-content: center;
