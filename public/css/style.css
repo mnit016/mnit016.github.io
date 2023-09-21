@@ -36,3 +36,21 @@
 .dropdown-custom-item.active::after {
     content: "\f068" !important;
 }
+
+.euro-text-background-vertical {
+    background-position: left; 
+    background-image: url(../images/blur-text-euro.png); 
+    background-size: contain; 
+    background-repeat: no-repeat;
+}
+
+.euro-text-background-horizontal {
+    background-position: top; 
+    background-image: url(../images/blur-text-euro-2.png); 
+    background-size: contain; 
+    background-repeat: no-repeat;
+}
+
+.contact-form input, .contact-form textarea {
+    background: transparent;
+}
