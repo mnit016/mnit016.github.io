@@ -103,12 +103,23 @@ nav .col-12 .nav-item {
   height: 700px;
 }
 .home-img .small-img {
-  height: 500px;
+  height: 400px;
 }
 .home-img .img {
-  background-color: black;
   width: 100%;
   height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-img .img14 {
+  background-image: url("../ext/img/1.4.jpg") !important;
+}
+.home-img .img32 {
+  background-image: url("../images/3.2.jpg") !important;
+}
+.home-img .img52 {
+  background-image: url("../images/5.2.jpg") !important;
 }
 .home-img .col-6 {
   display: flex;
@@ -215,4 +226,10 @@ footer a {
 }
 footer a:hover {
   color: grey;
+}
+
+.background-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }/*# sourceMappingURL=s.css.map */
