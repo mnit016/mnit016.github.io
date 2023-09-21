@@ -194,7 +194,7 @@ nav .col-12 .nav-item {
 }
 
 footer {
-  background-color: black;
+  background-color: #4287f5;
   color: white;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -210,12 +210,8 @@ footer tr td:first-child {
 footer .col-2 {
   width: 100%;
 }
-footer h3 {
-  text-align: center;
-}
 footer li {
   list-style-type: none;
-  text-align: center;
 }
 footer ul {
   padding: 0;
@@ -226,6 +222,47 @@ footer a {
 }
 footer a:hover {
   color: grey;
+}
+footer .visit {
+  padding-left: -20px;
+  width: 80%;
+}
+footer .visit h3 {
+  text-align: center;
+}
+footer .visit .holder {
+  display: flex;
+  align-items: center;
+  margin-bottom: -70px;
+}
+footer .visit img {
+  border: none;
+  scale: 0.2;
+}
+footer .visit .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+}
+footer .social h3 {
+  text-align: center;
+}
+footer .social div {
+  display: flex;
+  padding: 10px;
+  margin-top: -40px;
+  margin-left: 15px;
+}
+footer .social a {
+  width: 100px;
+  height: 100px;
+}
+footer .social img {
+  background-color: lightgray;
+  border-radius: 50%;
+  scale: 0.4;
+  padding: 20px;
 }
 
 .background-image {

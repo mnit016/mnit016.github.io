@@ -132,13 +132,13 @@ nav {
         height: 100%;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover; 
+        background-size: cover;
     }
 
     .img14 {
         background-image: url("../ext/img/1.4.jpg") !important;
     }
- 
+
     .img32 {
         background-image: url("../images/3.2.jpg") !important;
     }
@@ -234,7 +234,7 @@ nav {
 }
 
 footer {
-    background-color: black;
+    background-color: $blue;
     color: white;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -253,13 +253,8 @@ footer {
         width: 100%;
     }
 
-    h3 {
-        text-align: center;
-    }
-
     li {
         list-style-type: none;
-        text-align: center;
     }
 
     ul {
@@ -274,13 +269,62 @@ footer {
     a:hover {
         color: grey;
     }
+
+    .visit {
+        padding-left: -20px;
+        width: 80%;
+
+        h3 {
+            text-align: center;
+        }
+        .holder {
+            display: flex;
+            align-items: center;
+            margin-bottom: -70px;
+        }
+        img {
+            border: none;
+            scale: 0.2;
+        }
+        .img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+        }
+        .p {
+            // align-items: center;
+            // justify-content: center;
+        }
+    }
+
+    .social {
+        h3 {
+            text-align: center;
+        }
+        div {
+            display: flex;
+            padding: 10px;
+            margin-top: -40px;
+            margin-left: 15px;
+        }
+
+        a {
+            width: 100px;
+            height: 100px;
+        }
+
+        img {
+            background-color: lightgray;
+            border-radius: 50%;
+            scale: 0.4;
+            padding: 20px;
+        }
+    }
 }
 
 .background-image {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.img-3 {
 }
