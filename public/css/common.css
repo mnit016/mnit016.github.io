@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 
 .center-div {
     display: flex;
@@ -44,6 +47,10 @@
     color: #ea001b !important;
 }
 
+.text-blue {
+    color: #0284fe !important
+}
+
 .background-red {
     background-color: #ea001b !important;
 }
@@ -75,6 +82,10 @@ textarea {
     font-family: FontAwesome;
     font-size: 16px;
     padding-left: 5px;
+}
+
+.align-items-center {
+    align-items: center;
 }
 
 @font-face {
