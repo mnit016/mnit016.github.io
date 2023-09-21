@@ -194,10 +194,13 @@ nav .col-12 .nav-item {
 }
 
 footer {
-  background-color: #4287f5;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../ext/img/footer.jpg");
+  height: 450px;
   color: white;
   padding-top: 50px;
-  padding-bottom: 50px;
 }
 footer img {
   width: 150px;
@@ -235,15 +238,16 @@ footer .visit .holder {
   align-items: center;
   margin-bottom: -70px;
 }
-footer .visit img {
-  border: none;
-  scale: 0.2;
-}
 footer .visit .img {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 50px;
+}
+footer .visit img {
+  width: 30px;
+  height: 30px;
+  border: none;
 }
 footer .social h3 {
   text-align: center;
