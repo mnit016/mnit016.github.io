@@ -38,11 +38,6 @@ nav .col-12 {
   display: flex;
   align-items: center;
 }
-nav .col-12 ul {
-  margin: auto;
-  margin-left: 50px;
-  margin-right: 50px;
-}
 nav .col-12 li {
   list-style-type: none;
   border-left: solid #4287f5 2px;
@@ -73,7 +68,6 @@ nav .col-12 button,
 nav .col-12 input {
   background-color: white;
   border: solid 2px #4287f5;
-  color: white !important;
 }
 nav .col-12 .nav-item {
   border: none;
