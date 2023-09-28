@@ -204,16 +204,18 @@ nav .col-12 .form-inline img {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 50px;
+  width: auto;
 }
 .home-contact .logos img {
   width: auto;
-  height: 100px;
+  height: 100%;
 }
 .home-contact .logos .logos {
   margin: 0 auto;
 }
 .home-contact .img-sli img {
-  height: 70px !important;
+  height: 80%;
 }
 
 footer {

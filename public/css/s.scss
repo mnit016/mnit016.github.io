@@ -245,11 +245,13 @@ nav {
             display: flex;
             justify-content: center;
             align-items: center;
+            height: 50px;
+            width: auto;
         }
 
         img {
             width: auto;
-            height: 100px;
+            height: 100%;
         }
 
         .logos {
@@ -258,7 +260,7 @@ nav {
     }
     .img-sli {
         img {
-            height: 70px !important;
+            height: 80%;
         } 
     }
 }
