@@ -1,7 +1,8 @@
 .dropdown-custom-item {
     list-style: none;
     position: relative;
-    padding-right: 20px; /* Create space for the icon */
+    padding-right: 20px;
+    /* Create space for the icon */
     margin-bottom: 10px;
     cursor: pointer;
 }
@@ -25,8 +26,10 @@
 }
 
 .dropdown-custom-item::after {
-    content: "\2b"; /* Unicode for the desired icon (e.g., a font-awesome icon) */
-    font-family: FontAwesome; /* Use the font that contains the icon */
+    content: "\2b";
+    /* Unicode for the desired icon (e.g., a font-awesome icon) */
+    font-family: FontAwesome;
+    /* Use the font that contains the icon */
     position: absolute;
     top: 0;
     right: 5px;
@@ -38,19 +41,88 @@
 }
 
 .euro-text-background-vertical {
-    background-position: left; 
-    background-image: url(../images/blur-text-euro.png); 
-    background-size: contain; 
+    background-position: left;
+    background-image: url(../images/blur-text-euro.png);
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
 .euro-text-background-horizontal {
-    background-position: top; 
-    background-image: url(../images/blur-text-euro-2.png); 
-    background-size: contain; 
+    background-position: top;
+    background-image: url(../images/blur-text-euro-2.png);
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     background: transparent;
+}
+
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    font-size: 2.5vmin;
+}
+
+.carousel-slider {
+    display: flex;
+    transition: 0.3s;
+}
+
+.carousel-slide {
+    flex: 1 0 100%;
+}
+
+.carousel-slide img {
+    display: block;
+    width: 100%;
+    height: 36em;
+    object-fit: cover;
+}
+
+.carousel button {
+    font-size: inherit;
+}
+
+.carousel-prev,
+.carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+.carousel-prev {
+    left: 2em;
+}
+
+.carousel-next {
+    right: 2em;
+}
+
+.carousel-navigation {
+    position: absolute;
+    bottom: 1em;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.carousel-bullet {
+    width: 1em;
+    height: 1em;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carousel-bullet.is-active {
+    background: #1c69d3;
 }
