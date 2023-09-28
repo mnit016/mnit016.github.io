@@ -250,12 +250,16 @@ nav {
         img {
             width: auto;
             height: 100px;
-            border: solid 1px;
         }
 
         .logos {
             margin: 0 auto;
         }
+    }
+    .img-sli {
+        img {
+            height: 70px !important;
+        } 
     }
 }
 

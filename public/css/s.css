@@ -208,10 +208,12 @@ nav .col-12 .form-inline img {
 .home-contact .logos img {
   width: auto;
   height: 100px;
-  border: solid 1px;
 }
 .home-contact .logos .logos {
   margin: 0 auto;
+}
+.home-contact .img-sli img {
+  height: 70px !important;
 }
 
 footer {
