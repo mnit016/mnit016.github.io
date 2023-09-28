@@ -206,7 +206,7 @@ nav .col-12 .form-inline img {
   align-items: center;
 }
 .home-contact .logos img {
-  width: 100px;
+  width: auto;
   height: 100px;
   border: solid 1px;
 }
