@@ -53,6 +53,7 @@ if (!isset($_SESSION['CREATED'])) {
             <input type="submit" value="Upload" name="submit">
         </form>
     </div>  
+    <hr/>
     <div class="mb-3">
         <form action="../actions/save_content.php" method="post">
             <h1>Why Euro Film</h1>
@@ -66,21 +67,213 @@ if (!isset($_SESSION['CREATED'])) {
             ?>
             <input type="submit" value="Save" name="submit">
         </form>
-    </div> 
+    </div>
+    <hr/> 
     <div class="mb-3">
         <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
             <h1>1.1</h1>
-            <input type="text" name="fileName" hidden value="1.1.jpg">
+            <input type="text" name="fileName" hidden value="why/1.1.jpg">
             <input type="file" name="fileToUpload" id="fileToUpload">
-            <?php if(!empty($_SESSION['1.1.jpg'])): ?>
-                <p class="text-blue"> <?php echo $_SESSION["1.1.jpg"] ?></p>
+            <?php if(!empty($_SESSION['why/1.1.jpg'])): ?>
+                <p class="text-blue"> <?php echo $_SESSION["why/1.1.jpg"] ?></p>
                 <?php 
                 endif; 
-                unset($_SESSION["1.1.jpg"]);
+                unset($_SESSION["why/1.1.jpg"]);
             ?>
             <input type="submit" value="Upload" name="submit">
         </form>
     </div> 
+    <div class="mb-3">
+        <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
+            <h3>1.1 (2)</h3>
+            <input type="text" name="fileName" hidden value="why/1.2.jpg">
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <?php if(!empty($_SESSION['why/1.2.jpg'])): ?>
+                <p class="text-blue"> <?php echo $_SESSION["why/1.2.jpg"] ?></p>
+                <?php 
+                endif; 
+                unset($_SESSION["why/1.2.jpg"]);
+            ?>
+            <input type="submit" value="Upload" name="submit">
+        </form>
+    </div> 
+    <div class="mb-3">
+        <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
+            <h3>1.1 (3)</h3>
+            <input type="text" name="fileName" hidden value="why/1.3.jpg">
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <?php if(!empty($_SESSION['why/1.3.jpg'])): ?>
+                <p class="text-blue"> <?php echo $_SESSION["why/1.3.jpg"] ?></p>
+                <?php 
+                endif; 
+                unset($_SESSION["why/1.3.jpg"]);
+            ?>
+            <input type="submit" value="Upload" name="submit">
+        </form>
+    </div>
+    <hr/>
+    <div class="mb-3">
+        <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
+            <h1>WHY - SẢN PHẨM</h1>
+            <h3>1.2</h3>
+            <input type="text" name="fileName" hidden value="why-product/1.2.jpg">
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <?php if(!empty($_SESSION['why-product/1.3.jpg'])): ?>
+                <p class="text-blue"> <?php echo $_SESSION["why-product/1.2.jpg"] ?></p>
+                <?php 
+                endif; 
+                unset($_SESSION["why-product/1.2.jpg"]);
+            ?>
+            <input type="submit" value="Upload" name="submit">
+        </form>
+    </div>
+    <div class="mb-3">
+        <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
+            <h3>1.3</h3>
+            <input type="text" name="fileName" hidden value="why-product/1.3.jpg">
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <?php if(!empty($_SESSION['why-product/1.3.jpg'])): ?>
+                <p class="text-blue"> <?php echo $_SESSION["why-product/1.3.jpg"] ?></p>
+                <?php 
+                endif; 
+                unset($_SESSION["why-product/1.3.jpg"]);
+            ?>
+            <input type="submit" value="Upload" name="submit">
+        </form>
+    </div>  
+    <div class="mb-3">
+        <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
+            <h3>1.4</h3>
+            <input type="text" name="fileName" hidden value="why-product/1.4.jpg">
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <?php if(!empty($_SESSION['why-product/1.4.jpg'])): ?>
+                <p class="text-blue"> <?php echo $_SESSION["why-product/1.4.jpg"] ?></p>
+                <?php 
+                endif; 
+                unset($_SESSION["why-product/1.4.jpg"]);
+            ?>
+            <input type="submit" value="Upload" name="submit">
+        </form>
+    </div>
+    <div class="mb-3">
+        <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
+            <h3>1.2 (2)</h3>
+            <input type="text" name="fileName" hidden value="why-product/1.2 (2).jpg">
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <?php if(!empty($_SESSION['why-product/1.3 (2).jpg'])): ?>
+                <p class="text-blue"> <?php echo $_SESSION["why-product/1.2 (2).jpg"] ?></p>
+                <?php 
+                endif; 
+                unset($_SESSION["why-product/1.2 (2).jpg"]);
+            ?>
+            <input type="submit" value="Upload" name="submit">
+        </form>
+    </div>
+    <div class="mb-3">
+        <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
+            <h3>1.3 (2)</h3>
+            <input type="text" name="fileName" hidden value="why-product/1.3 (2).jpg">
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <?php if(!empty($_SESSION['why-product/1.3 (2).jpg'])): ?>
+                <p class="text-blue"> <?php echo $_SESSION["why-product/1.3 (2).jpg"] ?></p>
+                <?php 
+                endif; 
+                unset($_SESSION["why-product/1.3 (2).jpg"]);
+            ?>
+            <input type="submit" value="Upload" name="submit">
+        </form>
+    </div>  
+    <div class="mb-3">
+        <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
+            <h3>1.4 (2)</h3>
+            <input type="text" name="fileName" hidden value="why-product/1.4 (2).jpg">
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <?php if(!empty($_SESSION['why-product/1.4 (2).jpg'])): ?>
+                <p class="text-blue"> <?php echo $_SESSION["why-product/1.4 (2).jpg"] ?></p>
+                <?php 
+                endif; 
+                unset($_SESSION["why-product/1.4 (2).jpg"]);
+            ?>
+            <input type="submit" value="Upload" name="submit">
+        </form>
+    </div>
+    <hr/>
+    <div class="mb-3">
+        <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
+            <h1> CƠ SỞ VẬT CHẤT</h1>
+            <h3>1.5 (1)</h3>
+            <input type="text" name="fileName" hidden value="csvc/1.jpg">
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <?php if(!empty($_SESSION['csvc/1.jpg'])): ?>
+                <p class="text-blue"> <?php echo $_SESSION["csvc/1.jpg"] ?></p>
+                <?php 
+                endif; 
+                unset($_SESSION["csvc/1.jpg"]);
+            ?>
+            <input type="submit" value="Upload" name="submit">
+        </form>
+    </div>
+    <div class="mb-3">
+        <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
+            <h1> CƠ SỞ VẬT CHẤT</h1>
+            <h3>1.5 (2)</h3>
+            <input type="text" name="fileName" hidden value="csvc/2.jpg">
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <?php if(!empty($_SESSION['csvc/2.jpg'])): ?>
+                <p class="text-blue"> <?php echo $_SESSION["csvc/2.jpg"] ?></p>
+                <?php 
+                endif; 
+                unset($_SESSION["csvc/2.jpg"]);
+            ?>
+            <input type="submit" value="Upload" name="submit">
+        </form>
+    </div>
+    <div class="mb-3">
+        <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
+            <h1> CƠ SỞ VẬT CHẤT</h1>
+            <h3>1.5 (3)</h3>
+            <input type="text" name="fileName" hidden value="csvc/3.jpg">
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <?php if(!empty($_SESSION['csvc/3.jpg'])): ?>
+                <p class="text-blue"> <?php echo $_SESSION["csvc/3.jpg"] ?></p>
+                <?php 
+                endif; 
+                unset($_SESSION["csvc/3.jpg"]);
+            ?>
+            <input type="submit" value="Upload" name="submit">
+        </form>
+    </div>
+    <div class="mb-3">
+        <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
+            <h1> CƠ SỞ VẬT CHẤT</h1>
+            <h3>1.5 (4)</h3>
+            <input type="text" name="fileName" hidden value="csvc/4.jpg">
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <?php if(!empty($_SESSION['csvc/4.jpg'])): ?>
+                <p class="text-blue"> <?php echo $_SESSION["csvc/4.jpg"] ?></p>
+                <?php 
+                endif; 
+                unset($_SESSION["csvc/4.jpg"]);
+            ?>
+            <input type="submit" value="Upload" name="submit">
+        </form>
+    </div>
+    <div class="mb-3">
+        <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
+            <h1> CƠ SỞ VẬT CHẤT</h1>
+            <h3>1.5 (5)</h3>
+            <input type="text" name="fileName" hidden value="csvc/5.jpg">
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <?php if(!empty($_SESSION['csvc/5.jpg'])): ?>
+                <p class="text-blue"> <?php echo $_SESSION["csvc/5.jpg"] ?></p>
+                <?php 
+                endif; 
+                unset($_SESSION["csvc/5.jpg"]);
+            ?>
+            <input type="submit" value="Upload" name="submit">
+        </form>
+    </div>
+
 
 </body>
 <script src="https://kit.fontawesome.com/4e75f15372.js" crossorigin="anonymous"></script>
