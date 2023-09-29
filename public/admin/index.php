@@ -48,8 +48,8 @@ if (!isset($_SESSION['CREATED'])) {
             foreach ($fetchData as $e) { ?>
                 
             <div class="mb-3 mt-5">
+                <h2 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)"><?php echo "$e[name]"?></h2>
                 <form action="../actions/save_content.php" method="post">
-                    <h2><?php echo "$e[name]"?></h2>
                     <input type="text" name="name" hidden value="<?php echo $e["name"] ?>">
                     <textarea class="w-100 smaller" rows="5" type="text" name="content"><?php echo str_replace("<p>","\n",$e["content"]); ?></textarea>
                     <input type="submit" value="Save" name="submit">
@@ -65,14 +65,15 @@ if (!isset($_SESSION['CREATED'])) {
             <h1>Images part</h1>
             <?php
             foreach ($home_main as $e) { ?>
-                <div class="mb-3 mt-5">
-                <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
-                    <h3><?php echo "$e[name] - $e[des]"?></h3>
-                    <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
-                    <input type="file" name="fileToUpload" id="fileToUpload">
-                    <input type="submit" value="Upload" name="submit">
-                </form>
-            </div>  
+            
+                <h3 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)"><?php echo "$e[name] - $e[des]"?></h3>
+                <div class="mb-3 mt-5" style="display: none;">
+                    <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
+                        <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
+                        <input type="file" name="fileToUpload" id="fileToUpload">
+                        <input type="submit" value="Upload" name="submit">
+                    </form>
+                </div>  
             <hr/>
             <?php  
             }
@@ -80,9 +81,9 @@ if (!isset($_SESSION['CREATED'])) {
             
             <?php
             foreach ($why_euro as $e) { ?>
-            <div class="mb-3 mt-5">
+            <div class="mb-3 mt-5" style="display: none;">
                 <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
-                    <h3><?php echo "$e[name] - $e[des]"?></h3>
+                    <h3 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)"><?php echo "$e[name] - $e[des]"?></h3>
                     <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
                     <input type="file" name="fileToUpload" id="fileToUpload">
                     <input type="submit" value="Upload" name="submit">
@@ -94,9 +95,9 @@ if (!isset($_SESSION['CREATED'])) {
             <hr/>
             <?php
             foreach ($intro_product as $e) { ?>
-            <div class="mb-3 mt-5">
+            <h3 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)"><?php echo "$e[name] - $e[des]"?></h3>
+            <div class="mb-3 mt-5" style="display: none;">
                 <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
-                    <h3><?php echo "$e[name] - $e[des]"?></h3>
                     <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
                     <input type="file" name="fileToUpload" id="fileToUpload">
                     <input type="submit" value="Upload" name="submit">
@@ -108,9 +109,9 @@ if (!isset($_SESSION['CREATED'])) {
             <hr/>
             <?php
             foreach ($intro_facility as $e) { ?>
-            <div class="mb-3 mt-5">
+            <h3 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)"><?php echo "$e[name] - $e[des]"?></h3>
+            <div class="mb-3 mt-5" style="display: none;">
                 <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
-                    <h3><?php echo "$e[name] - $e[des]"?></h3>
                     <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
                     <input type="file" name="fileToUpload" id="fileToUpload">
                     <input type="submit" value="Upload" name="submit">
@@ -122,9 +123,9 @@ if (!isset($_SESSION['CREATED'])) {
             <hr/>
             <?php
             foreach ($partner as $e) { ?>
-            <div class="mb-3 mt-5">
+            <h3 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)"><?php echo "$e[name] - $e[des]"?></h3>
+            <div class="mb-3 mt-5" style="display: none;">
                 <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
-                    <h3><?php echo "$e[name] - $e[des]"?></h3>
                     <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
                     <input type="file" name="fileToUpload" id="fileToUpload">
                     <input type="submit" value="Upload" name="submit">
@@ -136,9 +137,9 @@ if (!isset($_SESSION['CREATED'])) {
             <hr/>
             <?php
             foreach ($product_main as $e) { ?>
-            <div class="mb-3 mt-5">
+            <h3 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)"><?php echo "$e[name] - $e[des]"?></h3>
+            <div class="mb-3 mt-5" style="display: none;">
                 <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
-                    <h3><?php echo "$e[name] - $e[des]"?></h3>
                     <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
                     <input type="file" name="fileToUpload" id="fileToUpload">
                     <input type="submit" value="Upload" name="submit">
@@ -150,9 +151,9 @@ if (!isset($_SESSION['CREATED'])) {
             <hr/>
             <?php
             foreach ($product as $e) { ?>
-            <div class="mb-3 mt-5">
+            <h3 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)"><?php echo "$e[name] - $e[des]"?></h3>
+            <div class="mb-3 mt-5" style="display: none;">
                 <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
-                    <h3><?php echo "$e[name] - $e[des]"?></h3>
                     <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
                     <input type="file" name="fileToUpload" id="fileToUpload">
                     <input type="submit" value="Upload" name="submit">
@@ -164,9 +165,9 @@ if (!isset($_SESSION['CREATED'])) {
             <hr/>
             <?php
             foreach ($lab_main as $e) { ?>
-            <div class="mb-3 mt-5">
+            <div class="mb-3 mt-5" style="display: none;">
                 <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
-                    <h3><?php echo "$e[name] - $e[des]"?></h3>
+                    <h3 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)"><?php echo "$e[name] - $e[des]"?></h3>
                     <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
                     <input type="file" name="fileToUpload" id="fileToUpload">
                     <input type="submit" value="Upload" name="submit">
@@ -178,9 +179,9 @@ if (!isset($_SESSION['CREATED'])) {
             <hr/>
             <?php
             foreach ($lab as $e) { ?>
-            <div class="mb-3 mt-5">
+            <div class="mb-3 mt-5" style="display: none;">
                 <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
-                    <h3><?php echo "$e[name] - $e[des]"?></h3>
+                    <h3 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)"><?php echo "$e[name] - $e[des]"?></h3>
                     <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
                     <input type="file" name="fileToUpload" id="fileToUpload">
                     <input type="submit" value="Upload" name="submit">
@@ -192,9 +193,9 @@ if (!isset($_SESSION['CREATED'])) {
             <hr/>
             <?php
             foreach ($infra_main as $e) { ?>
-            <div class="mb-3 mt-5">
+            <div class="mb-3 mt-5" style="display: none;">
                 <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
-                    <h3><?php echo "$e[name] - $e[des]"?></h3>
+                    <h3 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)"><?php echo "$e[name] - $e[des]"?></h3>
                     <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
                     <input type="file" name="fileToUpload" id="fileToUpload">
                     <input type="submit" value="Upload" name="submit">
@@ -206,9 +207,9 @@ if (!isset($_SESSION['CREATED'])) {
             <hr/>
             <?php
             foreach ($infra as $e) { ?>
-            <div class="mb-3 mt-5">
+            <div class="mb-3 mt-5" style="display: none;">
                 <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
-                    <h3><?php echo "$e[name] - $e[des]"?></h3>
+                    <h3 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)"><?php echo "$e[name] - $e[des]"?></h3>
                     <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
                     <input type="file" name="fileToUpload" id="fileToUpload">
                     <input type="submit" value="Upload" name="submit">
@@ -220,9 +221,9 @@ if (!isset($_SESSION['CREATED'])) {
             <hr/>
             <?php
             foreach ($contact_main as $e) { ?>
-            <div class="mb-3 mt-5">
+            <div class="mb-3 mt-5" style="display: none;">
                 <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
-                    <h3><?php echo "$e[name] - $e[des]"?></h3>
+                    <h3 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)"><?php echo "$e[name] - $e[des]"?></h3>
                     <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
                     <input type="file" name="fileToUpload" id="fileToUpload">
                     <input type="submit" value="Upload" name="submit">
@@ -234,9 +235,9 @@ if (!isset($_SESSION['CREATED'])) {
             <hr/>
             <?php
             foreach ($contact as $e) { ?>
-            <div class="mb-3 mt-5">
+            <div class="mb-3 mt-5" style="display: none;">
                 <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
-                    <h3><?php echo "$e[name] - $e[des]"?></h3>
+                    <h3 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)"><?php echo "$e[name] - $e[des]"?></h3>
                     <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
                     <input type="file" name="fileToUpload" id="fileToUpload">
                     <input type="submit" value="Upload" name="submit">
