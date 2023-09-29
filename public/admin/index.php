@@ -78,7 +78,7 @@ if (!isset($_SESSION['CREATED'])) {
                             <input type="file" name="fileToUpload" id="fileToUpload">
                             <input type="submit" value="Upload" name="submit">
                         </form>
-                        <img style="height: 400px" src="../images/<?php echo $e["path"] ?>">
+                        <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
                     </div>
                     <hr />
                     <?php
@@ -98,7 +98,7 @@ if (!isset($_SESSION['CREATED'])) {
                                 <input type="file" name="fileToUpload" id="fileToUpload">
                                 <input type="submit" value="Upload" name="submit">
                             </form>
-                        <img style="height: 400px" src="../images/<?php echo $e["path"] ?>">
+                        <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
                         </div>
                         <?php
                     }
@@ -119,7 +119,7 @@ if (!isset($_SESSION['CREATED'])) {
                                 <input type="file" name="fileToUpload" id="fileToUpload">
                                 <input type="submit" value="Upload" name="submit">
                             </form>
-                        <img style="height: 400px" src="../images/<?php echo $e["path"] ?>">
+                        <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
                         </div>
                         <?php
                     }
@@ -140,7 +140,7 @@ if (!isset($_SESSION['CREATED'])) {
                                 <input type="file" name="fileToUpload" id="fileToUpload">
                                 <input type="submit" value="Upload" name="submit">
                             </form>
-                        <img style="height: 400px" src="../images/<?php echo $e["path"] ?>">
+                        <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
                         </div>
                         <?php
                     }
@@ -161,7 +161,7 @@ if (!isset($_SESSION['CREATED'])) {
                                 <input type="file" name="fileToUpload" id="fileToUpload">
                                 <input type="submit" value="Upload" name="submit">
                             </form>
-                        <img style="height: 400px" src="../images/<?php echo $e["path"] ?>">
+                        <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
                         </div>
                         <?php
                     }
@@ -182,7 +182,7 @@ if (!isset($_SESSION['CREATED'])) {
                                 <input type="file" name="fileToUpload" id="fileToUpload">
                                 <input type="submit" value="Upload" name="submit">
                             </form>
-                        <img style="height: 400px" src="../images/<?php echo $e["path"] ?>">
+                        <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
                         </div>
                         <?php
                     }
@@ -199,7 +199,7 @@ if (!isset($_SESSION['CREATED'])) {
                                 <input type="file" name="fileToUpload" id="fileToUpload">
                                 <input type="submit" value="Upload" name="submit">
                             </form>
-                        <img style="height: 400px" src="../images/<?php echo $e["path"] ?>">
+                        <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
                         </div>
                         <?php
                     }
@@ -220,7 +220,7 @@ if (!isset($_SESSION['CREATED'])) {
                                 <input type="file" name="fileToUpload" id="fileToUpload">
                                 <input type="submit" value="Upload" name="submit">
                             </form>
-                        <img style="height: 400px" src="../images/<?php echo $e["path"] ?>">
+                        <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
                         </div>
                         <?php
                     }
@@ -237,7 +237,7 @@ if (!isset($_SESSION['CREATED'])) {
                                 <input type="file" name="fileToUpload" id="fileToUpload">
                                 <input type="submit" value="Upload" name="submit">
                             </form>
-                        <img style="height: 400px" src="../images/<?php echo $e["path"] ?>">
+                        <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
                         </div>
                         <?php
                     }
@@ -258,7 +258,7 @@ if (!isset($_SESSION['CREATED'])) {
                                 <input type="file" name="fileToUpload" id="fileToUpload">
                                 <input type="submit" value="Upload" name="submit">
                             </form>
-                        <img style="height: 400px" src="../images/<?php echo $e["path"] ?>">
+                        <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
                         </div>
                         <?php
                     }
@@ -275,7 +275,7 @@ if (!isset($_SESSION['CREATED'])) {
                                 <input type="file" name="fileToUpload" id="fileToUpload">
                                 <input type="submit" value="Upload" name="submit">
                             </form>
-                        <img style="height: 400px" src="../images/<?php echo $e["path"] ?>">
+                        <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
                         </div>
                         <?php
                     }
@@ -296,7 +296,7 @@ if (!isset($_SESSION['CREATED'])) {
                                 <input type="file" name="fileToUpload" id="fileToUpload">
                                 <input type="submit" value="Upload" name="submit">
                             </form>
-                        <img style="height: 400px" src="../images/<?php echo $e["path"] ?>">
+                        <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
                         </div>
                         <?php
                     }
@@ -313,7 +313,7 @@ if (!isset($_SESSION['CREATED'])) {
                                 <input type="file" name="fileToUpload" id="fileToUpload">
                                 <input type="submit" value="Upload" name="submit">
                             </form>
-                        <img style="height: 400px" src="../images/<?php echo $e["path"] ?>">
+                        <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
                         </div>
                         <?php
                     }
