@@ -35,7 +35,7 @@ if ($stmt = $conn->prepare('SELECT id, pass FROM user WHERE user = ?')) {
 
 	$stmt->close();
     if(isset($_SESSION['err_msg'])) {
-        header("Location: /admin/login.php");
+        header("Location: /admin/login/");
     } else {
         header("Location: $_SESSION[redirect_url]");
     }
