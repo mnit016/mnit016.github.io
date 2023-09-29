@@ -294,18 +294,9 @@ if (!isset($_SESSION['CREATED'])) {
                     <h2 class="d-block euro-font-title">BRUCKNER</h2>
                     <div class="d-flex justify-content-center">
                         <div>
-                            <p>
-                                * There are two Production lines BOPP - Bruckner brand Name
-                            </p>
-                            <p>
-                                * The process capacity is about 48000 tons of products per year.
-                            </p>
-                            <p>
-                                * Total width of semi-product: 8.4met
-                            </p>
-                            <p>
-                                * Total area: (WS1: 10.752m2, WS2: 10,227.32sqm)
-                            </p>
+                            <?php
+                                echo $fetchData[1]["content"];
+                            ?>
                         </div>
                     </div>
                 </div>

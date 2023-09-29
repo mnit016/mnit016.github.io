@@ -1,7 +1,7 @@
 <section id="products">
     <div class="position-relative background-image" style="height: 537px; background-image: url('./images/2.1.jpg');">
         <div class="container p-0 position-relative h-100 w-100">
-            <h1 class="position-absolute font-weight-bold euro-font-title" style="color: white; bottom: 0; font-size: 10rem;">SẢN PHẨM</h1>
+            <h1 class="position-absolute font-weight-bold euro-font-title" style="color: white; bottom: 0; font-size: 10rem;">PRODUCT</h1>
         </div>
     </div>
 </section>
@@ -54,7 +54,9 @@
                 <div class="w-100 pl-3">
                     <h1 class="p-1 font-weight-bold euro-font-title">Portfolio</h1>
                     <div class="pl-1 euro-font-content">
-                        Introducing Our Range of BOPP Products.
+                        <?php
+                            echo $fetchData[2]["content"];
+                        ?>
                     </div>
                     <div class="w-85">
                         <div class="row mt-2" style="min-height: 250px;">
@@ -72,14 +74,9 @@
                                         <p class="border-dashed-bottom-1 text-black euro-font-content pb-2 mb-1">
                                             Descriptions
                                         </p>
-                                        <p class="text-black euro-font-content-book"><small>
-                                            "A non heat sealable Biaxially Oriented Polypropylene film, 
-                                            with one side corona treated.
-                                            This film is widely used for printing, lamination in the market. 
-                                            Features: High gloss and good clarity, Excellent machinability, 
-                                            Good printability, Back treatment free, Excellent anchorage
-                                            Excellent optical properties."</small>
-                                        </p>
+                                        <?php
+                                            echo $fetchData[3]["content"];
+                                        ?>
                                     </div>
                                 </div>
                             </div>
@@ -92,12 +89,9 @@
                                         <p class="border-dashed-bottom-1 text-black euro-font-content pb-2 mb-1">
                                         Descriptions
                                         </p>
-                                        <p class="text-black euro-font-content-book"><small>
-                                            "A non-heat sealable Biaxially Oriented Polypropylene matte film, 
-                                            with one side corona treated (Glossy side).
-                                            This film is widely used for printing, lamination in the market. 
-                                            Good printability, Back treatment free, good matte appearance."</small>
-                                        </p>
+                                        <?php
+                                            echo $fetchData[4]["content"];
+                                        ?>
                                     </div>
                                 </div>
                             </div>
@@ -124,11 +118,9 @@
                                         <p class="border-dashed-bottom-1 text-black euro-font-content pb-2 mb-1">
                                         Descriptions
                                         </p>
-                                        <p class="text-black euro-font-content-book"><small>
-                                            "Pearl White, one-side heat sealable, 1-side Corona treated. The Corona treated side is purposedly designed for good inks adhesion and lamination adhesives bonding. Untreated side is heat sealable side with moderate COF, conventional seal initiation temperature, excellent seal strength.
-                                            Over-wrap label & packaging, film sealing packaging for tissue / ice cream / cosmetics.
-                                            Excellent opacity, excellent machinability, high surface gloss on non-sealable side, suitable for various printing and lamination technology."</small>
-                                        </p>
+                                        <?php
+                                            echo $fetchData[5]["content"];
+                                        ?>
                                     </div>
                                 </div>
                             </div>
@@ -141,12 +133,9 @@
                                         <p class="border-dashed-bottom-1 text-black euro-font-content pb-2 mb-1">
                                          Descriptions
                                         </p>
-                                        <p class="text-black euro-font-content-book"><small>
-                                            "It is a co-extruded Transparent, Other Side Corona Treated Cast Polypropylene (CPP) Film. 
-                                            Low COF for High Speed packaging line, Good Optical properties, Treated Surface is receptive to Inks and adhesives, Good hot tack
-                                            Lamination and single ply applications, Jumbo packs (e.g. snack food,
-                                            diapers, etc.), Direct food packaging (e.g. bread and bakery products, etc.),"</small>
-                                        </p>
+                                        <?php
+                                            echo $fetchData[6]["content"];
+                                        ?>
                                     </div>
                                 </div>
                             </div>
@@ -173,11 +162,9 @@
                                         <p class="border-dashed-bottom-1 text-black euro-font-content pb-2 mb-1">
                                         Descriptions
                                         </p>
-                                        <p class="text-black euro-font-content-book"><small>
-                                            "The OPP Self Adhesive Seal Pack Transparent is sealed on both sides the edge of the bag. They come with an adhesive strip on the flaps, which can be folded and sealed over the bag's opening. In order to ensure transparency, gloss, plasticity, durability, the quality must ensure the best quality.
-                                            The OPP Self Adhesive Seal Pack Transparent is ideal for storing varied products like clothes, books, stamps, coins, cosmetics, crafts, and general gift packaging.....
-                                            Store clothes, packaging for stationery of all kinds, etc."</small>
-                                        </p>
+                                        <?php
+                                            echo $fetchData[7]["content"];
+                                        ?>
                                         
                                     </div>
                                 </div>

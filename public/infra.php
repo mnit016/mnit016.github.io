@@ -10,10 +10,9 @@
             <div class="w-100 text-center">
                 <h1 class="p-1 font-weight-bold m-auto euro-font-title">FACILITIES</h1>
                 <div class="pt-2 pb-3 text-left euro-font-content">
-                    * The process capacity is about 48000 tons of products per year. <br/> 
-                    * There are two process lines. <br/>
-                    * Line 1 in WS1 has 1 BOPP film machine, 1 CPP film machine, 1 slitting machine, 1 inspection final product machine, 5 secondary slitters, 1 perforated film machine, 1 mechanical recycling unit. <br/>
-                    * Line 2 in WS2 has 1 BOPP film machine, 1 slitting machines, 15 bag making machines, 7 folding machines, 1 mechanical recycling unit.
+                    <?php
+                        echo $fetchData[9]["content"];
+                    ?>
                 </div>
             </div>
             <div class="w-100">

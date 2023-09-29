@@ -54,7 +54,7 @@
                 <div class="w-100 pl-3">
                     <h1 class="p-1 font-weight-bold euro-font-title">Danh Mục</h1>
                     <div class="pl-1 euro-font-content">
-                    <?php
+                        <?php
                             echo $fetchData[2]["content"];
                         ?>
                     </div>
