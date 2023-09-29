@@ -39,7 +39,7 @@ if (!isset($_SESSION['CREATED'])) {
     <div id="index" class="home-video pt-5 pb-5" style="background: linear-gradient(to bottom, #ebebeb 50%, #fff 50%)">
         <div class="container p-0">
             <div class="row">
-                <img src="./images/hinh ben ngoai.png">
+                <img src="./images/main.jpg">
             </div>
         </div>
     </div>
@@ -47,22 +47,14 @@ if (!isset($_SESSION['CREATED'])) {
         <div class="container pl-0 pr-0">
             <div class="row">
                 <div class="col-6" style="padding-right: 40px;">
-                    <div id="why-euro" class="home-why-text">
+                    <div id="why-euro" class="home-why-text euro-font-content-book">
                         <h1 class="euro-font-title ">
                             WHY EURO FILM
                         </h1>
                         <img src="./icon/slide-white-active.png" style="width: 200px; margin-top: -30px;">
-                        <p class="euro-font-content-book">
-                            "Euro Film Corporation Company was established 2015, operating in the field of Bopp films
-                            manufacturing. With 8 years experience, we are the leading manufacturer of Bopp film
-                            (Biaxial Oriented Polypropylene Film) for packaging, labeling, lamination and other
-                            applications.
-                        </p>
-                        <p class="euro-font-content-book">
-                            We are a leading supplier for over dozens of packaging factory facilities in the country.
-                            With production technology and modern equipment, we give customers quality products with the
-                            best prices."
-                        </p>
+                        <?php
+                            echo $fetchData[0]["content"];
+                        ?>
                     </div>
                 </div>
                 <div class="col-6">
