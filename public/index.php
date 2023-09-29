@@ -305,7 +305,7 @@ if (!isset($_SESSION['CREATED'])) {
 
         <div class="home-contact">
             <div>
-                <h1 class="text-blue euro-font-title">
+                <h1 class="text-blue euro-font-content">
                     PARTNERS
                 </h1>
                 <div class="row logos">
