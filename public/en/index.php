@@ -401,10 +401,10 @@ if (!isset($_SESSION['CREATED'])) {
         </div>
     </div>
 
-    <?php include "./products.html" ?>
-    <?php include "./lab.html" ?>
-    <?php include "./infra.html" ?>
-    <?php include "./contact.html" ?>
+    <?php include "./products.php" ?>
+    <?php include "./lab.php" ?>
+    <?php include "./infra.php" ?>
+    <?php include "./contact.php" ?>
 
     <!-- <footer>
         <?php include "./components/footer.html" ?>
