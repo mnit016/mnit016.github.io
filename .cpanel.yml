@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - /bin/rm -rf /home/eurofilm/public_html/*
+    # - /bin/rm -rf /home/eurofilm/public_html/*
     - /bin/cp -a public/. /home/eurofilm/public_html/
     
