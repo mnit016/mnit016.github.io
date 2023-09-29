@@ -15,11 +15,6 @@
                     * Line 1 in WS1 has 1 BOPP film machine, 1 CPP film machine, 1 slitting machine, 1 inspection final product machine, 5 secondary slitters, 1 perforated film machine, 1 mechanical recycling unit. <br/>
                     * Line 2 in WS2 has 1 BOPP film machine, 1 slitting machines, 15 bag making machines, 7 folding machines, 1 mechanical recycling unit.
                 </div>
-                <div class="pt-2 pb-3 text-left euro-font-content infra">
-                <?php
-                    echo $fetchData[9]["content"];
-                ?>
-                </div>
             </div>
             <div class="w-100">
                 

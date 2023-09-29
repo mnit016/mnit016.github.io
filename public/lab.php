@@ -12,9 +12,8 @@
         <div class="w-100 m-auto text-center">
             <h1 class="p-1 font-weight-bold m-auto euro-font-title">LAB</h1>
             <div class="pt-2 pb-3 text-left euro-font-content">
-            <?php
-                echo $fetchData[8]["content"];
-            ?>
+                Euro Film Corporation has fully controled strictly the quality required by its customers. 
+                The factory has set up a laboratory with modern equipment that can test most of the customer's test properties such as: Average Thickness By Weight,  Grammage, Density, Wetting Tension, Haze/ Transmittence, Gloss, Tensial strength, Elongation, Coefficient of Friction, Shrinkage, Heat Seal Temperature, Heat Seal Strength
             </div>
         </div>
         <div id="lab-carousel" class="carousel slide" data-ride="carousel" style="height: 927px;">
