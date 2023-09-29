@@ -1,3 +1,9 @@
+<?php
+if (!isset($_SESSION['loggedin'])) {
+	header('Location: /admin/login.php');
+	exit;
+}
+?>
 <!DOCTYPE html>
 <html>
 
