@@ -194,7 +194,7 @@ if (!isset($_SESSION['CREATED'])) {
                 <div class="row" style="padding: 0;">
                     <div class="col-12 p-0">
                         <h1>
-                            CƠ SỞ VẬT CHẤT
+                            Falilities
                         </h1>
                         <img src="./icon/slide-white-active.png"
                             style="width: 200px; margin-top: -20px; margin-bottom: 20px;">
