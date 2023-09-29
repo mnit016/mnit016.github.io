@@ -1,15 +1,16 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
 		<title>Euro Login</title>
-        <link rel="shortcut icon" href="../icon/logo-web.png" />
+        <link rel="shortcut icon" href="../../icon/logo-web.png" />
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 	</head>
 	<body>
 		<div class="login">
 			<h1>Login</h1>
-			<form action="../actions/authen.php" method="post">
+			<form action="../../actions/authen.php" method="post">
 				<label for="username">
 					<i class="fas fa-user"></i>
 				</label>
@@ -20,6 +21,13 @@
 				<input type="password" name="password" placeholder="Password" id="password" required>
 				<input type="submit" value="Login">
 			</form>
+			<p style="color: red">
+			<?php
+				if (isset($_SESSION['err_msg'])) {
+					echo $_SESSION['err_msg'];
+				}
+			?>
+			</p>
 		</div>
 	</body>
 </html>

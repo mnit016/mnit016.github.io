@@ -2,10 +2,10 @@
 session_start();
 
 $db_host = "localhost";
-$db_user = "eurofilm_admin";
-$db_pass = "sgC2MGv437Bu";
-// $db_user = "root";
-// $db_pass = "";
+// $db_user = "eurofilm_admin";
+// $db_pass = "sgC2MGv437Bu";
+$db_user = "root";
+$db_pass = "";
 $db_name = "eurofilm_main";
 
 $conn = new mysqli($db_host, $db_user, $db_pass, $db_name);
@@ -13,4 +13,5 @@ $conn = new mysqli($db_host, $db_user, $db_pass, $db_name);
 if (!$conn) {
   die("Connection failed: " . $conn->connect_error);
 }
+
 ?>

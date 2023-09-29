@@ -1,5 +1,6 @@
 <?php
-   session_destroy();
+   include("../includes/query_contents.php");
+   session_unset();
    
-   header('Location: /admin/login.php');
+   header('Location: /admin/login/');
 ?>

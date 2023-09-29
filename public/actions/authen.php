@@ -4,7 +4,7 @@ include "../includes/db_connect.php";
 // Now we check if the data from the login form was submitted, isset() will check if the data exists.
 if ( !isset($_POST['username'], $_POST['password']) ) {
 	// Could not get the data that should have been sent.
-	exit('Please fill both the username and password fields!');
+    $_SESSION['err_msg']='Incorrect username and/or password!';
 }
 // Prepare our SQL, preparing the SQL statement will prevent SQL injection.
 if ($stmt = $conn->prepare('SELECT id, pass FROM user WHERE user = ?')) {
@@ -26,14 +26,18 @@ if ($stmt = $conn->prepare('SELECT id, pass FROM user WHERE user = ?')) {
             $_SESSION['loggedin'] = TRUE;
         } else {
             // Incorrect password
-            $_SESSION['login_msg']='Incorrect username and/or password!';
+            $_SESSION['err_msg']='Incorrect username and/or password!';
         }
     } else {
         // Incorrect username
-        $_SESSION['login_msg']='Incorrect username and/or password!';
+        $_SESSION['err_msg']='Incorrect username and/or password!';
     }
 
 	$stmt->close();
-    header('Location: /admin/');
+    if(isset($_SESSION['err_msg'])) {
+        header("Location: /admin/login.php");
+    } else {
+        header("Location: $_SESSION[redirect_url]");
+    }
 }
 ?>

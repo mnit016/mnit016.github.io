@@ -2,7 +2,18 @@
 include("../includes/query_contents.php");
 // If the user is not logged in redirect to the login page...
 if (!isset($_SESSION['loggedin'])) {
-	header('Location: /admin/login.php');
+    $_SESSION['redirect_url']= "/admin/";
+	header('Location: /admin/login');
+	exit;
+}
+
+if (!isset($_SESSION['CREATED'])) {
+    $_SESSION['CREATED'] = time();
+} else if (time() - $_SESSION['CREATED'] > 1800) {
+    // session started more than 30 minutes ago
+    session_regenerate_id(true);    // change session ID for the current session and invalidate old session ID
+    $_SESSION['redirect_url']= "/admin/";
+	header('Location: /admin/login');
 	exit;
 }
 ?>

@@ -1,6 +1,18 @@
 <?php
+include("includes/query_contents.php");
 if (!isset($_SESSION['loggedin'])) {
-	header('Location: /admin/login.php');
+    $_SESSION['redirect_url']="/";
+	header('Location: /admin/login');
+	exit;
+}
+
+if (!isset($_SESSION['CREATED'])) {
+    $_SESSION['CREATED'] = time();
+} else if (time() - $_SESSION['CREATED'] > 1800) {
+    // session started more than 30 minutes ago
+    session_regenerate_id(true);    // change session ID for the current session and invalidate old session ID
+    $_SESSION['redirect_url']= "/";
+	header('Location: /admin/login');
 	exit;
 }
 ?>
@@ -22,7 +34,7 @@ if (!isset($_SESSION['loggedin'])) {
 </head>
 
 <body id="web-body">
-    <html-include src="./components/navbar.html"></html-include>
+    <?php include "./components/navbar.html" ?>
 
     <div id="index" class="home-video pt-5 pb-5" style="background: linear-gradient(to bottom, #ebebeb 50%, #fff 50%)">
         <div class="container p-0">
@@ -449,13 +461,13 @@ if (!isset($_SESSION['loggedin'])) {
         </div>
     </div>
 
-    <html-include src="./products.html"></html-include>
-    <html-include src="./lab.html"></html-include>
-    <html-include src="./infra.html"></html-include>
-    <html-include src="./contact.html"></html-include>
+    <?php include "./products.html" ?>
+    <?php include "./lab.html" ?>
+    <?php include "./infra.html" ?>
+    <?php include "./contact.html" ?>
 
     <footer>
-        <html-include src="./components/footer.html"></html-include>
+        <?php include "./components/footer.html" ?>
     </footer>
     <script src="https://kit.fontawesome.com/4e75f15372.js" crossorigin="anonymous"></script>
     <script src="lib/js/jquery.min.js"></script>
