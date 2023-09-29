@@ -102,7 +102,7 @@ if (!isset($_SESSION['CREATED'])) {
                             <div class="col-7">
                                 <div style="align-self: flex-end; width: 100%;">
                                     <div>
-                                        <h2 class="euro-font-title">PRODUCT</h2>
+                                        <h2 class="euro-font-title">SẢN PHẨM</h2>
                                     </div>
                                     <div class="row">
                                         <div class="col-6 small-img">
@@ -130,7 +130,7 @@ if (!isset($_SESSION['CREATED'])) {
                             <div class="col-7">
                                 <div style="align-self: flex-end; width: 100%;">
                                     <div>
-                                        <h2 class="euro-font-title">PRODUCT</h2>
+                                        <h2 class="euro-font-title">SẢN PHẨM</h2>
                                     </div>
                                     <div class="row">
                                         <div class="col-6 small-img">
@@ -194,7 +194,7 @@ if (!isset($_SESSION['CREATED'])) {
                 <div class="row" style="padding: 0;">
                     <div class="col-12 p-0">
                         <h1>
-                            Facilities
+                            CƠ SỞ VẬT CHẤT
                         </h1>
                         <img src="../icon/slide-white-active.png"
                             style="width: 200px; margin-top: -20px; margin-bottom: 20px;">

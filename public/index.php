@@ -102,7 +102,7 @@ if (!isset($_SESSION['CREATED'])) {
                             <div class="col-7">
                                 <div style="align-self: flex-end; width: 100%;">
                                     <div>
-                                        <h2 class="euro-font-title">SẢN PHẨM</h2>
+                                        <h2 class="euro-font-title">PRODUCT</h2>
                                     </div>
                                     <div class="row">
                                         <div class="col-6 small-img">
@@ -130,7 +130,7 @@ if (!isset($_SESSION['CREATED'])) {
                             <div class="col-7">
                                 <div style="align-self: flex-end; width: 100%;">
                                     <div>
-                                        <h2 class="euro-font-title">SẢN PHẨM</h2>
+                                        <h2 class="euro-font-title">PRODUCT</h2>
                                     </div>
                                     <div class="row">
                                         <div class="col-6 small-img">
@@ -194,7 +194,7 @@ if (!isset($_SESSION['CREATED'])) {
                 <div class="row" style="padding: 0;">
                     <div class="col-12 p-0">
                         <h1>
-                            CƠ SỞ VẬT CHẤT
+                            Facilities
                         </h1>
                         <img src="./icon/slide-white-active.png"
                             style="width: 200px; margin-top: -20px; margin-bottom: 20px;">
@@ -294,9 +294,18 @@ if (!isset($_SESSION['CREATED'])) {
                     <h2 class="d-block euro-font-title">BRUCKNER</h2>
                     <div class="d-flex justify-content-center">
                         <div>
-                            <?php
-                                echo $fetchData[1]["content"];
-                            ?>
+                            <p>
+                                * There are two Production lines BOPP - Bruckner brand Name
+                            </p>
+                            <p>
+                                * The process capacity is about 48000 tons of products per year.
+                            </p>
+                            <p>
+                                * Total width of semi-product: 8.4met
+                            </p>
+                            <p>
+                                * Total area: (WS1: 10.752m2, WS2: 10,227.32sqm)
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -306,7 +315,7 @@ if (!isset($_SESSION['CREATED'])) {
         <div class="home-contact">
             <div>
                 <h1 class="text-blue euro-font-title">
-                    ĐỐI TÁC
+                PARTNER COMPANIES
                 </h1>
                 <div class="row logos">
                     <div class="col-3">
