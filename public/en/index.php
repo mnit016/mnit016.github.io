@@ -389,10 +389,10 @@ if (!isset($_SESSION['CREATED'])) {
                                 <div class="carousel-item">
                                     <ul class="row img-sli justify-content-between">
                                         <li class="col-6">
-                                            <img src="./images/ctlk/1.png" alt="">
+                                            <img src="../images/ctlk/1.png" alt="">
                                         </li>
                                         <li class="col-6">
-                                            <img src="./images/ctlk/2.png" alt="">
+                                            <img src="../images/ctlk/2.png" alt="">
                                         </li>
                                     </ul>
                                 </div>
