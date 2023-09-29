@@ -315,59 +315,6 @@ if (!isset($_SESSION['CREATED'])) {
         <div class="home-contact">
             <div>
                 <h1 class="text-blue euro-font-title">
-                    CÔNG TY LIÊN KẾT
-                </h1>
-                <div class="row logos">
-                    <div class="col-3">
-                    </div>
-                    <div class="col-6">
-                        <div id="ctlk-slide" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <ul class="row">
-                                        <li class="col-6 background-image" style="background-image: url();">
-                                            <img src="./images/ctlk/1.png" alt="">
-                                        </li>
-                                        <li class="col-6 background-image" style="background-image: url();">
-                                            <img src="./images/ctlk/2.png" alt="">
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="carousel-item">
-                                    <ul class="row">
-                                        <li class="col-6 background-image" style="background-image: url();">
-                                            <img src="./images/ctlk/1.png" alt="">
-                                        </li>
-                                        <li class="col-6 background-image" style="background-image: url();">
-                                            <img src="./images/ctlk/2.png" alt="">
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
-                                data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleControls" role="button"
-                                data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <a class="" href="#ctlk-slide" role="button" data-slide="next">
-                        <img src="./icon/slide-black.png" style="width: 160px; margin-bottom: 10px;">
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="home-contact">
-            <div>
-                <h1 class="text-blue euro-font-title">
                     ĐỐI TÁC
                 </h1>
                 <div class="row logos">
@@ -436,6 +383,16 @@ if (!isset($_SESSION['CREATED'])) {
                                         </li>
                                         <li class="">
                                             <img src="./images/doitac/vinapacking.png" alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="carousel-item">
+                                    <ul class="row img-sli justify-content-between">
+                                        <li class="col-6">
+                                            <img src="./images/ctlk/1.png" alt="">
+                                        </li>
+                                        <li class="col-6">
+                                            <img src="./images/ctlk/2.png" alt="">
                                         </li>
                                     </ul>
                                 </div>
