@@ -1,7 +1,7 @@
 <?php
 include("../includes/query_contents.php");
 if (!isset($_SESSION['loggedin'])) {
-    $_SESSION['redirect_url']="/";
+    $_SESSION['redirect_url']="/vi/";
 	header('Location: /admin/login');
 	exit;
 }
@@ -11,7 +11,7 @@ if (!isset($_SESSION['CREATED'])) {
 } else if (time() - $_SESSION['CREATED'] > 1800) {
     // session started more than 30 minutes ago
     session_unset();  
-    $_SESSION['redirect_url']= "/";
+    $_SESSION['redirect_url']= "/vi/";
 	header('Location: /admin/login');
 	exit;
 }
