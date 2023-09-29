@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="lib/css/bootstrap.min.css" />
 <section id="lab">
     <div class="background-image" style="height: 537px; background-image: url('../images/3.1.jpg');">
         <div class="container p-0 position-relative h-100 w-100">
