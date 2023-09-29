@@ -11,9 +11,10 @@
 }
 
 nav {
-  height: 100px;
+  height: 70px;
   width: 100vw;
   background-color: white !important;
+  font-size: 1rem;
 }
 nav .row {
   display: flex;
@@ -26,12 +27,12 @@ nav .col-3 {
   align-items: center;
 }
 nav img {
-  height: 80px;
+  height: 60px;
   width: auto;
   margin-right: 10px;
 }
 nav .col-12 {
-  height: 100px;
+  height: 70px;
   background-color: white !important;
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -135,7 +136,7 @@ nav .col-12 .form-inline img {
 }
 .home-img .img12 {
   z-index: 999;
-  background-image: url("../images/why-product/1.2.jpg") !important;
+  background-image: url("../images/why-product/1.2.png") !important;
 }
 .home-img .img12-2 {
   z-index: 999;
