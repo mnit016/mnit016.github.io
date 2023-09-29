@@ -415,9 +415,9 @@ if (!isset($_SESSION['CREATED'])) {
     <?php include "./infra.html" ?>
     <?php include "./contact.html" ?>
 
-    <footer>
+    <!-- <footer>
         <?php include "./components/footer.html" ?>
-    </footer>
+    </footer> -->
     <script src="https://kit.fontawesome.com/4e75f15372.js" crossorigin="anonymous"></script>
     <script src="lib/js/jquery.min.js"></script>
     <script src="lib/js/bootstrap.min.js"></script>
