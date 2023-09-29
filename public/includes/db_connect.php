@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 $db_host = "localhost";
 $db_user = "eurofilm_admin";
 $db_pass = "sgC2MGv437Bu";

@@ -10,7 +10,7 @@ if (!isset($_SESSION['CREATED'])) {
     $_SESSION['CREATED'] = time();
 } else if (time() - $_SESSION['CREATED'] > 1800) {
     // session started more than 30 minutes ago
-    session_unset();    // change session ID for the current session and invalidate old session ID
+    session_unset();  
     $_SESSION['redirect_url']= "/";
 	header('Location: /admin/login');
 	exit;
@@ -294,18 +294,9 @@ if (!isset($_SESSION['CREATED'])) {
                     <h2 class="d-block euro-font-title">BRUCKNER</h2>
                     <div class="d-flex justify-content-center">
                         <div>
-                            <p>
-                                * There are two Production lines BOPP - Bruckner brand Name
-                            </p>
-                            <p>
-                                * The process capacity is about 48000 tons of products per year.
-                            </p>
-                            <p>
-                                * Total width of semi-product: 8.4met
-                            </p>
-                            <p>
-                                * Total area: (WS1: 10.752m2, WS2: 10,227.32sqm)
-                            </p>
+                            <?php
+                                echo $fetchData[1]["content"];
+                            ?>
                         </div>
                     </div>
                 </div>
@@ -410,9 +401,9 @@ if (!isset($_SESSION['CREATED'])) {
         </div>
     </div>
 
-    <?php include "./products.html" ?>
-    <?php include "./lab.html" ?>
-    <?php include "./infra.html" ?>
+    <?php include "./products.php" ?>
+    <?php include "./lab.php" ?>
+    <?php include "./infra.php" ?>
     <?php include "./contact.html" ?>
 
     <!-- <footer>

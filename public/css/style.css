@@ -58,3 +58,7 @@
 .contact-form textarea {
     background: transparent;
 }
+
+.infra p {
+    margin-bottom: 0 !important;
+}
