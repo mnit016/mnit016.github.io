@@ -13,9 +13,10 @@ $blue: #4287f5;
 }
 
 nav {
-    height: 100px;
+    height: 70px;
     width: 100vw;
     background-color: white !important;
+    font-size: 1rem;
 
     .row {
         display: flex;
@@ -30,13 +31,13 @@ nav {
     }
 
     img {
-        height: 80px;
+        height: 60px;
         width: auto;
         margin-right: 10px;
     }
 
     .col-12 {
-        height: 100px;
+        height: 70px;
         background-color: white !important;
         padding-left: 0 !important;
         padding-right: 0 !important;
@@ -161,7 +162,7 @@ nav {
 
     .img12 {
         z-index: 999;
-        background-image: url("../images/why-product/1.2.jpg") !important;
+        background-image: url("../images/why-product/1.2.png") !important;
     }
     .img12-2 {
         z-index: 999;
@@ -181,8 +182,6 @@ nav {
     .img14-2 {
         background-image: url("../images/why-product/1.4\ \(2\).jpg") !important;
     }
-
-
 
     .col-7,
     .col-5 {
@@ -274,7 +273,7 @@ nav {
     .img-sli {
         img {
             height: 80%;
-        } 
+        }
     }
 }
 
