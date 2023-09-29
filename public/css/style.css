@@ -1,7 +1,8 @@
 .dropdown-custom-item {
     list-style: none;
     position: relative;
-    padding-right: 20px; /* Create space for the icon */
+    padding-right: 20px;
+    /* Create space for the icon */
     margin-bottom: 10px;
     cursor: pointer;
 }
@@ -25,8 +26,10 @@
 }
 
 .dropdown-custom-item::after {
-    content: "\2b"; /* Unicode for the desired icon (e.g., a font-awesome icon) */
-    font-family: FontAwesome; /* Use the font that contains the icon */
+    content: "\2b";
+    /* Unicode for the desired icon (e.g., a font-awesome icon) */
+    font-family: FontAwesome;
+    /* Use the font that contains the icon */
     position: absolute;
     top: 0;
     right: 5px;
@@ -38,19 +41,20 @@
 }
 
 .euro-text-background-vertical {
-    background-position: left; 
-    background-image: url(../images/blur-text-euro.png); 
-    background-size: contain; 
+    background-position: left;
+    background-image: url(../images/blur-text-euro.png);
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
 .euro-text-background-horizontal {
-    background-position: top; 
-    background-image: url(../images/blur-text-euro-2.png); 
-    background-size: contain; 
+    background-position: top;
+    background-image: url(../images/blur-text-euro-2.png);
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     background: transparent;
 }
