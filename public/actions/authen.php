@@ -19,7 +19,7 @@ if ($stmt = $conn->prepare('SELECT id, pass FROM user WHERE user = ?')) {
         $stmt->fetch();
         // Account exists, now we verify the password.
         // Note: remember to use password_hash in your registration file to store the hashed passwords.
-        if ($_POST['password'] === $pass) {
+        if ($_POST['password'] == $pass) {
             // Verification success! User has logged-in!
             // Create sessions, so we know the user is logged in, they basically act like cookies but remember the data on the server.
             session_regenerate_id();
