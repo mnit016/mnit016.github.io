@@ -7,7 +7,7 @@
     </section>
     <section class="mt-4 mb-5 euro-text-background-vertical">
         <div class="container p-0">
-            <div class="w-100 text-center">
+            <div class="w-100 text-center infra">
                 <h1 class="p-1 font-weight-bold m-auto euro-font-title">FACILITIES</h1>
                 <div class="pt-2 pb-3 text-left euro-font-content">
                     <?php

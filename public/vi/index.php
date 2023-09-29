@@ -25,21 +25,21 @@ if (!isset($_SESSION['CREATED'])) {
     <title>Eurofilm</title>
     <meta name="description" content="EuroFilm" />
     <meta name="viewport" content="width=1140" charset="UTF-8" />
-    <link rel="stylesheet" href="lib/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../lib/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/common.css" rel="stylesheet" />
-    <link rel="shortcut icon" href="../icon/logo-web.png" />
-    <link rel="stylesheet" href="./css/s.css" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/common.css" rel="stylesheet" />
+    <link rel="shortcut icon" href=".../icon/logo-web.png" />
+    <link rel="stylesheet" href="../css/s.css" />
 </head>
 
 <body id="web-body">
-    <?php include "./components/navbar.html" ?>
+    <?php include "../components/navbar.html" ?>
 
     <div id="index" class="home-video pt-5 pb-5" style="background: linear-gradient(to bottom, #ebebeb 50%, #fff 50%)">
         <div class="container p-0">
             <div class="row">
-                <img src="../images/main.jpg">
+                <img src=".../images/main.jpg">
             </div>
         </div>
     </div>
@@ -51,7 +51,7 @@ if (!isset($_SESSION['CREATED'])) {
                         <h1 class="euro-font-title ">
                             WHY EURO FILM
                         </h1>
-                        <img src="../icon/slide-white-active.png" style="width: 200px; margin-top: -30px;">
+                        <img src=".../icon/slide-white-active.png" style="width: 200px; margin-top: -30px;">
                         <?php
                             echo $fetchData[0]["content"];
                         ?>
@@ -61,13 +61,13 @@ if (!isset($_SESSION['CREATED'])) {
                     <div id="why-slide" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="../images/why/1.1.jpg">
+                                <img src=".../images/why/1.1.jpg">
                             </div>
                             <div class="carousel-item">
-                                <img src="../images/why/1.2.jpg">
+                                <img src=".../images/why/1.2.jpg">
                             </div>
                             <div class="carousel-item">
-                                <img src="../images/why/1.3.jpg">
+                                <img src=".../images/why/1.3.jpg">
                             </div>
                         </div>
                         <!-- <a class="carousel-control-prev" href="#why-slide" role="button"
@@ -96,7 +96,7 @@ if (!isset($_SESSION['CREATED'])) {
                         <div class="row">
                             <div class="col-5 big-img" style="padding-right: 10px;">
                                 <div class="img img12">
-                                    <!-- <img src="./ext/img/1.4.jpg" style='width: 100%; object-fit: contain'> -->
+                                    <!-- <img src="../ext/img/1.4.jpg" style='width: 100%; object-fit: contain'> -->
                                 </div>
                             </div>
                             <div class="col-7">
@@ -124,7 +124,7 @@ if (!isset($_SESSION['CREATED'])) {
                         <div class="row">
                             <div class="col-5 big-img" style="padding-right: 10px;">
                                 <div class="img img12-2">
-                                    <!-- <img src="./ext/img/1.4.jpg" style='width: 100%; object-fit: contain'> -->
+                                    <!-- <img src="../ext/img/1.4.jpg" style='width: 100%; object-fit: contain'> -->
                                 </div>
                             </div>
                             <div class="col-7">
@@ -160,7 +160,7 @@ if (!isset($_SESSION['CREATED'])) {
         </div>
         <div class="d-flex justify-content-center" style="margin-top: -80px; margin-bottom: 50px;">
             <a class="" href="#pro-slide" role="button" data-slide="next">
-                <img src="../icon/slide-black.png" style="width: 160px; margin-bottom: 10px;">
+                <img src=".../icon/slide-black.png" style="width: 160px; margin-bottom: 10px;">
             </a>
         </div>
         <!-- <div class="container home-img pl-0 pr-0">
@@ -196,7 +196,7 @@ if (!isset($_SESSION['CREATED'])) {
                         <h1>
                             CƠ SỞ VẬT CHẤT
                         </h1>
-                        <img src="../icon/slide-white-active.png"
+                        <img src=".../icon/slide-white-active.png"
                             style="width: 200px; margin-top: -20px; margin-bottom: 20px;">
                     </div>
                 </div>
@@ -211,60 +211,60 @@ if (!isset($_SESSION['CREATED'])) {
                             <div class="carousel-item active">
                                 <div class="img-2-holder row">
                                     <div class="col-6 img-1">
-                                        <img src="../images/csvc/1.jpg" alt="">
+                                        <img src=".../images/csvc/1.jpg" alt="">
                                     </div>
                                     <div class="col-6 img-2">
-                                        <img src="../images/csvc/2.jpg" alt="">
+                                        <img src=".../images/csvc/2.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="img-2-holder row">
                                     <div class="col-6 img-1">
-                                        <img src="../images/csvc/3.jpg" alt="">
+                                        <img src=".../images/csvc/3.jpg" alt="">
                                     </div>
                                     <div class="col-6 img-2">
-                                        <img src="../images/csvc/4.jpg" alt="">
+                                        <img src=".../images/csvc/4.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="img-2-holder row">
                                     <div class="col-6 img-1">
-                                        <img src="../images/csvc/5.jpg" alt="">
+                                        <img src=".../images/csvc/5.jpg" alt="">
                                     </div>
                                     <div class="col-6 img-2">
-                                        <img src="../images/csvc/6.jpg" alt="">
+                                        <img src=".../images/csvc/6.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="img-2-holder row">
                                     <div class="col-6 img-1">
-                                        <img src="../images/csvc/7.jpg" alt="">
+                                        <img src=".../images/csvc/7.jpg" alt="">
                                     </div>
                                     <div class="col-6 img-2">
-                                        <img src="../images/csvc/8.jpg" alt="">
+                                        <img src=".../images/csvc/8.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="img-2-holder row">
                                     <div class="col-6 img-1">
-                                        <img src="../images/csvc/9.jpg" alt="">
+                                        <img src=".../images/csvc/9.jpg" alt="">
                                     </div>
                                     <div class="col-6 img-2">
-                                        <img src="../images/csvc/10.jpg" alt="">
+                                        <img src=".../images/csvc/10.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="img-2-holder row">
                                     <div class="col-6 img-1">
-                                        <img src="../images/csvc/5.jpg" alt="">
+                                        <img src=".../images/csvc/5.jpg" alt="">
                                     </div>
                                     <div class="col-6 img-2">
-                                        <img src="../images/csvc/11.jpg" alt="">
+                                        <img src=".../images/csvc/11.jpg" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -283,7 +283,7 @@ if (!isset($_SESSION['CREATED'])) {
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="d-flex justify-content-center align-items-center" style="margin-top: -50px; z-index: 50;">
                     <a href="#csvc-slide" role="button" data-slide="next">
-                        <img src="../icon/slide-white.png" style="width: 200px; display: block;">
+                        <img src=".../icon/slide-white.png" style="width: 200px; display: block;">
                     </a>
 
                 </div>
@@ -317,73 +317,73 @@ if (!isset($_SESSION['CREATED'])) {
                                 <div class="carousel-item active">
                                     <ul class="row img-sli justify-content-between">
                                         <li class="">
-                                            <img src="../images/doitac/ampacking copy-01.png" alt="">
+                                            <img src=".../images/doitac/ampacking copy-01.png" alt="">
                                         </li>
                                         <li class="">
-                                            <img src="../images/doitac/bao bi trung son copy.png" alt="">
+                                            <img src=".../images/doitac/bao bi trung son copy.png" alt="">
                                         </li>
                                         <li class="">
-                                            <img src="../images/doitac/bao tin copy-01-01.png" alt="">
+                                            <img src=".../images/doitac/bao tin copy-01-01.png" alt="">
                                         </li>
                                         <li class="">
-                                            <img src="../images/doitac/batico.png" alt="">
+                                            <img src=".../images/doitac/batico.png" alt="">
                                         </li>
                                         <li class="">
-                                            <img src="../images/doitac/bunzl.jpg" alt="">
+                                            <img src=".../images/doitac/bunzl.jpg" alt="">
                                         </li>
                                         <li class="">
-                                            <img src="../images/doitac/dai luc copy.png" alt="">
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="carousel-item">
-                                    <ul class="row img-sli justify-content-between">
-                                        <li class="">
-                                            <img src="../images/doitac/dica.png" alt="">
-                                        </li>
-                                        <li class="">
-                                            <img src="../images/doitac/goda.png" alt="">
-                                        </li>
-                                        <li class="">
-                                            <img src="../images/doitac/lo duc.png" alt="">
-                                        </li>
-                                        <li class="">
-                                            <img src="../images/doitac/Logo-HMT-V-01 copy.png" alt="">
-                                        </li>
-                                        <li class="">
-                                            <img src="../images/doitac/logo1.png" alt="">
-                                        </li>
-                                        <li class="">
-                                            <img src="../images/doitac/saphia copy.png" alt="">
+                                            <img src=".../images/doitac/dai luc copy.png" alt="">
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="carousel-item">
                                     <ul class="row img-sli justify-content-between">
                                         <li class="">
-                                            <img src="../images/doitac/tan dai hung.png" alt="">
+                                            <img src=".../images/doitac/dica.png" alt="">
                                         </li>
                                         <li class="">
-                                            <img src="../images/doitac/tan hiep loi.png" alt="">
+                                            <img src=".../images/doitac/goda.png" alt="">
                                         </li>
                                         <li class="">
-                                            <img src="../images/doitac/tien phat.png" alt="">
+                                            <img src=".../images/doitac/lo duc.png" alt="">
                                         </li>
                                         <li class="">
-                                            <img src="../images/doitac/viet hoa.png" alt="">
+                                            <img src=".../images/doitac/Logo-HMT-V-01 copy.png" alt="">
                                         </li>
                                         <li class="">
-                                            <img src="../images/doitac/vinapacking.png" alt="">
+                                            <img src=".../images/doitac/logo1.png" alt="">
+                                        </li>
+                                        <li class="">
+                                            <img src=".../images/doitac/saphia copy.png" alt="">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="carousel-item">
+                                    <ul class="row img-sli justify-content-between">
+                                        <li class="">
+                                            <img src=".../images/doitac/tan dai hung.png" alt="">
+                                        </li>
+                                        <li class="">
+                                            <img src=".../images/doitac/tan hiep loi.png" alt="">
+                                        </li>
+                                        <li class="">
+                                            <img src=".../images/doitac/tien phat.png" alt="">
+                                        </li>
+                                        <li class="">
+                                            <img src=".../images/doitac/viet hoa.png" alt="">
+                                        </li>
+                                        <li class="">
+                                            <img src=".../images/doitac/vinapacking.png" alt="">
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="carousel-item">
                                     <ul class="row img-sli justify-content-between">
                                         <li class="col-6">
-                                            <img src="../images/ctlk/1.png" alt="">
+                                            <img src=".../images/ctlk/1.png" alt="">
                                         </li>
                                         <li class="col-6">
-                                            <img src="../images/ctlk/2.png" alt="">
+                                            <img src=".../images/ctlk/2.png" alt="">
                                         </li>
                                     </ul>
                                 </div>
@@ -393,7 +393,7 @@ if (!isset($_SESSION['CREATED'])) {
                 </div>
                 <div class="d-flex justify-content-center">
                     <a href="#doitac-slide" role="button" data-slide="next">
-                        <img src="../icon/slide-black.png" style="width: 160px; margin-bottom: 10px;">
+                        <img src=".../icon/slide-black.png" style="width: 160px; margin-bottom: 10px;">
                     </a>
 
                 </div>
@@ -401,18 +401,18 @@ if (!isset($_SESSION['CREATED'])) {
         </div>
     </div>
 
-    <?php include "./products.php" ?>
-    <?php include "./lab.php" ?>
-    <?php include "./infra.php" ?>
-    <?php include "./contact.html" ?>
+    <?php include "../products.php" ?>
+    <?php include "../lab.php" ?>
+    <?php include "../infra.php" ?>
+    <?php include "../contact.html" ?>
 
     <!-- <footer>
-        <?php include "./components/footer.html" ?>
+        <?php include "../components/footer.html" ?>
     </footer> -->
     <script src="https://kit.fontawesome.com/4e75f15372.js" crossorigin="anonymous"></script>
-    <script src="lib/js/jquery.min.js"></script>
-    <script src="lib/js/bootstrap.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="../lib/js/jquery.min.js"></script>
+    <script src="../lib/js/bootstrap.min.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
