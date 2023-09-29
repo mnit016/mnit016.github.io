@@ -315,7 +315,7 @@ if (!isset($_SESSION['CREATED'])) {
         <div class="home-contact">
             <div>
                 <h1 class="text-blue euro-font-title">
-                PARTNER COMPANIES
+                    PARTNER COMPANIES
                 </h1>
                 <div class="row logos">
                     <div class="col-3">
