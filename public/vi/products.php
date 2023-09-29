@@ -74,9 +74,11 @@
                                         <p class="border-dashed-bottom-1 text-black euro-font-content pb-2 mb-1">
                                             THÔNG TIN SẢN PHẨM
                                         </p>
+                                        <small>
                                         <?php
                                             echo $fetchData[3]["content"];
                                         ?>
+                                        </small>
                                     </div>
                                 </div>
                             </div>
@@ -89,9 +91,11 @@
                                         <p class="border-dashed-bottom-1 text-black euro-font-content pb-2 mb-1">
                                             THÔNG TIN SẢN PHẨM
                                         </p>
+                                        <small>
                                         <?php
                                             echo $fetchData[4]["content"];
                                         ?>
+                                        </small>
                                     </div>
                                 </div>
                             </div>
@@ -118,9 +122,11 @@
                                         <p class="border-dashed-bottom-1 text-black euro-font-content pb-2 mb-1">
                                             THÔNG TIN SẢN PHẨM
                                         </p>
+                                        <small>
                                         <?php
                                             echo $fetchData[5]["content"];
                                         ?>
+                                        </small>
                                     </div>
                                 </div>
                             </div>
@@ -133,9 +139,11 @@
                                         <p class="border-dashed-bottom-1 text-black euro-font-content pb-2 mb-1">
                                             THÔNG TIN SẢN PHẨM
                                         </p>
+                                        <small>
                                         <?php
                                             echo $fetchData[6]["content"];
                                         ?>
+                                        </small>
                                     </div>
                                 </div>
                             </div>
@@ -162,9 +170,11 @@
                                         <p class="border-dashed-bottom-1 text-black euro-font-content pb-2 mb-1">
                                             THÔNG TIN SẢN PHẨM
                                         </p>
+                                        <small>
                                         <?php
                                             echo $fetchData[7]["content"];
                                         ?>
+                                        </small>
                                     </div>
                                 </div>
                             </div>
