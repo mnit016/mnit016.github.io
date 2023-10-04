@@ -5,6 +5,7 @@ $db=$conn;
 $tableName="contents";
 $columns=['name', 'content'];
 $fetchData=fetch_data($db, $tableName, $columns);
+$product_list=fetch_data($db, 'products', ['name', 'des', 'img_path']);
 
 function fetch_data($db, $tableName, $columns) {
     if (empty($db)) {

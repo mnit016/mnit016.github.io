@@ -8,10 +8,96 @@
     <section class="mt-4 mb-5 euro-text-background-vertical">
         <div class="container p-0">
             <div class="w-100 text-center infra">
-                <h1 class="p-1 font-weight-bold m-auto euro-font-title">FACILITIES</h1>
-                <div class="pt-2 pb-3 text-left euro-font-content">
+                <h1 class="p-1 font-weight-bold m-auto euro-font-title">BRUCKNER</h1>
+                <div class="pt-2 pb-3 text-left euro-font-content-book">
                     <?php
-                        echo $fetchData[9]["content"];
+                        echo $fetchData[1]["content"];
+                    ?>
+                </div>
+                <div class="home-img-2 container" style="padding: 0;">
+                    <div class="row">
+                        <div class="col-12 p-0">
+                            <div id="csvc-slide" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="img-2-holder row">
+                                            <div class="col-6 img-1">
+                                                <img src="../images/csvc/1.jpg" alt="">
+                                            </div>
+                                            <div class="col-6 img-2">
+                                                <img src="../images/csvc/2.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="img-2-holder row">
+                                            <div class="col-6 img-1">
+                                                <img src="../images/csvc/3.jpg" alt="">
+                                            </div>
+                                            <div class="col-6 img-2">
+                                                <img src="../images/csvc/4.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="img-2-holder row">
+                                            <div class="col-6 img-1">
+                                                <img src="../images/csvc/5.jpg" alt="">
+                                            </div>
+                                            <div class="col-6 img-2">
+                                                <img src="../images/csvc/6.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="img-2-holder row">
+                                            <div class="col-6 img-1">
+                                                <img src="../images/csvc/7.jpg" alt="">
+                                            </div>
+                                            <div class="col-6 img-2">
+                                                <img src="../images/csvc/8.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="img-2-holder row">
+                                            <div class="col-6 img-1">
+                                                <img src="../images/csvc/9.jpg" alt="">
+                                            </div>
+                                            <div class="col-6 img-2">
+                                                <img src="../images/csvc/10.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="img-2-holder row">
+                                            <div class="col-6 img-1">
+                                                <img src="../images/csvc/5.jpg" alt="">
+                                            </div>
+                                            <div class="col-6 img-2">
+                                                <img src="../images/csvc/11.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <a class="carousel-control-prev" href="#csvc-slide" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#csvc-slide" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-100" style="text-align: center;">
+                        <img class="pt-3" style="width: 10rem;" src="./icon/slide-black.png" href="#infra-carousel" role="button" data-slide="next">
+                    </div>
+                </div>
+                <div class="pt-2 pb-3 text-left euro-font-content-book">
+                    <?php
+                        echo $fetchData[4]["content"];
                     ?>
                 </div>
             </div>

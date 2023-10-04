@@ -1,17 +1,18 @@
 <section id="products">
     <div class="position-relative background-image" style="height: 537px; background-image: url('./images/2.1.jpg');">
         <div class="container p-0 position-relative h-100 w-100">
-            <h1 class="position-absolute font-weight-bold euro-font-title" style="color: white; bottom: 0; font-size: 10rem;">PRODUCT</h1>
+            <h1 class="position-absolute font-weight-bold euro-font-title"
+                style="color: white; bottom: 0; font-size: 10rem;">PRODUCT</h1>
         </div>
     </div>
 </section>
-<section class="products mt-4 mb-5 euro-text-background-vertical">
+<section class="products mt-4 mb-5">
     <div class="container p-0">
         <div class="row">
             <div class="col-4 pl-0">
                 <div class="h-100">
                     <h1 class="p-2 pl-4 font-weight-bold background-red text-white euro-font-title">CATEGORY</h1>
-                    <ul class="dropdown-custom euro-font-content-book">
+                    <ul class="dropdown-custom euro-font-content">
                         <li class="dropdown-custom-item" onclick="expandMenu(this)">
                             PLAIN AND EMBOSSED FILM
                         </li>
@@ -52,136 +53,83 @@
             </div>
             <div class="col-8">
                 <div class="w-100 pl-3">
-                    <h1 class="p-1 font-weight-bold euro-font-title">Portfolio</h1>
-                    <div class="pl-1 euro-font-content">
+                    <h1 class="p-1 font-weight-bold euro-font-title">PORTFOLIO</h1>
+                    <div class="pl-1 euro-font-content-book">
                         <?php
-                            echo $fetchData[2]["content"];
+                        echo $fetchData[2]["content"];
                         ?>
                     </div>
-                    <div class="w-85">
-                        <div class="row mt-2" style="min-height: 250px;">
-                            <div class="col-4 pl-0">
+                </div>
+            </div>
+            <div class="col-12 p-0 mt-4">
+                <div class="row mb-4" style="min-height: 180px">
+                <?php
+                    $swap=false; 
+                    for ($i=0; $i < count($product_list); $i++) {
+                ?>
+                    <div class="col-6 pl-0">
+                        <div class="row h-100">
+                            <?php
+                                if (!$swap) {
+                            ?>
+                            <div class="col-4 pl-0 pr-2">
                                 <div class="p-2 h-100 background-grey">
-                                    <div class="background-image h-100" style="background-image: url('./images/2.2.jpg');">
+                                    <div class="background-image h-100"
+                                        style="background-image: url('./images/<?php echo $product_list[$i]["img_path"] ?>');">
 
                                     </div>
                                 </div>
                             </div>
+                            <?php 
+                                } 
+                            ?>
                             <div class="col-8 p-0">
                                 <div class="h-100 background-grey">
-                                    <div class="ml-4 mr-4 pt-3 font-weight-bold euro-font-content-book">
-                                        <h2 class="w-100 border-dashed-bottom-1 text-red euro-font-title pb-2">PLAIN FILM</h2>
-                                        <p class="border-dashed-bottom-1 text-black euro-font-content pb-2 mb-1">
-                                            Descriptions
+                                    <div class="ml-4 mr-4 pt-2 euro-font-content-book">
+                                        <h3 class="w-100 border-dashed-bottom-1 text-red euro-font-title pb-1 mb-1"><?php echo $product_list[$i]["name"] ?></h3>
+                                        <p class="border-dashed-bottom-1 text-black text-small euro-font-content pb-1 mb-1">
+                                            DESCRIPTIONS
                                         </p>
-                                        <small>
-                                        <?php
-                                            echo $fetchData[3]["content"];
-                                        ?>
-                                        </small>
+                                        <div class="product-des">
+                                            <?php echo $product_list[$i]["des"] ?>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row mt-5" style="min-height: 250px;">
-                            <div class="col-8 pl-0">
-                                <div class="h-100 background-grey euro-font-content-book">
-                                    <div class="ml-4 mr-4 pt-3 font-weight-bold">
-                                        <h2 class="w-100 border-dashed-bottom-1 text-red euro-font-title pb-2">MATT FILM</h2>
-                                        <p class="border-dashed-bottom-1 text-black euro-font-content pb-2 mb-1">
-                                        Descriptions
-                                        </p>
-                                        <small>
-                                        <?php
-                                            echo $fetchData[4]["content"];
-                                        ?>
-                                        </small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4 p-0">
+                            
+                            <?php
+                                if ($swap) {
+                            ?>
+                            <div class="col-4 pl-2 pr-0">
                                 <div class="p-2 h-100 background-grey">
-                                    <div class="background-image h-100" style="background-image: url('./images/2.3.jpg');">
-
+                                    <div class="background-image h-100"
+                                        style="background-image: url('./images/<?php echo $product_list[$i]["img_path"] ?>');">
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row mt-5" style="min-height: 250px;">
-                            <div class="col-4 pl-0">
-                                <div class="p-2 h-100 background-grey">
-                                    <div class="background-image h-100" style="background-image: url('./images/2.4.jpg');">
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-8 p-0">
-                                <div class="h-100 background-grey">
-                                    <div class="ml-4 mr-4 pt-3 font-weight-bold euro-font-content-book">
-                                        <h2 class="w-100 border-dashed-bottom-1 text-red euro-font-title pb-2">PEARL FILM</h2>
-                                        <p class="border-dashed-bottom-1 text-black euro-font-content pb-2 mb-1">
-                                        Descriptions
-                                        </p>
-                                        <small>
-                                        <?php
-                                            echo $fetchData[5]["content"];
-                                        ?>
-                                        </small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-5" style="min-height: 250px;">
-                            <div class="col-8 pl-0">
-                                <div class="h-100 background-grey">
-                                    <div class="ml-4 mr-4 pt-3 font-weight-bold euro-font-content-book">
-                                        <h2 class="w-100 border-dashed-bottom-1 text-red euro-font-title pb-2">PEVA FILM</h2>
-                                        <p class="border-dashed-bottom-1 text-black euro-font-content pb-2 mb-1">
-                                         Descriptions
-                                        </p>
-                                        <small>
-                                        <?php
-                                            echo $fetchData[6]["content"];
-                                        ?>
-                                        </small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4 p-0">
-                                <div class="p-2 h-100 background-grey">
-                                    <div class="background-image h-100" style="background-image: url('./images/2.5.jpg');">
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-5" style="min-height: 250px;">
-                            <div class="col-4 pl-0">
-                                <div class="p-2 h-100 background-grey">
-                                    <div class="background-image h-100" style="background-image: url('./images/2.6.jpg');">
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-8 p-0">
-                                <div class="h-100 background-grey euro-font-content-book">
-                                    <div class="ml-4 mr-4 pt-3 font-weight-bold">
-                                        <h2 class="w-100 border-dashed-bottom-1 text-red euro-font-title pb-2">POLY BAG</h2>
-                                        <p class="border-dashed-bottom-1 text-black euro-font-content pb-2 mb-1">
-                                        Descriptions
-                                        </p>
-                                        <small>
-                                        <?php
-                                            echo $fetchData[7]["content"];
-                                        ?>
-                                        </small>
-                                        
-                                    </div>
-                                </div>
-                            </div>
+                            <?php 
+                                } 
+                            ?>
                         </div>
                     </div>
+                <?php
+                    if ($i % 2 == 1) {
+                        $swap=!$swap;
+                ?>
                 </div>
+                <?php
+                    if (count($product_list) > $i + 1) {
+                ?>
+                <div class="row mb-4" style="min-height: 180px">
+                <?php
+                    }
+                } else if (count($product_list) == $i - 1) {
+                ?>
+                </div>
+                <?php
+                }
+                }
+                ?>
             </div>
         </div>
     </div>

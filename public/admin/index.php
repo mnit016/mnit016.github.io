@@ -54,6 +54,8 @@ if (!isset($_SESSION['CREATED'])) {
                         </h2>
                         <form action="../actions/save_content.php" method="post" style="display: none;">
                             <input type="text" name="name" hidden value="<?php echo $e["name"] ?>">
+                            <input type="text" name="table" hidden value="contents">
+                            <input type="text" name="col" hidden value="content">
                             <textarea class="w-100 smaller" rows="5" type="text"
                                 name="content"><?php echo str_replace("<p>", "\n", $e["content"]); ?></textarea>
                             <input type="submit" value="Save" name="submit">
@@ -63,7 +65,27 @@ if (!isset($_SESSION['CREATED'])) {
                     <?php
                 }
                 ?>
-
+                <h1>Products</h1>
+                <?php
+                    foreach ($product_list as $e) {
+                ?>
+                    <div class="mb-3 mt-5">
+                        <h2 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)">
+                            <?php echo "$e[name]" ?>
+                        </h2>
+                        <form action="../actions/save_content.php" method="post" style="display: none;">
+                            <input type="text" name="name" hidden value="<?php echo $e["name"] ?>">
+                            <input type="text" name="table" hidden value="products">
+                            <input type="text" name="col" hidden value="des">
+                            <textarea class="w-100 smaller" rows="5" type="text"
+                                name="content"><?php echo str_replace("<p>", "\n", $e["des"]); ?></textarea>
+                            <input type="submit" value="Save" name="submit">
+                        </form>
+                    </div>
+                    <hr />
+                <?php
+                    }
+                ?>
             </div>
             <div class="col-6">
                 <h1>Images part</h1>

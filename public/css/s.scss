@@ -13,9 +13,7 @@ $blue: #4287f5;
 }
 
 nav {
-    height: 70px;
     width: 100vw;
-    background-color: white !important;
     font-size: 1rem;
 
     .row {
@@ -31,14 +29,13 @@ nav {
     }
 
     img {
-        height: 60px;
+        height: 80px;
         width: auto;
         margin-right: 10px;
     }
 
     .col-12 {
-        height: 70px;
-        background-color: white !important;
+        height: 80px;
         padding-left: 0 !important;
         padding-right: 0 !important;
         display: flex;  
@@ -46,7 +43,6 @@ nav {
 
         li { 
             list-style-type: none;
-            border-left: solid $blue 2px;
             text-align: center;
             height: 30px;
             display: flex;
@@ -70,18 +66,21 @@ nav {
         }
 
         a {
-            color: $blue;
+            color: #000;
             font-weight: bold;
         }
 
         button,
         input {
-            background-color: white;
-            border: solid 2px $blue;
+            border: solid 2px #000;
         }
 
         .nav-item {
             border: none;
+        }
+
+        .nav-link {
+            padding: 0.5rem 0.7rem;
         }
 
         .form-inline {
@@ -106,9 +105,6 @@ nav {
 }
 
 .home-why {
-    background-color: $blue;
-    padding-top: 20px;
-    padding-bottom: 40px;
 
     .row {
         padding-top: 40px;
@@ -128,11 +124,11 @@ nav {
         color: white;
 
         h1 {
-            font-size: 5rem;
+            font-size: 3rem;
         }
 
         p {
-            font-size: 1rem;
+            font-size: .8rem;
         }
     }
 }
@@ -198,7 +194,6 @@ nav {
 }
 
 .home-big-text {
-    background-color: $blue;
     height: 200px;
     padding-top: 30px;
 
@@ -210,8 +205,6 @@ nav {
 }
 
 .home-img-2 {
-    position: relative;
-    top: -60px;
 
     .img-2-holder {
         div {
@@ -281,7 +274,7 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../ext/img/footer.jpg");
+    background-image: url("../images/footer.jpg");
     height: 450px;
     color: white;
     padding-top: 50px;

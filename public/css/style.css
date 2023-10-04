@@ -47,6 +47,10 @@
     background-repeat: no-repeat;
 }
 
+.background-position-right {
+    background-position: right !important;
+}
+
 .euro-text-background-horizontal {
     background-position: top;
     background-image: url(../images/blur-text-euro-2.png);
@@ -61,4 +65,10 @@
 
 .infra p {
     margin-bottom: 0 !important;
+}
+
+.product-des {
+    line-height: 1.1;
+    font-size: 0.7rem;
+    margin-top: .5rem;
 }

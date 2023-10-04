@@ -11,9 +11,7 @@
 }
 
 nav {
-  height: 70px;
   width: 100vw;
-  background-color: white !important;
   font-size: 1rem;
 }
 nav .row {
@@ -27,13 +25,12 @@ nav .col-3 {
   align-items: center;
 }
 nav img {
-  height: 60px;
+  height: 80px;
   width: auto;
   margin-right: 10px;
 }
 nav .col-12 {
-  height: 70px;
-  background-color: white !important;
+  height: 80px;
   padding-left: 0 !important;
   padding-right: 0 !important;
   display: flex;
@@ -41,7 +38,6 @@ nav .col-12 {
 }
 nav .col-12 li {
   list-style-type: none;
-  border-left: solid #4287f5 2px;
   text-align: center;
   height: 30px;
   display: flex;
@@ -62,16 +58,18 @@ nav .col-12 li img {
   margin-left: -10px;
 }
 nav .col-12 a {
-  color: #4287f5;
+  color: #000;
   font-weight: bold;
 }
 nav .col-12 button,
 nav .col-12 input {
-  background-color: white;
-  border: solid 2px #4287f5;
+  border: solid 2px #000;
 }
 nav .col-12 .nav-item {
   border: none;
+}
+nav .col-12 .nav-link {
+  padding: 0.5rem 0.7rem;
 }
 nav .col-12 .form-inline img {
   width: 10px;
@@ -89,11 +87,6 @@ nav .col-12 .form-inline img {
   height: auto;
 }
 
-.home-why {
-  background-color: #4287f5;
-  padding-top: 20px;
-  padding-bottom: 40px;
-}
 .home-why .row {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -109,10 +102,10 @@ nav .col-12 .form-inline img {
   color: white;
 }
 .home-why .home-why-text h1 {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 .home-why .home-why-text p {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .home-img {
@@ -167,7 +160,6 @@ nav .col-12 .form-inline img {
 }
 
 .home-big-text {
-  background-color: #4287f5;
   height: 200px;
   padding-top: 30px;
 }
@@ -177,10 +169,6 @@ nav .col-12 .form-inline img {
   font-weight: 1000;
 }
 
-.home-img-2 {
-  position: relative;
-  top: -60px;
-}
 .home-img-2 .img-2-holder div {
   margin: 0;
   padding: 0;
@@ -234,7 +222,7 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../ext/img/footer.jpg");
+  background-image: url("../images/footer.jpg");
   height: 450px;
   color: white;
   padding-top: 50px;

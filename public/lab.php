@@ -11,9 +11,9 @@
     <div class="container p-0">
         <div class="w-100 m-auto text-center">
             <h1 class="p-1 font-weight-bold m-auto euro-font-title">LAB</h1>
-            <div class="pt-2 pb-3 text-left euro-font-content">
+            <div class="pt-2 pb-3 text-left euro-font-content-book">
                 <?php
-                    echo $fetchData[8]["content"];
+                    echo $fetchData[3]["content"];
                 ?>
             </div>
         </div>
