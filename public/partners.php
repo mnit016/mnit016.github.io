@@ -1,6 +1,6 @@
 <div class="home-contact container">
             <div>
-                <h1 class="euro-font-content text-red">
+                <h1 class="euro-font-title text-red">
                     PARTNERS
                 </h1>
                 <div class="row logos">

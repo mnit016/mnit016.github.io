@@ -117,6 +117,15 @@ textarea {
     src: url(../font/main_font/Anton-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url(../font/Roboto\ Việt\ Hóa/Roboto-Black.ttf);
+}
+
+.euro-font-nav {
+    font-family: 'Roboto-Black';
+}
+
 .euro-font-title {
     font-family: 'Compacta';
 }

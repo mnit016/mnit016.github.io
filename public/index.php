@@ -47,7 +47,7 @@ if (!isset($_SESSION['CREATED'])) {
         <div class="container pl-0 pr-0">
             <div class="row">
                 <div class="col-6" style="padding-right: 40px;">
-                    <div id="why-euro" class="home-why-text euro-font-content-book text-black">
+                    <div id="about-us" class="home-why-text euro-font-content-book text-black">
                         <h1 class="euro-font-title text-red">
                             WHY EURO FILM
                         </h1>

@@ -1,4 +1,4 @@
-    <section id="infra">
+    <section id="facilities">
         <div class="background-image" style="height: 537px; background-image: url('./images/4.1.jpg');">
             <div class="container p-0 position-relative h-100 w-100">
                 <h1 class="position-absolute euro-font-title" style="color: white; bottom: 0; font-size: 10rem;">FACILITIES</h1>
