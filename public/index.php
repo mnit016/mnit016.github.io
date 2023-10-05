@@ -21,7 +21,7 @@ if (!isset($_SESSION['CREATED'])) {
 
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
     <title>Eurofilm</title>
     <meta name="description" content="EuroFilm" />
     <meta name="viewport" content="width=1140" charset="UTF-8" />
