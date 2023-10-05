@@ -25,12 +25,11 @@ nav .col-3 {
   align-items: center;
 }
 nav img {
-  height: 80px;
+  height: 70px;
   width: auto;
-  margin-right: 10px;
 }
 nav .col-12 {
-  height: 80px;
+  height: 70px;
   padding-left: 0 !important;
   padding-right: 0 !important;
   display: flex;
@@ -69,7 +68,8 @@ nav .col-12 .nav-item {
   border: none;
 }
 nav .col-12 .nav-link {
-  padding: 0.5rem 0.7rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 nav .col-12 .form-inline img {
   width: 10px;

@@ -29,13 +29,12 @@ nav {
     }
 
     img {
-        height: 80px;
+        height: 70px;
         width: auto;
-        margin-right: 10px;
     }
 
     .col-12 {
-        height: 80px;
+        height: 70px;
         padding-left: 0 !important;
         padding-right: 0 !important;
         display: flex;  
@@ -80,7 +79,8 @@ nav {
         }
 
         .nav-link {
-            padding: 0.5rem 0.7rem;
+            padding-left: .5rem;
+            padding-right: .5rem;
         }
 
         .form-inline {
