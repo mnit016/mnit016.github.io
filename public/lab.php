@@ -2,7 +2,7 @@
 <section id="lab">
     <div class="background-image" style="height: 537px; background-image: url('./images/3.1.jpg');">
         <div class="container p-0 position-relative h-100 w-100">
-            <h1 class="position-absolute font-weight-bold euro-font-title"
+            <h1 class="position-absolute euro-font-title"
                 style="color: white; bottom: 0; font-size: 10rem;">LAB</h1>
         </div>
     </div>
@@ -10,7 +10,7 @@
 <section class="mt-4 mb-5 euro-text-background-horizontal">
     <div class="container p-0">
         <div class="w-100 m-auto text-center">
-            <h1 class="p-1 font-weight-bold m-auto euro-font-title">LAB</h1>
+            <h1 class="p-1 font-size-big m-auto euro-font-title">LAB</h1>
             <div class="pt-2 pb-3 text-left euro-font-content-book">
                 <?php
                     echo $fetchData[3]["content"];

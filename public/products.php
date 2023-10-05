@@ -1,7 +1,7 @@
 <section id="products">
     <div class="position-relative background-image" style="height: 537px; background-image: url('./images/2.1.jpg');">
         <div class="container p-0 position-relative h-100 w-100">
-            <h1 class="position-absolute font-weight-bold euro-font-title"
+            <h1 class="position-absolute euro-font-title"
                 style="color: white; bottom: 0; font-size: 10rem;">PRODUCT</h1>
         </div>
     </div>
@@ -11,7 +11,7 @@
         <div class="row">
             <div class="col-4 pl-0">
                 <div class="h-100">
-                    <h1 class="p-2 pl-4 font-weight-bold background-red text-white euro-font-title">CATEGORY</h1>
+                    <h1 class="p-2 pl-4 font-size-big background-red text-white euro-font-title">CATEGORY</h1>
                     <ul class="dropdown-custom euro-font-content">
                         <li class="dropdown-custom-item" onclick="expandMenu(this)">
                             PLAIN AND EMBOSSED FILM
@@ -53,7 +53,7 @@
             </div>
             <div class="col-8">
                 <div class="w-100 pl-3">
-                    <h1 class="p-1 font-weight-bold euro-font-title">PORTFOLIO</h1>
+                    <h1 class="p-1 font-size-big euro-font-title">PORTFOLIO</h1>
                     <div class="pl-1 euro-font-content-book">
                         <?php
                         echo $fetchData[2]["content"];
