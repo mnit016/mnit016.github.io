@@ -1,7 +1,7 @@
 <div class="home-contact container">
             <div>
                 <h1 class="font-size-big euro-font-title text-red">
-                    PARTNERS
+                <?= _PARTNERS ?>
                 </h1>
                 <div class="row logos">
                     <div class="col-12 p-0">

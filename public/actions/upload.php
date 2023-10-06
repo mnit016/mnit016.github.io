@@ -33,8 +33,8 @@ if ($uploadOk == 1) {
       $msg="Sorry, there was an error uploading your file.";
     }
 }
-
-session_start();
+if (session_id() == "")
+  session_start();
 $_SESSION["$_POST[fileName]"] = "$msg";
 header("Location: /admin/");
 ?>

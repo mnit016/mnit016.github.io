@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-6">
-            <h3 class="euro-font-content-black">Visit Us</h3>
+            <h3 class="euro-font-content-black mb-3"><?= _FT_VISIT_US ?></h3>
             <div class="visit euro-font-content-book">
                 <div class="d-flex">
                     <img class="float-left" style="height: 1.5rem;" src="./icon/address.png">
@@ -25,16 +25,18 @@
             </div> 
         </div>
         <div class="col-2">
-            <h3 class="euro-font-content-black">Site map</h3>
+            <h3 class="euro-font-content-black mb-3"><?= _FT_SITEMAP ?></h3>
             <ul class="euro-font-content-book">
-                <li><a href="#">GIỚI THIỆU</a></li>
-                <li><a href="#">SẢN PHẨM</a></li>
-                <li><a href="#">TIN TỨC</a></li>
-                <li><a href="#">LIÊN HỆ</a></li>
+                <li class="mb-1"><a href="#about-us">About Us</a></li>
+                <li class="mb-1"><a href="#facilities">Facilities</a></li>
+                <li class="mb-1"><a href="#products">Products</a></li>
+                <li class="mb-1"><a href="#lab">Lab</a></li>
+                <li class="mb-1"><a href="#accreditations">Accreditations</a></li>
+                <li class="mb-1"><a href="#contact-us">Contact Us</a></li>
             </ul>
         </div>
         <div class="col-4 social">
-            <h3 class="euro-font-content-black">Social Network</h3>
+            <h3 class="euro-font-content-black mb-3"><?= _FT_SOCIAL_NETWORK ?></h3>
             <div>
                 <a href="#">
                     <img src="./icon/facebook.png" alt="">

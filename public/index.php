@@ -10,11 +10,22 @@ if (!isset($_SESSION['CREATED'])) {
     $_SESSION['CREATED'] = time();
 } else if (time() - $_SESSION['CREATED'] > 1800) {
     // session started more than 30 minutes ago
-    session_unset();  
+    session_unset();
+    session_destroy();
+    session_start();  
     $_SESSION['redirect_url']= "/";
 	header('Location: /admin/login');
 	exit;
 }
+
+if (!isset($_SESSION['LANG'])) {
+    $_SESSION['LANG'] = "EN";
+}
+if ($_SESSION['LANG'] == "EN")
+    include './lang/en.php';
+else
+    include './lang/vi.php';
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -34,7 +45,7 @@ if (!isset($_SESSION['CREATED'])) {
 </head>
 
 <body id="web-body">
-    <?php include "./components/navbar.html" ?>
+    <?php include "./components/navbar.php" ?>
 
     <div id="index" class="home-video pt-4 pb-4">
         <div class="container p-0">
@@ -49,7 +60,7 @@ if (!isset($_SESSION['CREATED'])) {
                 <div class="col-6" style="padding-right: 40px;">
                     <div id="about-us" class="home-why-text euro-font-content-book text-black">
                         <h1 class="euro-font-title text-red">
-                            WHY EURO FILM
+                        <?= _WHY_EURO ?>
                         </h1>
                         <img src="./icon/slide-black-active.png" style="width: 200px; margin-top: -30px;">
                         <?php
@@ -81,12 +92,12 @@ if (!isset($_SESSION['CREATED'])) {
     <?php include "./infra.php" ?>
     <?php include "./products.php" ?>
     <?php include "./lab.php" ?>
-    <?php include "./accreditations.html" ?>
+    <?php include "./accreditations.php" ?>
     <?php include "./partners.php" ?>
-    <?php include "./contact.html" ?>
+    <?php include "./contact.php" ?>
 
     <footer>
-        <?php include "./components/footer.html" ?>
+        <?php include "./components/footer.php" ?>
     </footer>
     <script src="https://kit.fontawesome.com/4e75f15372.js" crossorigin="anonymous"></script>
     <script src="lib/js/jquery.min.js"></script>

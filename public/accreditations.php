@@ -1,7 +1,7 @@
 <div class="container text-center mb-5" id="accreditations">
 
     <h1 class="euro-font-title text-red font-size-big">
-        ACCREDITATIONS
+    <?= _ACCREDITATIONS ?>
     </h1>
     <div class="d-flex justify-content-center">
         <div class="w-25 p-2">

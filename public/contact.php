@@ -2,7 +2,7 @@
     <div class="background-image" style="height: 537px; background-image: url('./images/5.1.jpg');">
         <div class="container p-0 position-relative h-100 w-100">
             <h1 class="position-absolute euro-font-title"
-                style="color: white; bottom: 0; font-size: 10rem;">CONTACT US</h1>
+                style="color: white; bottom: 0; font-size: 10rem;"><?= _CONTACT_US ?></h1>
         </div>
     </div>
 </section>
@@ -53,7 +53,7 @@
             </div>
             <div class="pt-3 col-5 pl-0">
                 <div class="background-red">
-                    <h2 class="p-1 pl-3 text-white euro-font-title">EMAIL US</h2>
+                    <h2 class="p-1 pl-3 text-white euro-font-title"><?= _EMAIL_US?></h2>
                 </div>
             </div>
             <div class="col-7">
@@ -63,13 +63,13 @@
                 <form class="row euro-font-content">
                     <div class="col-6 p-0">
                         <div class="form-group">
-                            <label for="fullName">FULL NAME</label>
+                            <label for="fullName"><?= _FORM_FULL_NAME ?></label>
                             <input type="text"
                                 class="form-control border-bottom border-top-0 border-left-0 border-right-0"
                                 id="fullName">
                         </div>
                         <div class="form-group">
-                            <label for="organization">COMPANY/ORGANIZTION</label>
+                            <label for="organization"><?= _FORM_COMPANY_ORGANIZATION ?></label>
                             <input type="text"
                                 class="form-control border-bottom border-top-0 border-left-0 border-right-0"
                                 id="organization">
@@ -77,30 +77,30 @@
                         <div class="form-group">
                             <div class="row">
                                 <div class="col p-0">
-                                    <label for="email">EMAIL</label>
+                                    <label for="email"><?= _FORM_EMAIL ?></label>
                                     <input type="text"
                                         class="form-control border-bottom border-top-0 border-left-0 border-right-0"
                                         id="email">
                                 </div>
                                 <div class="col pr-0">
-                                    <label for="email">PHONE*</label>
+                                    <label for="email"><?= _FORM_PHONE ?>*</label>
                                     <input type="text"
                                         class="form-control border-bottom border-top-0 border-left-0 border-right-0">
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="title">TITLE</label>
+                            <label for="title"><?= _FORM_TITLE ?></label>
                             <input type="text"
                                 class="form-control border-bottom border-top-0 border-left-0 border-right-0" id="title">
                         </div>
                         <div class="form-group">
-                            <label for="details">CONTENT</label>
+                            <label for="details"><?= _FORM_CONTENT ?></label>
                             <textarea type="text" rows="2"
                                 class="form-control border-top-0 border-left-0 border-right-0 textarea-border-bottom-row"
                                 id="details"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary float-right background-red">SEND</button>
+                        <button type="submit" class="btn btn-primary float-right background-red"><?= _FORM_SEND_BTN ?></button>
                     </div>
 
                 </form>

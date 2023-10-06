@@ -10,7 +10,8 @@ if ($result== true) {
 } else {
     $msg=mysqli_error($conn);
 }
-session_start();
+if (session_id() == "")
+    session_start();
 $_SESSION["$_POST[name]"] = "$msg";
 header("Location: /admin/");
 ?>

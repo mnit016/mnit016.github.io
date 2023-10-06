@@ -1,14 +1,14 @@
     <section id="facilities">
         <div class="background-image" style="height: 537px; background-image: url('./images/4.1.jpg');">
             <div class="container p-0 position-relative h-100 w-100">
-                <h1 class="position-absolute euro-font-title" style="color: white; bottom: 0; font-size: 10rem;">FACILITIES</h1>
+                <h1 class="position-absolute euro-font-title" style="color: white; bottom: 0; font-size: 10rem;"><?= _FACILITIES ?></h1>
             </div>
         </div>
     </section>
     <section class="mt-4 mb-5 euro-text-background-vertical">
         <div class="container p-0">
             <div class="w-100 text-center infra">
-                <h1 class="p-1 m-auto euro-font-title font-size-big">BRUCKNER</h1>
+                <h1 class="p-1 m-auto euro-font-title font-size-big"><?= _BRUCKNER ?></h1>
                 <div class="pt-2 pb-3 text-left euro-font-content-book">
                     <?php
                         echo $fetchData[1]["content"];

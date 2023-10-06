@@ -7,22 +7,22 @@
                     <div class="d-flex">
                         <ul class="d-flex align-items-center mb-0 text-black">
                             <li class="">
-                                <a class="nav-link" href="#about-us">About Us<span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#about-us"><?= _NAV_ABOUT_US ?><span class="sr-only">(current)</span></a>
                             </li>
                             <li class=""> 
-                                <a class="nav-link" href="#facilities">Facilities</a>
+                                <a class="nav-link" href="#facilities"><?= _NAV_FACILITIES ?></a>
                             </li>
                             <li class="">
-                                <a class="nav-link " href="#products">Products</a>
+                                <a class="nav-link " href="#products"><?= _NAV_PRODUCTS ?></a>
                             </li>
                             <li class="">
-                                <a class="nav-link" href="#lab">Lab</a>
+                                <a class="nav-link" href="#lab"><?= _NAV_LAB ?></a>
                             </li>
                             <li class="">
-                                <a class="nav-link" href="#accreditations">Accreditations</a>
+                                <a class="nav-link" href="#accreditations"><?= _NAV_ACCREDITATIONS ?></a>
                             </li>
                             <li class="">
-                                <a class="nav-link" href="#contact-us">Contact us</a>
+                                <a class="nav-link" href="#contact-us"><?= _NAV_CONTACT_US ?></a>
                             </li>
                         </ul>
 
@@ -32,7 +32,7 @@
                                 <i class="fa-solid fa-magnifying-glass position-absolute text-black" style="left: 0.5rem;"></i>
                             </div>
                             <div class="d-flex align-items-center">
-                                <a class="euro-font-nav nav-link p-0 dropdown-icon-after" href="/vi/">EN</a>
+                                <a class="euro-font-nav nav-link p-0 dropdown-icon-after" href="/swap_lang.php"><?= LANG ?></a>
                             </div>
                         </form>
                     </div>

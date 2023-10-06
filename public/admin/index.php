@@ -13,6 +13,8 @@ if (!isset($_SESSION['CREATED'])) {
 } else if (time() - $_SESSION['CREATED'] > 1800) {
     // session started more than 30 minutes ago
     session_unset();
+    session_destroy();
+    session_start();
     $_SESSION['redirect_url'] = "/admin/";
     header('Location: /admin/login');
     exit;
