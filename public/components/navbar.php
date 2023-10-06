@@ -32,7 +32,7 @@
                                 <i class="fa-solid fa-magnifying-glass position-absolute text-black" style="left: 0.5rem;"></i>
                             </div>
                             <div class="d-flex align-items-center">
-                                <a class="euro-font-nav nav-link p-0 dropdown-icon-after" href="/swap_lang.php"><?= LANG ?></a>
+                                <a class="euro-font-nav nav-link p-0 dropdown-icon-after" href="/swap_lang.php?redirect_page=/"><?= LANG ?></a>
                             </div>
                         </form>
                     </div>

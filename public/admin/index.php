@@ -1,6 +1,7 @@
 <?php
-require("../includes/query_contents.php");
-require("../includes/query_img.php");
+
+if (session_id() == "")
+    session_start();
 // If the user is not logged in redirect to the login page...
 if (!isset($_SESSION['loggedin'])) {
     $_SESSION['redirect_url'] = "/admin/";
@@ -19,6 +20,16 @@ if (!isset($_SESSION['CREATED'])) {
     header('Location: /admin/login');
     exit;
 }
+if (!isset($_SESSION['LANG'])) {
+    $_SESSION['LANG'] = "";
+}
+if ($_SESSION['LANG'] == "vi")
+    require('../lang/vi.php');
+else
+    require('../lang/en.php');
+
+require("../includes/query_contents.php");
+require("../includes/query_img.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -40,8 +51,10 @@ if (!isset($_SESSION['CREATED'])) {
 <body>
     <div class="container-xl mt-5">
         <div class="position-fixed w-100 background-grey" style="top: 0; right:0">
-            <div class="container">
-                <a class="float-right" href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
+            <div class="container d-flex justify-content-end">
+                <a class="euro-font-nav nav-link p-0 pr-4" href="/">Home</a>
+                <a class="euro-font-nav nav-link p-0 dropdown-icon-after pr-4" href="/swap_lang.php?redirect_page=/admin"><?= LANG ?></a>
+                <a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
             </div>
         </div>
         <div class="row">
@@ -57,8 +70,6 @@ if (!isset($_SESSION['CREATED'])) {
                         </h2>
                         <form action="../actions/save_content.php" method="post" style="display: none;">
                             <input type="text" name="name" hidden value="<?php echo $e["name"] ?>">
-                            <input type="text" name="table" hidden value="contents">
-                            <input type="text" name="col" hidden value="content">
                             <textarea class="w-100 smaller" rows="5" type="text"
                                 name="content"><?php echo str_replace("<p>", "\n", $e["content"]); ?></textarea>
                             <input type="submit" value="Save" name="submit">

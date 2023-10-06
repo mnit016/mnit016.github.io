@@ -7,5 +7,5 @@ if ($_SESSION['LANG'] == '') {
     $_SESSION['LANG'] = '';
 }
 
-header('Location: /');
+header("Location: $_GET[redirect_page]");
 ?>

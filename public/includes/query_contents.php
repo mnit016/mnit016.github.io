@@ -2,10 +2,10 @@
 require("db_connect.php");
 
 $db=$conn;
-$tableName="contents";
+$tableName="contents$_SESSION[LANG]";
 $columns=['name', 'content'];
 $fetchData=fetch_data($db, $tableName, $columns);
-$product_list=fetch_data($db, 'products', ['id', 'name', 'des', 'img_path']);
+$product_list=fetch_data($db, "products$_SESSION[LANG]", ['id', 'name', 'des', 'img_path']);
 
 function fetch_data($db, $tableName, $columns) {
     if (empty($db)) {
