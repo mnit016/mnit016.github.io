@@ -38,7 +38,7 @@ if (!isset($_SESSION['CREATED'])) {
 </head>
 
 <body>
-    <div class="container mt-5">
+    <div class="container-xl mt-5">
         <div class="position-fixed w-100 background-grey" style="top: 0; right:0">
             <div class="container">
                 <a class="float-right" href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
@@ -46,7 +46,8 @@ if (!isset($_SESSION['CREATED'])) {
         </div>
         <div class="row">
             <div class="col-6">
-                <h1>Contents</h1>
+                <h1 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)">Common Contents</h1>
+                <div style="display: none;">
                 <?php
                 foreach ($fetchData as $e) { ?>
 
@@ -67,10 +68,13 @@ if (!isset($_SESSION['CREATED'])) {
                     <?php
                 }
                 ?>
-                <h1>Products</h1>
-                <?php
+                </div>
+                <hr/>
+                <h1 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)">Products List</h1>
+                <div style="display: none;">
+                    <?php
                     foreach ($product_list as $e) {
-                ?>
+                    ?>
                     <div class="mb-3 mt-5">
                         <h2 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)">
                             <?php echo "$e[name]" ?>
@@ -83,10 +87,11 @@ if (!isset($_SESSION['CREATED'])) {
                             <input type="submit" value="Save" name="submit">
                         </form>
                     </div>
-                    <hr />
-                <?php
+                        <hr />
+                    <?php
                     }
-                ?>
+                    ?>
+                </div>
             </div>
             <div class="col-6">
                 <h1>Images part</h1>
@@ -128,11 +133,28 @@ if (!isset($_SESSION['CREATED'])) {
                     ?>
                 </div>
                 <hr />
-                <h2 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)">About
-                    us: Product</h2>
+                <h2 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)">
+                    Facilities images</h2>
                 <div style="display: none;">
                     <?php
-                    foreach ($intro_product as $e) { ?>
+                    foreach ($infra_main as $e) { ?>
+                        <div class="mb-3 mt-5">
+                            <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
+                                <h3>
+                                    <?php echo "$e[name] - $e[des]" ?>
+                                </h3>
+                                <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
+                                <input type="file" name="fileToUpload" id="fileToUpload">
+                                <input type="submit" value="Upload" name="submit">
+                            </form>
+                        <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
+                        </div>
+                        <?php
+                    }
+                    ?>
+                    <hr />
+                    <?php
+                    foreach ($infra as $e) { ?>
                         <div class="mb-3 mt-5">
                             <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
                                 <h3>
@@ -149,8 +171,7 @@ if (!isset($_SESSION['CREATED'])) {
                     ?>
                 </div>
                 <hr />
-                <h2 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)">About
-                    us: Facilities</h2>
+                <h2 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)">Bruckner</h2>
                 <div style="display: none;">
                     <?php
                     foreach ($intro_facility as $e) { ?>
@@ -216,13 +237,13 @@ if (!isset($_SESSION['CREATED'])) {
                         <div class="mb-3 mt-5">
                             <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
                                 <h3>
-                                    <?php echo "$e[name] - $e[des]" ?>
+                                    <?php echo "$e[name]" ?>
                                 </h3>
-                                <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
+                                <input type="text" name="fileName" hidden value="<?php echo $e["img_path"] ?>">
                                 <input type="file" name="fileToUpload" id="fileToUpload">
                                 <input type="submit" value="Upload" name="submit">
                             </form>
-                        <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
+                        <img style="height: 300px" src="../images/<?php echo $e["img_path"] ?>">
                         </div>
                         <?php
                     }
@@ -251,44 +272,6 @@ if (!isset($_SESSION['CREATED'])) {
                     <hr />
                     <?php
                     foreach ($lab as $e) { ?>
-                        <div class="mb-3 mt-5">
-                            <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
-                                <h3>
-                                    <?php echo "$e[name] - $e[des]" ?>
-                                </h3>
-                                <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
-                                <input type="file" name="fileToUpload" id="fileToUpload">
-                                <input type="submit" value="Upload" name="submit">
-                            </form>
-                        <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
-                        </div>
-                        <?php
-                    }
-                    ?>
-                </div>
-                <hr />
-                <h2 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)">
-                    Facilities images</h2>
-                <div style="display: none;">
-                    <?php
-                    foreach ($infra_main as $e) { ?>
-                        <div class="mb-3 mt-5">
-                            <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
-                                <h3>
-                                    <?php echo "$e[name] - $e[des]" ?>
-                                </h3>
-                                <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
-                                <input type="file" name="fileToUpload" id="fileToUpload">
-                                <input type="submit" value="Upload" name="submit">
-                            </form>
-                        <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
-                        </div>
-                        <?php
-                    }
-                    ?>
-                    <hr />
-                    <?php
-                    foreach ($infra as $e) { ?>
                         <div class="mb-3 mt-5">
                             <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
                                 <h3>
