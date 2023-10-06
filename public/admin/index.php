@@ -1,6 +1,6 @@
 <?php
-include("../includes/query_contents.php");
-include("../includes/query_img.php");
+require("../includes/query_contents.php");
+require("../includes/query_img.php");
 // If the user is not logged in redirect to the login page...
 if (!isset($_SESSION['loggedin'])) {
     $_SESSION['redirect_url'] = "/admin/";
@@ -75,10 +75,9 @@ if (!isset($_SESSION['CREATED'])) {
                         <h2 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)">
                             <?php echo "$e[name]" ?>
                         </h2>
-                        <form action="../actions/save_content.php" method="post" style="display: none;">
-                            <input type="text" name="name" hidden value="<?php echo $e["name"] ?>">
-                            <input type="text" name="table" hidden value="products">
-                            <input type="text" name="col" hidden value="des">
+                        <form action="../actions/update_product.php" method="post" style="display: none;">
+                            <input type="text" name="id" hidden value="<?php echo $e["id"] ?>">
+                            <input type="text" name="name" value="<?php echo $e["name"] ?>">
                             <textarea class="w-100 smaller" rows="5" type="text"
                                 name="content"><?php echo str_replace("<p>", "\n", $e["des"]); ?></textarea>
                             <input type="submit" value="Save" name="submit">
