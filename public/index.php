@@ -19,12 +19,12 @@ if (!isset($_SESSION['CREATED'])) {
 }
 
 if (!isset($_SESSION['LANG'])) {
-    $_SESSION['LANG'] = "EN";
+    $_SESSION['LANG'] = "";
 }
-if ($_SESSION['LANG'] == "EN")
-    include './lang/en.php';
-else
+if ($_SESSION['LANG'] == "vi")
     include './lang/vi.php';
+else
+    include './lang/en.php';
 
 ?>
 <!DOCTYPE html>

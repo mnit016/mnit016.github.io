@@ -1,10 +1,10 @@
 <?php 
 session_start();
 
-if ($_SESSION['LANG'] == 'EN') {
-    $_SESSION['LANG'] = 'VI';
+if ($_SESSION['LANG'] == '') {
+    $_SESSION['LANG'] = 'vi';
 } else {
-    $_SESSION['LANG'] = 'EN';
+    $_SESSION['LANG'] = '';
 }
 
 header('Location: /');
