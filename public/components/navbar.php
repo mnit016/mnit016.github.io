@@ -29,7 +29,7 @@
                         <form class="form-inline my-2 my-lg-0">
                             <div class="d-flex align-items-center position-relative ml-2">
                                 <input class="form-control mr-sm-2 pl-4 background-grey" type="search" style="width: 170px" aria-label="Search" />
-                                <i class="fa-solid fa-magnifying-glass position-absolute text-black" style="left: 0.5rem;"></i>
+                                <i class="fa-solid fa-magnifying-glass position-absolute text-red" style="left: 0.5rem;"></i>
                             </div>
                             <div class="d-flex align-items-center">
                                 <a class="euro-font-nav nav-link p-0 dropdown-icon-after" href="/swap_lang.php?redirect_page=/"><?= LANG ?></a>
