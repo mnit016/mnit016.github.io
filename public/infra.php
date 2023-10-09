@@ -14,67 +14,67 @@
                         echo $fetchData[1]["content"];
                     ?>
                 </div>
-                <div class="home-img-2 container" style="padding: 0;">
+                <div class="home-img-2 pl-5 container" style="padding: 0;">
                     <div class="row">
                         <div class="col-12 p-0">
                             <div id="csvc-slide" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <div class="img-2-holder row">
-                                            <div class="col-6 img-1">
+                                        <div class="img-2 pl-5-holder row">
+                                            <div class="col-6 img-1 pr-5">
                                                 <img src="../images/csvc/1.jpg" alt="">
                                             </div>
-                                            <div class="col-6 img-2">
+                                            <div class="col-6 img-2 pl-5">
                                                 <img src="../images/csvc/2.jpg" alt="">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <div class="img-2-holder row">
-                                            <div class="col-6 img-1">
+                                        <div class="img-2 pl-5-holder row">
+                                            <div class="col-6 img-1 pr-5">
                                                 <img src="../images/csvc/3.jpg" alt="">
                                             </div>
-                                            <div class="col-6 img-2">
+                                            <div class="col-6 img-2 pl-5">
                                                 <img src="../images/csvc/4.jpg" alt="">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <div class="img-2-holder row">
-                                            <div class="col-6 img-1">
+                                        <div class="img-2 pl-5-holder row">
+                                            <div class="col-6 img-1 pr-5">
                                                 <img src="../images/csvc/5.jpg" alt="">
                                             </div>
-                                            <div class="col-6 img-2">
+                                            <div class="col-6 img-2 pl-5">
                                                 <img src="../images/csvc/6.jpg" alt="">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <div class="img-2-holder row">
-                                            <div class="col-6 img-1">
+                                        <div class="img-2 pl-5-holder row">
+                                            <div class="col-6 img-1 pr-5">
                                                 <img src="../images/csvc/7.jpg" alt="">
                                             </div>
-                                            <div class="col-6 img-2">
+                                            <div class="col-6 img-2 pl-5">
                                                 <img src="../images/csvc/8.jpg" alt="">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <div class="img-2-holder row">
-                                            <div class="col-6 img-1">
+                                        <div class="img-2 pl-5-holder row">
+                                            <div class="col-6 img-1 pr-5">
                                                 <img src="../images/csvc/9.jpg" alt="">
                                             </div>
-                                            <div class="col-6 img-2">
+                                            <div class="col-6 img-2 pl-5">
                                                 <img src="../images/csvc/10.jpg" alt="">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <div class="img-2-holder row">
-                                            <div class="col-6 img-1">
+                                        <div class="img-2 pl-5-holder row">
+                                            <div class="col-6 img-1 pr-5">
                                                 <img src="../images/csvc/5.jpg" alt="">
                                             </div>
-                                            <div class="col-6 img-2">
+                                            <div class="col-6 img-2 pl-5">
                                                 <img src="../images/csvc/11.jpg" alt="">
                                             </div>
                                         </div>
