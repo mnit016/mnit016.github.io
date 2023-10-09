@@ -147,3 +147,8 @@ textarea {
   background-size: 100% 4ch !important;
   border-bottom: none !important;
 }
+
+video::-webkit-media-controls-panel {
+    display: none !important;
+    opacity: 1 !important;
+}

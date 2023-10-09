@@ -116,7 +116,7 @@ require("../includes/query_img.php");
             </div>
             <div class="col-6">
                 <h1>Images part</h1>
-                <?php
+                <!-- <?php
                 foreach ($home_main as $e) { ?>
                     <div class="mb-3 mt-5">
                         <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
@@ -132,7 +132,7 @@ require("../includes/query_img.php");
                     <hr />
                     <?php
                 }
-                ?>
+                ?> -->
                 <h2 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)">Why
                     euro slide images</h2>
                 <div style="display: none;">
