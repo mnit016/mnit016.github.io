@@ -52,7 +52,10 @@ if (!isset($_SESSION['CREATED'])) {
     <div id="index" class="home-video pt-4 pb-4">
         <div class="container p-0">
             <div class="row">
-                <img src="./images/main.jpg">
+                <video width="100%" height="auto" controls>
+                    <source src="./videos/demo.MOV" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
     </div>
