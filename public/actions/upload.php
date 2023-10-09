@@ -1,5 +1,7 @@
 <?php
 echo "handling... $_POST[fileName] \n";
+ini_set('upload_max_filesize', '20M');
+ini_set('post_max_size', '20M');
 
 $target_dir = "../images/";
 $target_file = $target_dir . $_POST['fileName'];
@@ -21,8 +23,8 @@ if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg
   $uploadOk = 0;
 }
 // Check file size
-if ($_FILES["fileToUpload"]["size"] > 10000000) {
-    $msg="Your file should be smaller than 10MB.";
+if ($_FILES["fileToUpload"]["size"] > 20000000) {
+    $msg="Your file should be smaller than 20MB.";
     $uploadOk = 0;
   }
 // Check if $uploadOk is set to 0 by an error
