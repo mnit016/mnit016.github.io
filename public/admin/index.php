@@ -49,6 +49,16 @@ require("../includes/query_img.php");
 </head>
 
 <body>
+    <?php
+    if (isset($_SESSION["msg"])) {
+    ?>
+        <script>
+            alert(<?php echo $_SESSION["msg"] ?>)
+        </script>
+    <?php
+        unset($_SESSION["msg"]);
+    }
+    ?>
     <div class="container-xl mt-5">
         <div class="position-fixed w-100 background-grey" style="top: 0; right:0">
             <div class="container d-flex justify-content-end">
@@ -114,7 +124,7 @@ require("../includes/query_img.php");
                                 <?php echo "$e[name] - $e[des]" ?>
                             </h3>
                             <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
-                            <input type="file" name="fileToUpload" id="fileToUpload">
+                            <input type="file" required name="fileToUpload" id="fileToUpload">
                             <input type="submit" value="Upload" name="submit">
                         </form>
                         <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
@@ -134,7 +144,7 @@ require("../includes/query_img.php");
                                     <?php echo "$e[name] - $e[des]" ?>
                                 </h3>
                                 <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
-                                <input type="file" name="fileToUpload" id="fileToUpload">
+                                <input type="file" required name="fileToUpload" id="fileToUpload">
                                 <input type="submit" value="Upload" name="submit">
                             </form>
                         <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
@@ -155,7 +165,7 @@ require("../includes/query_img.php");
                                     <?php echo "$e[name] - $e[des]" ?>
                                 </h3>
                                 <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
-                                <input type="file" name="fileToUpload" id="fileToUpload">
+                                <input type="file" required name="fileToUpload" id="fileToUpload">
                                 <input type="submit" value="Upload" name="submit">
                             </form>
                         <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
@@ -172,7 +182,7 @@ require("../includes/query_img.php");
                                     <?php echo "$e[name] - $e[des]" ?>
                                 </h3>
                                 <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
-                                <input type="file" name="fileToUpload" id="fileToUpload">
+                                <input type="file" required name="fileToUpload" id="fileToUpload">
                                 <input type="submit" value="Upload" name="submit">
                             </form>
                         <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
@@ -192,7 +202,7 @@ require("../includes/query_img.php");
                                     <?php echo "$e[name] - $e[des]" ?>
                                 </h3>
                                 <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
-                                <input type="file" name="fileToUpload" id="fileToUpload">
+                                <input type="file" required name="fileToUpload" id="fileToUpload">
                                 <input type="submit" value="Upload" name="submit">
                             </form>
                         <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
@@ -213,7 +223,7 @@ require("../includes/query_img.php");
                                     <?php echo "$e[name] - $e[des]" ?>
                                 </h3>
                                 <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
-                                <input type="file" name="fileToUpload" id="fileToUpload">
+                                <input type="file" required name="fileToUpload" id="fileToUpload">
                                 <input type="submit" value="Upload" name="submit">
                             </form>
                         <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
@@ -234,7 +244,7 @@ require("../includes/query_img.php");
                                     <?php echo "$e[name] - $e[des]" ?>
                                 </h3>
                                 <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
-                                <input type="file" name="fileToUpload" id="fileToUpload">
+                                <input type="file" required name="fileToUpload" id="fileToUpload">
                                 <input type="submit" value="Upload" name="submit">
                             </form>
                         <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
@@ -251,7 +261,7 @@ require("../includes/query_img.php");
                                     <?php echo "$e[name]" ?>
                                 </h3>
                                 <input type="text" name="fileName" hidden value="<?php echo $e["img_path"] ?>">
-                                <input type="file" name="fileToUpload" id="fileToUpload">
+                                <input type="file" required name="fileToUpload" id="fileToUpload">
                                 <input type="submit" value="Upload" name="submit">
                             </form>
                         <img style="height: 300px" src="../images/<?php echo $e["img_path"] ?>">
@@ -272,7 +282,7 @@ require("../includes/query_img.php");
                                     <?php echo "$e[name] - $e[des]" ?>
                                 </h3>
                                 <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
-                                <input type="file" name="fileToUpload" id="fileToUpload">
+                                <input type="file" required name="fileToUpload" id="fileToUpload">
                                 <input type="submit" value="Upload" name="submit">
                             </form>
                         <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
@@ -289,7 +299,7 @@ require("../includes/query_img.php");
                                     <?php echo "$e[name] - $e[des]" ?>
                                 </h3>
                                 <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
-                                <input type="file" name="fileToUpload" id="fileToUpload">
+                                <input type="file" required name="fileToUpload" id="fileToUpload">
                                 <input type="submit" value="Upload" name="submit">
                             </form>
                         <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
@@ -310,7 +320,7 @@ require("../includes/query_img.php");
                                     <?php echo "$e[name] - $e[des]" ?>
                                 </h3>
                                 <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
-                                <input type="file" name="fileToUpload" id="fileToUpload">
+                                <input type="file" required name="fileToUpload" id="fileToUpload">
                                 <input type="submit" value="Upload" name="submit">
                             </form>
                         <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
@@ -327,7 +337,7 @@ require("../includes/query_img.php");
                                     <?php echo "$e[name] - $e[des]" ?>
                                 </h3>
                                 <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
-                                <input type="file" name="fileToUpload" id="fileToUpload">
+                                <input type="file" required name="fileToUpload" id="fileToUpload">
                                 <input type="submit" value="Upload" name="submit">
                             </form>
                         <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">

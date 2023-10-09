@@ -1,4 +1,14 @@
 <?php
+if (session_id() == "")
+  session_start();
+if (!isset($_SESSION['LANG'])) {
+    $_SESSION['LANG'] = "";
+}
+if ($_SESSION['LANG'] == "vi")
+    include './lang/vi.php';
+else
+    include './lang/en.php';
+
 include("includes/query_contents.php");
 if (!isset($_SESSION['loggedin'])) {
     $_SESSION['redirect_url']="/";
@@ -17,14 +27,6 @@ if (!isset($_SESSION['CREATED'])) {
 	header('Location: /admin/login');
 	exit;
 }
-
-if (!isset($_SESSION['LANG'])) {
-    $_SESSION['LANG'] = "";
-}
-if ($_SESSION['LANG'] == "vi")
-    include './lang/vi.php';
-else
-    include './lang/en.php';
 
 ?>
 <!DOCTYPE html>
