@@ -20,7 +20,7 @@
                             <div id="csvc-slide" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <div class="img-2 pl-5-holder row">
+                                        <div class="img-2-holder row">
                                             <div class="col-6 img-1 pr-5">
                                                 <img src="../images/csvc/1.jpg" alt="">
                                             </div>
@@ -30,7 +30,7 @@
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <div class="img-2 pl-5-holder row">
+                                        <div class="img-2-holder row">
                                             <div class="col-6 img-1 pr-5">
                                                 <img src="../images/csvc/3.jpg" alt="">
                                             </div>
@@ -40,7 +40,7 @@
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <div class="img-2 pl-5-holder row">
+                                        <div class="img-2-holder row">
                                             <div class="col-6 img-1 pr-5">
                                                 <img src="../images/csvc/5.jpg" alt="">
                                             </div>
@@ -50,7 +50,7 @@
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <div class="img-2 pl-5-holder row">
+                                        <div class="img-2-holder row">
                                             <div class="col-6 img-1 pr-5">
                                                 <img src="../images/csvc/7.jpg" alt="">
                                             </div>
@@ -60,7 +60,7 @@
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <div class="img-2 pl-5-holder row">
+                                        <div class="img-2-holder row">
                                             <div class="col-6 img-1 pr-5">
                                                 <img src="../images/csvc/9.jpg" alt="">
                                             </div>
@@ -70,7 +70,7 @@
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <div class="img-2 pl-5-holder row">
+                                        <div class="img-2-holder row">
                                             <div class="col-6 img-1 pr-5">
                                                 <img src="../images/csvc/5.jpg" alt="">
                                             </div>
