@@ -57,12 +57,12 @@ nav .col-12 li img {
   margin-left: -10px;
 }
 nav .col-12 a {
-  color: #000;
+  color: #9a2c31;
   font-weight: bold;
 }
 nav .col-12 button,
 nav .col-12 input {
-  border: solid 2px #000;
+  border: solid 2px #9a2c31;
 }
 nav .col-12 .nav-item {
   border: none;
