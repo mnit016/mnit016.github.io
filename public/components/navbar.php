@@ -5,7 +5,7 @@
                 <div class="col-12 d-flex justify-content-between">
                     <a class="nav-link p-0" href="#index"><img src="./icon/logo-15.png" alt=""></a>
                     <div class="d-flex">
-                        <ul class="d-flex align-items-center mb-0 text-black">
+                        <ul class="d-flex align-items-center mb-0 text-red">
                             <li class="">
                                 <a class="nav-link" href="#about-us"><?= _NAV_ABOUT_US ?><span class="sr-only">(current)</span></a>
                             </li>
