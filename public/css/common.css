@@ -25,14 +25,14 @@ html {
     height: 60%;
 }
 
-.pl-5 {
+.pad-l-5 {
     padding-left: 5px;
 }
 
-.pr-5 {
+.pad-r-5 {
     padding-right: 5px;
  }
- 
+
 .font-size-big {
     font-size: 3.5rem !important;
 }
