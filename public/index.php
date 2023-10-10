@@ -10,6 +10,7 @@ else
     include './lang/en.php';
 
 include("includes/query_contents.php");
+include("includes/query_img.php");
 if (!isset($_SESSION['loggedin'])) {
     $_SESSION['redirect_url']="/";
 	header('Location: /admin/login');
@@ -84,15 +85,13 @@ if (!isset($_SESSION['CREATED'])) {
                     <div id="why-slide" class="carousel slide" data-ride="carousel">
                         <img class="position-absolute" style="top: -2rem; right: -3rem; z-index: 1; width: 100px; height: auto" src="./icon/euro-text-circle-black.png">
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./images/why/1.1.jpg">
+                            
+                        <?php
+                            for ($i=0; $i < count($why_euro); $i++) { ?>
+                            <div class="carousel-item <?php if ($i == 0) { ?>active <?php } ?>">
+                                <img src="./images/<?php echo $why_euro[$i]["path"] ?>">
                             </div>
-                            <div class="carousel-item">
-                                <img src="./images/why/1.2.jpg">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./images/why/1.3.jpg">
-                            </div>
+                        <?php } ?>
                         </div>
                     </div>
 

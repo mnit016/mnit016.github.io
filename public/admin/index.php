@@ -53,7 +53,7 @@ require("../includes/query_img.php");
     if (isset($_SESSION["msg"])) {
     ?>
         <script>
-            alert(<?php echo $_SESSION["msg"] ?>)
+            alert("<?php echo $_SESSION["msg"] ?>");
         </script>
     <?php
         unset($_SESSION["msg"]);
@@ -116,23 +116,22 @@ require("../includes/query_img.php");
             </div>
             <div class="col-6">
                 <h1>Images part</h1>
-                <!-- <?php
+                <?php
                 foreach ($home_main as $e) { ?>
                     <div class="mb-3 mt-5">
-                        <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
+                        <form action="../actions/update_home_video.php" method="post" enctype="multipart/form-data">
                             <h3>
                                 <?php echo "$e[name] - $e[des]" ?>
                             </h3>
-                            <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
-                            <input type="file" required name="fileToUpload" id="fileToUpload">
-                            <input type="submit" value="Upload" name="submit">
+                            <input type="text" name="id" hidden value="<?php echo $e["id"] ?>">
+                            <input class="w-75" type="text" name="url" value="<?php echo $e["path"] ?>">
+                            <input type="submit" value="save" name="submit">
                         </form>
-                        <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
                     </div>
                     <hr />
                     <?php
                 }
-                ?> -->
+                ?>
                 <h2 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)">Why
                     euro slide images</h2>
                 <div style="display: none;">
@@ -141,11 +140,16 @@ require("../includes/query_img.php");
                         <div class="mb-3 mt-5">
                             <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
                                 <h3>
-                                    <?php echo "$e[name] - $e[des]" ?>
+                                    <?php echo "$e[name]" ?>
                                 </h3>
                                 <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
                                 <input type="file" required name="fileToUpload" id="fileToUpload">
                                 <input type="submit" value="Upload" name="submit">
+                            </form>
+                            <form action="../actions/remove_image.php" method="post">
+                                <input type="text" name="id" hidden value="<?php echo $e["id"] ?>">
+                                <input type="text" name="path" hidden value="<?php echo $e["path"] ?>">
+                                <input type="submit" value="Delete" name="submit">
                             </form>
                         <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
                         </div>
@@ -153,6 +157,13 @@ require("../includes/query_img.php");
                     }
                     ?>
                 </div>
+                <button class="dropdown-custom-item" onclick="expandMenu(this)">add image</button>
+                <form action="../actions/add_image.php" method="post" style="display: none" enctype="multipart/form-data">
+                    <input type="text" name="name" value="why euro slide image (<?php echo count($why_euro)+1 ?>)">
+                    <input type="text" name="type" hidden value="why_euro">
+                    <input type="file" required name="fileToUpload" id="fileToUpload">
+                    <input type="submit" value="add" name="submit">
+                </form>
                 <hr />
                 <h2 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)">
                     Facilities images</h2>

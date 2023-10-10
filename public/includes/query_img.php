@@ -3,14 +3,14 @@ include("db_connect.php");
 
 $db=$conn;
 $tableName="img";
-$columns=['name', 'path', 'des'];
+$columns=['id', 'name', 'path', 'des'];
 $home_main=fetch_img($db, $tableName, $columns, "where type='home'");
 $why_euro=fetch_img($db, $tableName, $columns, "where type='why_euro'");
 $intro_product=fetch_img($db, $tableName, $columns, "where type='intro_product'");
 $intro_facility=fetch_img($db, $tableName, $columns, "where type='intro_facility'");
 $partner=fetch_img($db, $tableName, $columns, "where type='partner'");
 $product_main=fetch_img($db, $tableName, $columns, "where type='product_main'");
-$product=fetch_img($db, 'products', ['name', 'img_path', 'des'], "");
+$product=fetch_img($db, 'products', ['id', 'name', 'img_path', 'des'], "");
 $lab_main=fetch_img($db, $tableName, $columns, "where type='lab_main'");
 $lab=fetch_img($db, $tableName, $columns, "where type='lab'");
 $infra_main=fetch_img($db, $tableName, $columns, "where type='infra_main'");
