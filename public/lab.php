@@ -19,106 +19,34 @@
         </div>
         <div id="lab-carousel" class="carousel slide" data-ride="carousel" style="height: 927px;">
             <div class="carousel-inner h-100">
-                <div class="carousel-item h-100 active">
+            <?php
+                for ($i=0; $i < count($lab); $i+=5) { ?>
+                <div class="carousel-item h-100 <?php if ($i == 0) { ?>active <?php } ?>">
                     <div class="w-100 h-100 d-block">
                         <div class="row h-100">
                             <div class="h-100 pr-2" style="width: 30%;">
                                 <div class="pb-2 h-50">
-                                    <div class="h-100 background-image" style="background-image: url(./images/3.2.jpg);"></div>
+                                    <div class="h-100 background-image" style="background-image: url(./images/<?php echo $lab[$i]["path"] ?>);"></div>
                                 </div>
                                 <div class="pt-2 h-50">
-                                    <div class="h-100 background-image" style="background-image: url(./images/3.3.jpg);"></div>
+                                    <div class="h-100 background-image" style="background-image: url(./images/<?php echo $lab[$i+1]["path"] ?>);"></div>
                                 </div>
                             </div>
                             <div class="h-100 pl-2 pr-2" style="width: 40%;">
-                                <div class="h-100 background-image" style="background-image: url(./images/3.4.jpg);"></div>
+                                <div class="h-100 background-image" style="background-image: url(./images/<?php echo $lab[$i+2]["path"] ?>);"></div>
                             </div>
                             <div class="h-100 pl-2" style="width: 30%;">
                                 <div class="pb-2 h-50">
-                                    <div class="h-100 background-image" style="background-image: url(./images/3.5.jpg);"></div>
+                                    <div class="h-100 background-image" style="background-image: url(./images/<?php echo $lab[$i+3]["path"] ?>);"></div>
                                 </div>
                                 <div class="pt-2 h-50">
-                                    <div class="h-100 background-image" style="background-image: url(./images/3.6.jpg);"></div>
+                                    <div class="h-100 background-image" style="background-image: url(./images/<?php echo $lab[$i+4]["path"] ?>);"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item h-100">
-                    <div class="w-100 h-100 d-block">
-                        <div class="row h-100">
-                            <div class="h-100 pr-2" style="width: 30%;">
-                                <div class="pb-2 h-50">
-                                    <div class="h-100 background-image" style="background-image: url(./images/3.7.jpg);"></div>
-                                </div>
-                                <div class="pt-2 h-50">
-                                    <div class="h-100 background-image" style="background-image: url(./images/3.8.jpg);"></div>
-                                </div>
-                            </div>
-                            <div class="h-100 pl-2 pr-2" style="width: 40%;">
-                                <div class="h-100 background-image" style="background-image: url(./images/3.9.jpg);"></div>
-                            </div>
-                            <div class="h-100 pl-2" style="width: 30%;">
-                                <div class="pb-2 h-50">
-                                    <div class="h-100 background-image" style="background-image: url(./images/3.10.jpg);"></div>
-                                </div>
-                                <div class="pt-2 h-50">
-                                    <div class="h-100 background-image" style="background-image: url(./images/3.11.jpg);"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item h-100">
-                    <div class="w-100 h-100 d-block">
-                        <div class="row h-100">
-                            <div class="h-100 pr-2" style="width: 30%;">
-                                <div class="pb-2 h-50">
-                                    <div class="h-100 background-image" style="background-image: url(./images/3.12.jpg);"></div>
-                                </div>
-                                <div class="pt-2 h-50">
-                                    <div class="h-100 background-image" style="background-image: url(./images/3.13.jpg);"></div>
-                                </div>
-                            </div>
-                            <div class="h-100 pl-2 pr-2" style="width: 40%;">
-                                <div class="h-100 background-image" style="background-image: url(./images/3.14.jpg);"></div>
-                            </div>
-                            <div class="h-100 pl-2" style="width: 30%;">
-                                <div class="pb-2 h-50">
-                                    <div class="h-100 background-image" style="background-image: url(./images/3.15.jpg);"></div>
-                                </div>
-                                <div class="pt-2 h-50">
-                                    <div class="h-100 background-image" style="background-image: url(./images/3.16.jpg);"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item h-100">
-                    <div class="w-100 h-100 d-block">
-                        <div class="row h-100">
-                            <div class="h-100 pr-2" style="width: 30%;">
-                                <div class="pb-2 h-50">
-                                    <div class="h-100 background-image" style="background-image: url(./images/3.17.jpg);"></div>
-                                </div>
-                                <div class="pt-2 h-50">
-                                    <div class="h-100 background-image" style="background-image: url(./images/3.18.jpg);"></div>
-                                </div>
-                            </div>
-                            <div class="h-100 pl-2 pr-2" style="width: 40%;">
-                                <div class="h-100 background-image" style="background-image: url(./images/3.19.jpg);"></div>
-                            </div>
-                            <div class="h-100 pl-2" style="width: 30%;">
-                                <div class="pb-2 h-50">
-                                    <div class="h-100 background-image" style="background-image: url(./images/3.20.jpg);"></div>
-                                </div>
-                                <div class="pt-2 h-50">
-                                    <div class="h-100 background-image" style="background-image: url(./images/3.21.jpg);"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <?php } ?>
             </div>
         </div>
         <div class="w-100" style="text-align: center;" >

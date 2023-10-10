@@ -4,20 +4,14 @@
     <?= _ACCREDITATIONS ?>
     </h1>
     <div class="d-flex justify-content-center">
+        <?php 
+        foreach ($accreditations as $acc) {
+        ?>
         <div class="w-25 p-2">
-            <a href="/accreditation_doc.php?file_path=accreditations/IDFL 22-439965 GRS Certificate - eurofilm-corporation (09 Mar 2023)_v2.pdf" target="_blank">
-                <img class="w-100 h-100" src="./images/accreditations/386858864_748820757003933_1869067794892497738_n.jpg">
+            <a href="/accreditation_doc.php?file_path=accreditations/<?php echo $acc["pdf_path"] ?>" target="_blank">
+                <img class="w-100 h-100" src="./images/<?php echo $acc["img_path"] ?>">
             </a>
         </div>
-        <div class="w-25 p-2">
-            <a href="/accreditation_doc.php?file_path=accreditations/Final Packaging Certificate_EI0330_2023.pdf" target="_blank">
-                <img class="w-100" src="./images/accreditations/Final Packaging Certificate_EI0330_2023.jpg">
-            </a>
-        </div>
-        <div class="w-25 p-2">
-            <a href="/accreditation_doc.php?file_path=accreditations/QA-D-VN-22000-0039-EN.pdf" target="_blank">
-                <img class="w-100" src="./images/accreditations/QA-D-VN-22000-0039-EN.jpg">
-            </a>
-        </div>
+        <?php } ?>
     </div>
 </div>

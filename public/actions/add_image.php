@@ -54,5 +54,5 @@ foreach ($_FILES["fileToUpload"]["name"] as $i=>$ar) {
 if (session_id() == "")
     session_start();
 $_SESSION["msg"] = "$msg";
-// header("Location: /admin/");
+header("Location: /admin/");
 ?>

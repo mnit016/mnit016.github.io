@@ -142,13 +142,13 @@ require("../includes/query_img.php");
                                 <h3>
                                     <?php echo "$e[name]" ?>
                                 </h3>
-                                <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
-                                <input type="file" required name="fileToUpload" id="fileToUpload">
+                                <input type="text" name="fileName[]" hidden value="<?php echo $e["path"] ?>">
+                                <input type="file" required name="fileToUpload[]" id="fileToUpload">
                                 <input type="submit" value="Update" name="submit">
                             </form>
                             <form action="../actions/remove_image.php" method="post">
-                                <input type="text" name="id" hidden value="<?php echo $e["id"] ?>">
-                                <input type="text" name="path" hidden value="<?php echo $e["path"] ?>">
+                                <input type="text" name="id[]" hidden value="<?php echo $e["id"] ?>">
+                                <input type="text" name="path[]" hidden value="<?php echo $e["path"] ?>">
                                 <input type="submit" value="Delete" name="submit">
                             </form>
                         <img style="height: 150px" src="../images/<?php echo $e["path"] ?>">
@@ -165,218 +165,12 @@ require("../includes/query_img.php");
                     <input type="submit" value="add" name="submit">
                 </form>
                 <hr />
-                <h2 class="dropdown-custom-item background-grey" style="border-bottom: none !important" onclick="expandMenu(this)">
-                    Facilities images</h2>
-                <div style="display: none;">
-                    <?php
-                    foreach ($infra_main as $e) { ?>
-                        <div class="mb-3 mt-5">
-                            <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
-                                <h3>
-                                    <?php echo "$e[name]" ?>
-                                </h3>
-                                <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
-                                <input type="file" required name="fileToUpload" id="fileToUpload">
-                                <input type="submit" value="Update" name="submit">
-                            </form>
-                        <img style="height: 150px" src="../images/<?php echo $e["path"] ?>">
-                        </div>
-                        <?php
-                    }
-                    ?>
-                    <hr />
-                    <?php
-                    foreach ($infra as $e) { ?>
-                        <div class="mb-3 mt-5">
-                            <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
-                                <h3>
-                                    <?php echo "$e[name]" ?>
-                                </h3>
-                                <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
-                                <input type="file" required name="fileToUpload" id="fileToUpload">
-                                <input type="submit" value="Update" name="submit">
-                            </form>
-                            <form action="../actions/remove_image.php" method="post">
-                                <input type="text" name="id" hidden value="<?php echo $e["id"] ?>">
-                                <input type="text" name="path" hidden value="<?php echo $e["path"] ?>">
-                                <input type="submit" value="Delete" name="submit">
-                            </form>
-                        <img style="height: 150px" src="../images/<?php echo $e["path"] ?>">
-                        </div>
-                        <?php
-                    }
-                    ?>
-                </div>
-                <button class="dropdown-custom-item" onclick="expandMenu(this)">add image</button>
-                <form action="../actions/add_image.php" method="post" style="display: none" enctype="multipart/form-data">
-                    <input type="text" class="w-75" name="name" value="Facilities images slide">
-                    <input type="text" name="type" hidden value="infra">
-                    <input type="file" required name="fileToUpload[]" id="fileToUpload">
-                    <input type="submit" value="add" name="submit">
-                </form>
-                <hr />
-                <h2 class="dropdown-custom-item background-grey" style="border-bottom: none !important" onclick="expandMenu(this)">Bruckner</h2>
-                <div style="display: none;">
-                    <?php
-                    for ($i=0; $i < count($intro_facility); $i+=2) { ?>
-                        <div class="mb-3 mt-5">
-                            <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
-                                <h3>
-                                    <?php echo $intro_facility[$i]["name"] ?>
-                                </h3>
-                                <input type="text" name="fileName[]" hidden value="<?php echo $intro_facility[$i]["path"] ?>">
-                                <input type="text" name="fileName[]" hidden value="<?php echo $intro_facility[$i+1]["path"] ?>">
-                                <input type="file" required name="fileToUpload[]" id="fileToUpload">
-                                <input type="file" required name="fileToUpload[]" id="fileToUpload">
-                                <input type="submit" value="Update" name="submit">
-                            </form>
-                            <form action="../actions/remove_images.php" method="post">
-                                <input type="text" name="id[]" hidden value="<?php echo $intro_facility[$i]["id"] ?>">
-                                <input type="text" name="id[]" hidden value="<?php echo $intro_facility[$i+1]["id"] ?>">
-                                <input type="text" name="path[]" hidden value="<?php echo $intro_facility[$i]["path"] ?>">
-                                <input type="text" name="path[]" hidden value="<?php echo $intro_facility[$i+1]["path"] ?>">
-                                <input type="submit" value="Delete" name="submit">
-                            </form>
-                            <div class="d-flex">
-                                <img style="height: 150px" src="../images/<?php echo $intro_facility[$i]["path"] ?>">
-                                <img class="ml-2" style="height: 150px" src="../images/<?php echo $intro_facility[$i+1]["path"] ?>">
-                            </div>
-                            
-                        </div>
-                        <?php
-                    }
-                    ?>
-                </div>
-                <button class="dropdown-custom-item" onclick="expandMenu(this)">add image</button>
-                <form action="../actions/add_image.php" method="post" style="display: none" enctype="multipart/form-data">
-                    <input type="text" class="w-75" name="name" value="Bruckner images slide">
-                    <input type="text" name="type" hidden value="intro_facility">
-                    <input type="file" required name="fileToUpload[]" id="fileToUpload">
-                    <input type="file" required name="fileToUpload[]" id="fileToUpload">
-                    <input type="submit" value="add" name="submit">
-                </form>
-                <hr />
-                <h2 class="dropdown-custom-item background-grey" style="border-bottom: none !important" onclick="expandMenu(this)">
-                    Partner Images</h2>
-                <div style="display: none;">
-                    <?php
-                    foreach ($partner as $e) { ?>
-                        <div class="mb-3 mt-5">
-                            <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
-                                <h3>
-                                    <?php echo "$e[name]" ?>
-                                </h3>
-                                <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
-                                <input type="file" required name="fileToUpload" id="fileToUpload">
-                                <input type="submit" value="Update" name="submit">
-                            </form>
-                            <form action="../actions/remove_image.php" method="post">
-                                <input type="text" name="id" hidden value="<?php echo $e["id"] ?>">
-                                <input type="text" name="path" hidden value="<?php echo $e["path"] ?>">
-                                <input type="submit" value="Delete" name="submit">
-                            </form>
-                        <img style="height: 150px" src="../images/<?php echo $e["path"] ?>">
-                        </div>
-                        <?php
-                    }
-                    ?>
-                </div>
-                <button class="dropdown-custom-item" onclick="expandMenu(this)">add image</button>
-                <form action="../actions/add_image.php" method="post" style="display: none" enctype="multipart/form-data">
-                    <input type="text" class="w-75" name="name" value="Partner images">
-                    <input type="text" name="type" hidden value="partner">
-                    <input type="file" required name="fileToUpload[]" id="fileToUpload">
-                    <input type="submit" value="add" name="submit">
-                </form>
-                <hr />
-                <h2 class="dropdown-custom-item background-grey" style="border-bottom: none !important" onclick="expandMenu(this)">
-                    Product images</h2>
-                <div style="display: none;">
-                    <?php
-                    foreach ($product_main as $e) { ?>
-                        <div class="mb-3 mt-5">
-                            <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
-                                <h3>
-                                    <?php echo "$e[name]" ?>
-                                </h3>
-                                <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
-                                <input type="file" required name="fileToUpload" id="fileToUpload">
-                                <input type="submit" value="Update" name="submit">
-                            </form>
-                        <img style="height: 150px" src="../images/<?php echo $e["path"] ?>">
-                        </div>
-                        <?php
-                    }
-                    ?>
-                    <hr />
-                    <?php
-                    foreach ($product as $e) { ?>
-                        <div class="mb-3 mt-5">
-                            <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
-                                <h3>
-                                    <?php echo "$e[name]" ?>
-                                </h3>
-                                <input type="text" name="fileName" hidden value="<?php echo $e["img_path"] ?>">
-                                <input type="file" required name="fileToUpload" id="fileToUpload">
-                                <input type="submit" value="Update" name="submit">
-                            </form>
-                        <img style="height: 150px" src="../images/<?php echo $e["img_path"] ?>">
-                        </div>
-                        <?php
-                    }
-                    ?>
-                </div>
-                <hr />
-                <h2 class="dropdown-custom-item background-grey" style="border-bottom: none !important" onclick="expandMenu(this)">Lab
-                    Images</h2>
-                <div style="display: none;">
-                    <?php
-                    foreach ($lab_main as $e) { ?>
-                        <div class="mb-3 mt-5">
-                            <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
-                                <h3>
-                                    <?php echo "$e[name]" ?>
-                                </h3>
-                                <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
-                                <input type="file" required name="fileToUpload" id="fileToUpload">
-                                <input type="submit" value="Update" name="submit">
-                            </form>
-                        <img style="height: 150px" src="../images/<?php echo $e["path"] ?>">
-                        </div>
-                        <?php
-                    }
-                    ?>
-                    <hr />
-                    <?php
-                    foreach ($lab as $e) { ?>
-                        <div class="mb-3 mt-5">
-                            <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
-                                <h3>
-                                    <?php echo "$e[name]" ?>
-                                </h3>
-                                <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
-                                <input type="file" required name="fileToUpload" id="fileToUpload">
-                                <input type="submit" value="Update" name="submit">
-                            </form>
-                            <form action="../actions/remove_image.php" method="post">
-                                <input type="text" name="id" hidden value="<?php echo $e["id"] ?>">
-                                <input type="text" name="path" hidden value="<?php echo $e["path"] ?>">
-                                <input type="submit" value="Delete" name="submit">
-                            </form>
-                        <img style="height: 150px" src="../images/<?php echo $e["path"] ?>">
-                        </div>
-                        <?php
-                    }
-                    ?>
-                </div>
-                <button class="dropdown-custom-item" onclick="expandMenu(this)">add image</button>
-                <form action="../actions/add_image.php" method="post" style="display: none" enctype="multipart/form-data">
-                    <input type="text" class="w-75" name="name" value="Lab images slide">
-                    <input type="text" name="type" hidden value="lab">
-                    <input type="file" required name="fileToUpload[]" id="fileToUpload">
-                    <input type="submit" value="add" name="submit">
-                </form>
-                <hr/>
+                <?php include './infra.php' ?>
+                <?php include './bruckner.php' ?>
+                <?php include './accreditations.php' ?>
+                <?php include './partner.php' ?>
+                <?php include './lab.php' ?>
+                
                 <h2 class="dropdown-custom-item background-grey" style="border-bottom: none !important" onclick="expandMenu(this)">
                     Contact image</h2>
                 <div style="display: none;">
@@ -387,8 +181,8 @@ require("../includes/query_img.php");
                                 <h3>
                                     <?php echo "$e[name]" ?>
                                 </h3>
-                                <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
-                                <input type="file" required name="fileToUpload" id="fileToUpload">
+                                <input type="text" name="fileName[]" hidden value="<?php echo $e["path"] ?>">
+                                <input type="file" required name="fileToUpload[]" id="fileToUpload">
                                 <input type="submit" value="Update" name="submit">
                             </form>
                         <img style="height: 150px" src="../images/<?php echo $e["path"] ?>">
@@ -404,8 +198,8 @@ require("../includes/query_img.php");
                                 <h3>
                                     <?php echo "$e[name]" ?>
                                 </h3>
-                                <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
-                                <input type="file" required name="fileToUpload" id="fileToUpload">
+                                <input type="text" name="fileName[]" hidden value="<?php echo $e["path"] ?>">
+                                <input type="file" required name="fileToUpload[]" id="fileToUpload">
                                 <input type="submit" value="Update" name="submit">
                             </form>
                         <img style="height: 150px" src="../images/<?php echo $e["path"] ?>">

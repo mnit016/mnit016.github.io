@@ -1,9 +1,8 @@
 <?php
 include("../includes/db_connect.php");
-$isDeleted;
 foreach ($_POST["path"] as $path) {
     $fileDir = '../images/' . $path;
-    // $isDeleted = unlink($fileDir);
+    unlink($fileDir);
 }
 foreach ($_POST["id"] as $i) {
     $query= "DELETE FROM img WHERE id='$i'";

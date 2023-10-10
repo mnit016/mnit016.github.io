@@ -17,6 +17,7 @@ $infra_main=fetch_img($db, $tableName, $columns, "where type='infra_main'");
 $infra=fetch_img($db, $tableName, $columns, "where type='infra'");
 $contact_main=fetch_img($db, $tableName, $columns, "where type='contact_main'");
 $contact=fetch_img($db, $tableName, $columns, "where type='contact'");
+$accreditations=fetch_img($db, 'accreditations', ['id', 'name', 'img_path', 'pdf_path'], "");
 
 function fetch_img($db, $tableName, $columns, $condition) {
     if (empty($db)) {

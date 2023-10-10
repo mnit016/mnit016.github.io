@@ -6,7 +6,7 @@ $postContent=str_replace("'", "\'", $postContent);
 $query= "UPDATE products$_SESSION[LANG] SET des='$postContent', name='$_POST[name]' WHERE id='$_POST[id]'";
 $result = $conn->query($query);
 if ($result== true) { 
-    $msg="Updated successfully";
+    $msg="Updated product successfully";
 } else {
     $msg=mysqli_error($conn);
 }

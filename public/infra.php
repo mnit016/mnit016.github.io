@@ -19,65 +19,19 @@
                         <div class="col-12 p-0">
                             <div id="csvc-slide" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
-                                    <div class="carousel-item active">
+                                <?php
+                                    for ($i=0; $i < count($intro_facility); $i+=2) { ?>
+                                    <div class="carousel-item <?php if ($i == 0) { ?>active <?php } ?>">
                                         <div class="img-2-holder row">
                                             <div class="col-6 img-1 pad-r-5">
-                                                <img src="../images/csvc/1.jpg" alt="">
+                                                <img src="../images/<?php echo $intro_facility[$i]["path"] ?>" alt="">
                                             </div>
                                             <div class="col-6 img-2 pad-l-5">
-                                                <img src="../images/csvc/2.jpg" alt="">
+                                                <img src="../images/<?php echo $intro_facility[$i+1]["path"] ?>" alt="">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="carousel-item">
-                                        <div class="img-2-holder row">
-                                            <div class="col-6 img-1 pad-r-5">
-                                                <img src="../images/csvc/3.jpg" alt="">
-                                            </div>
-                                            <div class="col-6 img-2 pad-l-5">
-                                                <img src="../images/csvc/4.jpg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="img-2-holder row">
-                                            <div class="col-6 img-1 pad-r-5">
-                                                <img src="../images/csvc/5.jpg" alt="">
-                                            </div>
-                                            <div class="col-6 img-2 pad-l-5">
-                                                <img src="../images/csvc/6.jpg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="img-2-holder row">
-                                            <div class="col-6 img-1 pad-r-5">
-                                                <img src="../images/csvc/7.jpg" alt="">
-                                            </div>
-                                            <div class="col-6 img-2 pad-l-5">
-                                                <img src="../images/csvc/8.jpg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="img-2-holder row">
-                                            <div class="col-6 img-1 pad-r-5">
-                                                <img src="../images/csvc/9.jpg" alt="">
-                                            </div>
-                                            <div class="col-6 img-2 pad-l-5">
-                                                <img src="../images/csvc/10.jpg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- <a class="carousel-control-prev" href="#csvc-slide" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#csvc-slide" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a> -->
+                                <?php } ?>
                             </div>
                         </div>
                     </div>
@@ -96,24 +50,26 @@
             </div>
             <div id="infra-carousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                <?php
+                    for ($i=0; $i < count($infra); $i+=9) { ?>
+                    <div class="carousel-item <?php if ($i == 0) { ?>active <?php } ?>">
                         <div class="w-100 d-block">
                             <div class="row pb-2" style="height: 612px;">
                                 <div class="col-4 pl-0 pr-2">
                                     <div class="h-100">
-                                        <div class="h-100 background-image" style="background-image: url(./images/4.2.jpg);">
+                                        <div class="h-100 background-image" style="background-image: url(./images/<?php echo $infra[$i]["path"] ?>);">
             
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-4 pl-2 pr-2">
                                     <div class="h-50 pb-2">
-                                        <div class="h-100 background-image" style="background-image: url(./images/4.3.jpg);">
+                                        <div class="h-100 background-image" style="background-image: url(./images/<?php echo $infra[$i+1]["path"] ?>);">
             
                                         </div>
                                     </div>
                                     <div class="h-50 position-relative pt-2">
-                                        <div class="h-100 w-100 background-image" style="bottom: 0; background-image: url(./images/4.4.jpg);">
+                                        <div class="h-100 w-100 background-image" style="bottom: 0; background-image: url(./images/<?php echo $infra[$i+2]["path"] ?>);">
             
                                         </div>
                                     </div>
@@ -121,7 +77,7 @@
                                 <div class="col-4 pl-2 pr-2">
                                     <div class="h-100">
                                         
-                                        <div class="h-100 background-image" style="background-image: url(./images/4.5.jpg);">
+                                        <div class="h-100 background-image" style="background-image: url(./images/<?php echo $infra[$i+3]["path"] ?>);">
             
                                         </div>
                                     </div>
@@ -130,12 +86,12 @@
                             <div class="row pt-2" style="height: 612px;">
                                 <div class="col-4 pl-0 pr-2">
                                     <div class="h-50 pb-2">
-                                        <div class="h-100 background-image" style="background-image: url(./images/4.6.jpg);">
+                                        <div class="h-100 background-image" style="background-image: url(./images/<?php echo $infra[$i+4]["path"] ?>);">
             
                                         </div>
                                     </div>
                                     <div class="h-50 position-relative pt-2">
-                                        <div class="h-100 w-100 background-image" style="bottom: 0; background-image: url(./images/4.7.jpg);">
+                                        <div class="h-100 w-100 background-image" style="bottom: 0; background-image: url(./images/<?php echo $infra[$i+5]["path"] ?>);">
             
                                         </div>
                                     </div>
@@ -143,19 +99,19 @@
                                 <div class="col-4 pl-2 pr-2">
                                     <div class="h-100">
                                         
-                                        <div class="h-100 background-image" style="background-image: url(./images/4.8.jpg);">
+                                        <div class="h-100 background-image" style="background-image: url(./images/<?php echo $infra[$i+6]["path"] ?>);">
             
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-4 pl-2 pr-2">
                                     <div class="h-50 pb-2">
-                                        <div class="h-100 background-image" style="background-image: url(./images/4.9.jpg);">
+                                        <div class="h-100 background-image" style="background-image: url(./images/<?php echo $infra[$i+7]["path"] ?>);">
             
                                         </div>
                                     </div>
                                     <div class="h-50 position-relative pt-2">
-                                        <div class="h-100 w-100 background-image" style="bottom: 0; background-image: url(./images/4.10.jpg);">
+                                        <div class="h-100 w-100 background-image" style="bottom: 0; background-image: url(./images/<?php echo $infra[$i+8]["path"] ?>);">
             
                                         </div>
                                     </div>
@@ -163,141 +119,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="w-100 d-block">
-                            <div class="row pb-2" style="height: 612px;">
-                                <div class="col-4 pl-0 pr-2">
-                                    <div class="h-100">
-                                        <div class="h-100 background-image" style="background-image: url(./images/4.11.jpg);">
-            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4 pl-2 pr-2">
-                                    <div class="h-50 pb-2">
-                                        <div class="h-100 background-image" style="background-image: url(./images/4.12.jpg);">
-            
-                                        </div>
-                                    </div>
-                                    <div class="h-50 position-relative pt-2">
-                                        <div class="h-100 w-100 background-image" style="bottom: 0; background-image: url(./images/4.13.jpg);">
-            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4 pl-2 pr-2">
-                                    <div class="h-100">
-                                        
-                                        <div class="h-100 background-image" style="background-image: url(./images/4.14.jpg);">
-            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row pt-2" style="height: 612px;">
-                                <div class="col-4 pl-0 pr-2">
-                                    <div class="h-50 pb-2">
-                                        <div class="h-100 background-image" style="background-image: url(./images/4.15.jpg);">
-            
-                                        </div>
-                                    </div>
-                                    <div class="h-50 position-relative pt-2">
-                                        <div class="h-100 w-100 background-image" style="bottom: 0; background-image: url(./images/4.16.jpg);">
-            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4 pl-2 pr-2">
-                                    <div class="h-100">
-                                        
-                                        <div class="h-100 background-image" style="background-image: url(./images/4.17.jpg);">
-            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4 pl-2 pr-2">
-                                    <div class="h-50 pb-2">
-                                        <div class="h-100 background-image" style="background-image: url(./images/4.18.jpg);">
-            
-                                        </div>
-                                    </div>
-                                    <div class="h-50 position-relative pt-2">
-                                        <div class="h-100 w-100 background-image" style="bottom: 0; background-image: url(./images/4.19.jpg);">
-            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="w-100 d-block">
-                            <div class="row pb-2" style="height: 612px;">
-                                <div class="col-4 pl-0 pr-2">
-                                    <div class="h-100">
-                                        <div class="h-100 background-image" style="background-image: url(./images/4.20.jpg);">
-            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4 pl-2 pr-2">
-                                    <div class="h-50 pb-2">
-                                        <div class="h-100 background-image" style="background-image: url(./images/4.21.jpg);">
-            
-                                        </div>
-                                    </div>
-                                    <div class="h-50 position-relative pt-2">
-                                        <div class="h-100 w-100 background-image" style="bottom: 0; background-image: url(./images/4.22.jpg);">
-            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4 pl-2 pr-2">
-                                    <div class="h-100">
-                                        
-                                        <div class="h-100 background-image" style="background-image: url(./images/4.23.jpg);">
-            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row pt-2" style="height: 612px;">
-                                <div class="col-4 pl-0 pr-2">
-                                    <div class="h-50 pb-2">
-                                        <div class="h-100 background-image" style="background-image: url(./images/4.24.jpg);">
-            
-                                        </div>
-                                    </div>
-                                    <div class="h-50 position-relative pt-2">
-                                        <div class="h-100 w-100 background-image" style="bottom: 0; background-image: url(./images/4.25.jpg);">
-            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4 pl-2 pr-2">
-                                    <div class="h-100">
-                                        
-                                        <div class="h-100 background-image" style="background-image: url(./images/4.26.jpg);">
-            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4 pl-2 pr-2">
-                                    <div class="h-50 pb-2">
-                                        <div class="h-100 background-image" style="background-image: url(./images/4.27.jpg);">
-            
-                                        </div>
-                                    </div>
-                                    <div class="h-50 position-relative pt-2">
-                                        <div class="h-100 w-100 background-image" style="bottom: 0; background-image: url(./images/4.28.jpg);">
-            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <?php } ?>
             </div>
             <div class="w-100" style="text-align: center;">
                 <img class="pt-3" style="width: 10rem;" src="./icon/slide-black.png" href="#infra-carousel" role="button" data-slide="next">
