@@ -60,7 +60,7 @@ require("../includes/query_img.php");
     }
     ?>
     <div class="container-xl mt-5">
-        <div class="position-fixed w-100 background-grey" style="top: 0; right:0">
+        <div class="position-fixed w-100 background-grey" style="top: 0; right:0; z-index: 1">
             <div class="container d-flex justify-content-end">
                 <a class="euro-font-nav nav-link p-0 pr-4" href="/">Home</a>
                 <a class="euro-font-nav nav-link p-0 dropdown-icon-after pr-4" href="/swap_lang.php?redirect_page=/admin"><?= LANG ?></a>
@@ -90,29 +90,8 @@ require("../includes/query_img.php");
                 }
                 ?>
                 </div>
-                <hr/>
-                <h1 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)">Products List</h1>
-                <div style="display: none;">
-                    <?php
-                    foreach ($product_list as $e) {
-                    ?>
-                    <div class="mb-3 mt-5">
-                        <h2 class="dropdown-custom-item background-grey" style="border-bottom: none !important" onclick="expandMenu(this)">
-                            <?php echo "$e[name]" ?>
-                        </h2>
-                        <form action="../actions/update_product.php" method="post" style="display: none;">
-                            <input type="text" name="id" hidden value="<?php echo $e["id"] ?>">
-                            <input type="text" name="name" value="<?php echo $e["name"] ?>">
-                            <textarea class="w-100 smaller" rows="5" type="text"
-                                name="content"><?php echo str_replace("<p>", "\n", $e["des"]); ?></textarea>
-                            <input type="submit" value="Save" name="submit">
-                        </form>
-                    </div>
-                        <hr />
-                    <?php
-                    }
-                    ?>
-                </div>
+                <?php include './product.php' ?>
+                
             </div>
             <div class="col-6">
                 <h1>Images part</h1>
