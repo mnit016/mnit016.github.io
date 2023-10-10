@@ -69,16 +69,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="carousel-item">
-                                        <div class="img-2-holder row">
-                                            <div class="col-6 img-1 pad-r-5">
-                                                <img src="../images/csvc/5.jpg" alt="">
-                                            </div>
-                                            <div class="col-6 img-2 pad-l-5">
-                                                <img src="../images/csvc/11.jpg" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                                 <!-- <a class="carousel-control-prev" href="#csvc-slide" role="button" data-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>

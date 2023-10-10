@@ -75,7 +75,7 @@ require("../includes/query_img.php");
                 foreach ($fetchData as $e) { ?>
 
                     <div class="mb-3 mt-5">
-                        <h2 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)">
+                        <h2 class="dropdown-custom-item background-grey" style="border-bottom: none !important" onclick="expandMenu(this)">
                             <?php echo "$e[name]" ?>
                         </h2>
                         <form action="../actions/save_content.php" method="post" style="display: none;">
@@ -97,7 +97,7 @@ require("../includes/query_img.php");
                     foreach ($product_list as $e) {
                     ?>
                     <div class="mb-3 mt-5">
-                        <h2 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)">
+                        <h2 class="dropdown-custom-item background-grey" style="border-bottom: none !important" onclick="expandMenu(this)">
                             <?php echo "$e[name]" ?>
                         </h2>
                         <form action="../actions/update_product.php" method="post" style="display: none;">
@@ -121,7 +121,7 @@ require("../includes/query_img.php");
                     <div class="mb-3 mt-5">
                         <form action="../actions/update_home_video.php" method="post" enctype="multipart/form-data">
                             <h3>
-                                <?php echo "$e[name] - $e[des]" ?>
+                                <?php echo "$e[name]" ?>
                             </h3>
                             <input type="text" name="id" hidden value="<?php echo $e["id"] ?>">
                             <input class="w-75" type="text" name="url" value="<?php echo $e["path"] ?>">
@@ -132,7 +132,7 @@ require("../includes/query_img.php");
                     <?php
                 }
                 ?>
-                <h2 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)">Why
+                <h2 class="dropdown-custom-item background-grey" style="border-bottom: none !important" onclick="expandMenu(this)">Why
                     euro slide images</h2>
                 <div style="display: none;">
                     <?php
@@ -144,14 +144,14 @@ require("../includes/query_img.php");
                                 </h3>
                                 <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
                                 <input type="file" required name="fileToUpload" id="fileToUpload">
-                                <input type="submit" value="Upload" name="submit">
+                                <input type="submit" value="Update" name="submit">
                             </form>
                             <form action="../actions/remove_image.php" method="post">
                                 <input type="text" name="id" hidden value="<?php echo $e["id"] ?>">
                                 <input type="text" name="path" hidden value="<?php echo $e["path"] ?>">
                                 <input type="submit" value="Delete" name="submit">
                             </form>
-                        <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
+                        <img style="height: 150px" src="../images/<?php echo $e["path"] ?>">
                         </div>
                         <?php
                     }
@@ -159,13 +159,13 @@ require("../includes/query_img.php");
                 </div>
                 <button class="dropdown-custom-item" onclick="expandMenu(this)">add image</button>
                 <form action="../actions/add_image.php" method="post" style="display: none" enctype="multipart/form-data">
-                    <input type="text" name="name" value="why euro slide image (<?php echo count($why_euro)+1 ?>)">
+                    <input type="text" class="w-75" name="name" value="why euro slide image">
                     <input type="text" name="type" hidden value="why_euro">
-                    <input type="file" required name="fileToUpload" id="fileToUpload">
+                    <input type="file" required name="fileToUpload[]" id="fileToUpload">
                     <input type="submit" value="add" name="submit">
                 </form>
                 <hr />
-                <h2 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)">
+                <h2 class="dropdown-custom-item background-grey" style="border-bottom: none !important" onclick="expandMenu(this)">
                     Facilities images</h2>
                 <div style="display: none;">
                     <?php
@@ -173,13 +173,13 @@ require("../includes/query_img.php");
                         <div class="mb-3 mt-5">
                             <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
                                 <h3>
-                                    <?php echo "$e[name] - $e[des]" ?>
+                                    <?php echo "$e[name]" ?>
                                 </h3>
                                 <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
                                 <input type="file" required name="fileToUpload" id="fileToUpload">
-                                <input type="submit" value="Upload" name="submit">
+                                <input type="submit" value="Update" name="submit">
                             </form>
-                        <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
+                        <img style="height: 150px" src="../images/<?php echo $e["path"] ?>">
                         </div>
                         <?php
                     }
@@ -190,40 +190,73 @@ require("../includes/query_img.php");
                         <div class="mb-3 mt-5">
                             <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
                                 <h3>
-                                    <?php echo "$e[name] - $e[des]" ?>
+                                    <?php echo "$e[name]" ?>
                                 </h3>
                                 <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
                                 <input type="file" required name="fileToUpload" id="fileToUpload">
-                                <input type="submit" value="Upload" name="submit">
+                                <input type="submit" value="Update" name="submit">
                             </form>
-                        <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
+                            <form action="../actions/remove_image.php" method="post">
+                                <input type="text" name="id" hidden value="<?php echo $e["id"] ?>">
+                                <input type="text" name="path" hidden value="<?php echo $e["path"] ?>">
+                                <input type="submit" value="Delete" name="submit">
+                            </form>
+                        <img style="height: 150px" src="../images/<?php echo $e["path"] ?>">
                         </div>
                         <?php
                     }
                     ?>
                 </div>
+                <button class="dropdown-custom-item" onclick="expandMenu(this)">add image</button>
+                <form action="../actions/add_image.php" method="post" style="display: none" enctype="multipart/form-data">
+                    <input type="text" class="w-75" name="name" value="Facilities images slide">
+                    <input type="text" name="type" hidden value="infra">
+                    <input type="file" required name="fileToUpload[]" id="fileToUpload">
+                    <input type="submit" value="add" name="submit">
+                </form>
                 <hr />
-                <h2 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)">Bruckner</h2>
+                <h2 class="dropdown-custom-item background-grey" style="border-bottom: none !important" onclick="expandMenu(this)">Bruckner</h2>
                 <div style="display: none;">
                     <?php
-                    foreach ($intro_facility as $e) { ?>
+                    for ($i=0; $i < count($intro_facility); $i+=2) { ?>
                         <div class="mb-3 mt-5">
                             <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
                                 <h3>
-                                    <?php echo "$e[name] - $e[des]" ?>
+                                    <?php echo $intro_facility[$i]["name"] ?>
                                 </h3>
-                                <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
-                                <input type="file" required name="fileToUpload" id="fileToUpload">
-                                <input type="submit" value="Upload" name="submit">
+                                <input type="text" name="fileName[]" hidden value="<?php echo $intro_facility[$i]["path"] ?>">
+                                <input type="text" name="fileName[]" hidden value="<?php echo $intro_facility[$i+1]["path"] ?>">
+                                <input type="file" required name="fileToUpload[]" id="fileToUpload">
+                                <input type="file" required name="fileToUpload[]" id="fileToUpload">
+                                <input type="submit" value="Update" name="submit">
                             </form>
-                        <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
+                            <form action="../actions/remove_images.php" method="post">
+                                <input type="text" name="id[]" hidden value="<?php echo $intro_facility[$i]["id"] ?>">
+                                <input type="text" name="id[]" hidden value="<?php echo $intro_facility[$i+1]["id"] ?>">
+                                <input type="text" name="path[]" hidden value="<?php echo $intro_facility[$i]["path"] ?>">
+                                <input type="text" name="path[]" hidden value="<?php echo $intro_facility[$i+1]["path"] ?>">
+                                <input type="submit" value="Delete" name="submit">
+                            </form>
+                            <div class="d-flex">
+                                <img style="height: 150px" src="../images/<?php echo $intro_facility[$i]["path"] ?>">
+                                <img class="ml-2" style="height: 150px" src="../images/<?php echo $intro_facility[$i+1]["path"] ?>">
+                            </div>
+                            
                         </div>
                         <?php
                     }
                     ?>
                 </div>
+                <button class="dropdown-custom-item" onclick="expandMenu(this)">add image</button>
+                <form action="../actions/add_image.php" method="post" style="display: none" enctype="multipart/form-data">
+                    <input type="text" class="w-75" name="name" value="Bruckner images slide">
+                    <input type="text" name="type" hidden value="intro_facility">
+                    <input type="file" required name="fileToUpload[]" id="fileToUpload">
+                    <input type="file" required name="fileToUpload[]" id="fileToUpload">
+                    <input type="submit" value="add" name="submit">
+                </form>
                 <hr />
-                <h2 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)">
+                <h2 class="dropdown-custom-item background-grey" style="border-bottom: none !important" onclick="expandMenu(this)">
                     Partner Images</h2>
                 <div style="display: none;">
                     <?php
@@ -231,20 +264,32 @@ require("../includes/query_img.php");
                         <div class="mb-3 mt-5">
                             <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
                                 <h3>
-                                    <?php echo "$e[name] - $e[des]" ?>
+                                    <?php echo "$e[name]" ?>
                                 </h3>
                                 <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
                                 <input type="file" required name="fileToUpload" id="fileToUpload">
-                                <input type="submit" value="Upload" name="submit">
+                                <input type="submit" value="Update" name="submit">
                             </form>
-                        <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
+                            <form action="../actions/remove_image.php" method="post">
+                                <input type="text" name="id" hidden value="<?php echo $e["id"] ?>">
+                                <input type="text" name="path" hidden value="<?php echo $e["path"] ?>">
+                                <input type="submit" value="Delete" name="submit">
+                            </form>
+                        <img style="height: 150px" src="../images/<?php echo $e["path"] ?>">
                         </div>
                         <?php
                     }
                     ?>
                 </div>
+                <button class="dropdown-custom-item" onclick="expandMenu(this)">add image</button>
+                <form action="../actions/add_image.php" method="post" style="display: none" enctype="multipart/form-data">
+                    <input type="text" class="w-75" name="name" value="Partner images">
+                    <input type="text" name="type" hidden value="partner">
+                    <input type="file" required name="fileToUpload[]" id="fileToUpload">
+                    <input type="submit" value="add" name="submit">
+                </form>
                 <hr />
-                <h2 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)">
+                <h2 class="dropdown-custom-item background-grey" style="border-bottom: none !important" onclick="expandMenu(this)">
                     Product images</h2>
                 <div style="display: none;">
                     <?php
@@ -252,13 +297,13 @@ require("../includes/query_img.php");
                         <div class="mb-3 mt-5">
                             <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
                                 <h3>
-                                    <?php echo "$e[name] - $e[des]" ?>
+                                    <?php echo "$e[name]" ?>
                                 </h3>
                                 <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
                                 <input type="file" required name="fileToUpload" id="fileToUpload">
-                                <input type="submit" value="Upload" name="submit">
+                                <input type="submit" value="Update" name="submit">
                             </form>
-                        <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
+                        <img style="height: 150px" src="../images/<?php echo $e["path"] ?>">
                         </div>
                         <?php
                     }
@@ -273,16 +318,16 @@ require("../includes/query_img.php");
                                 </h3>
                                 <input type="text" name="fileName" hidden value="<?php echo $e["img_path"] ?>">
                                 <input type="file" required name="fileToUpload" id="fileToUpload">
-                                <input type="submit" value="Upload" name="submit">
+                                <input type="submit" value="Update" name="submit">
                             </form>
-                        <img style="height: 300px" src="../images/<?php echo $e["img_path"] ?>">
+                        <img style="height: 150px" src="../images/<?php echo $e["img_path"] ?>">
                         </div>
                         <?php
                     }
                     ?>
                 </div>
                 <hr />
-                <h2 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)">Lab
+                <h2 class="dropdown-custom-item background-grey" style="border-bottom: none !important" onclick="expandMenu(this)">Lab
                     Images</h2>
                 <div style="display: none;">
                     <?php
@@ -290,13 +335,13 @@ require("../includes/query_img.php");
                         <div class="mb-3 mt-5">
                             <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
                                 <h3>
-                                    <?php echo "$e[name] - $e[des]" ?>
+                                    <?php echo "$e[name]" ?>
                                 </h3>
                                 <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
                                 <input type="file" required name="fileToUpload" id="fileToUpload">
-                                <input type="submit" value="Upload" name="submit">
+                                <input type="submit" value="Update" name="submit">
                             </form>
-                        <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
+                        <img style="height: 150px" src="../images/<?php echo $e["path"] ?>">
                         </div>
                         <?php
                     }
@@ -307,20 +352,32 @@ require("../includes/query_img.php");
                         <div class="mb-3 mt-5">
                             <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
                                 <h3>
-                                    <?php echo "$e[name] - $e[des]" ?>
+                                    <?php echo "$e[name]" ?>
                                 </h3>
                                 <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
                                 <input type="file" required name="fileToUpload" id="fileToUpload">
-                                <input type="submit" value="Upload" name="submit">
+                                <input type="submit" value="Update" name="submit">
                             </form>
-                        <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
+                            <form action="../actions/remove_image.php" method="post">
+                                <input type="text" name="id" hidden value="<?php echo $e["id"] ?>">
+                                <input type="text" name="path" hidden value="<?php echo $e["path"] ?>">
+                                <input type="submit" value="Delete" name="submit">
+                            </form>
+                        <img style="height: 150px" src="../images/<?php echo $e["path"] ?>">
                         </div>
                         <?php
                     }
                     ?>
                 </div>
+                <button class="dropdown-custom-item" onclick="expandMenu(this)">add image</button>
+                <form action="../actions/add_image.php" method="post" style="display: none" enctype="multipart/form-data">
+                    <input type="text" class="w-75" name="name" value="Lab images slide">
+                    <input type="text" name="type" hidden value="lab">
+                    <input type="file" required name="fileToUpload[]" id="fileToUpload">
+                    <input type="submit" value="add" name="submit">
+                </form>
                 <hr/>
-                <h2 class="dropdown-custom-item" style="border-bottom: none !important" onclick="expandMenu(this)">
+                <h2 class="dropdown-custom-item background-grey" style="border-bottom: none !important" onclick="expandMenu(this)">
                     Contact image</h2>
                 <div style="display: none;">
                     <?php
@@ -328,13 +385,13 @@ require("../includes/query_img.php");
                         <div class="mb-3 mt-5">
                             <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
                                 <h3>
-                                    <?php echo "$e[name] - $e[des]" ?>
+                                    <?php echo "$e[name]" ?>
                                 </h3>
                                 <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
                                 <input type="file" required name="fileToUpload" id="fileToUpload">
-                                <input type="submit" value="Upload" name="submit">
+                                <input type="submit" value="Update" name="submit">
                             </form>
-                        <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
+                        <img style="height: 150px" src="../images/<?php echo $e["path"] ?>">
                         </div>
                         <?php
                     }
@@ -345,13 +402,13 @@ require("../includes/query_img.php");
                         <div class="mb-3 mt-5">
                             <form action="../actions/upload.php" method="post" enctype="multipart/form-data">
                                 <h3>
-                                    <?php echo "$e[name] - $e[des]" ?>
+                                    <?php echo "$e[name]" ?>
                                 </h3>
                                 <input type="text" name="fileName" hidden value="<?php echo $e["path"] ?>">
                                 <input type="file" required name="fileToUpload" id="fileToUpload">
-                                <input type="submit" value="Upload" name="submit">
+                                <input type="submit" value="Update" name="submit">
                             </form>
-                        <img style="height: 300px" src="../images/<?php echo $e["path"] ?>">
+                        <img style="height: 150px" src="../images/<?php echo $e["path"] ?>">
                         </div>
                         <?php
                     }
