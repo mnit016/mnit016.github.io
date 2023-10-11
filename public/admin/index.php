@@ -95,6 +95,9 @@ require("../includes/query_img.php");
             </div>
             <div class="col-6">
                 <h1>Images part</h1>
+                <h5>Vui lòng tránh add trùng file name cho nhiều hạng mục -> các hạng mục sẽ dùng chung 1 đường dẫn hình ảnh
+                    -> khi delete/update thì sẽ ảnh hưởng trên các phần dùng chung.
+                </h5>
                 <?php
                 foreach ($home_main as $e) { ?>
                     <div class="mb-3 mt-5">
