@@ -45,7 +45,7 @@
                                 <input type="file" name="fileToUpload[]" id="fileToUpload">
                                 <input type="submit" value="Update" name="submit">
                             </form>
-                            <form action="../actions/remove_images.php" method="post">
+                            <form action="../actions/remove_images.php" onsubmit="return confirm('Do you really want to delete?')" method="post">
                                 <input type="text" name="id[]" hidden value="<?php echo $infra[$i]["id"] ?>">
                                 <input type="text" name="id[]" hidden value="<?php echo $infra[$i+1]["id"] ?>">
                                 <input type="text" name="id[]" hidden value="<?php echo $infra[$i+2]["id"] ?>">

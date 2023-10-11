@@ -125,9 +125,9 @@ require("../includes/query_img.php");
                                 <input type="file" required name="fileToUpload[]" id="fileToUpload">
                                 <input type="submit" value="Update" name="submit">
                             </form>
-                            <form action="../actions/remove_image.php" method="post">
-                                <input type="text" name="id[]" hidden value="<?php echo $e["id"] ?>">
-                                <input type="text" name="path[]" hidden value="<?php echo $e["path"] ?>">
+                            <form action="../actions/remove_image.php" onsubmit="return confirm('Do you really want to delete?')" method="post">
+                                <input type="text" name="id" hidden value="<?php echo $e["id"] ?>">
+                                <input type="text" name="path" hidden value="<?php echo $e["path"] ?>">
                                 <input type="submit" value="Delete" name="submit">
                             </form>
                         <img style="height: 150px" src="../images/<?php echo $e["path"] ?>">

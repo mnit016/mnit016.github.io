@@ -17,7 +17,7 @@
                                 <input id="fileToUploadPdf" type="file" name="fileToUploadPdf" id="fileToUpload">
                                 <input type="submit" value="Update" name="submit">
                             </form>
-                            <form action="../actions/remove_accreditation.php" method="post">
+                            <form action="../actions/remove_accreditation.php" onsubmit="return confirm('Do you really want to delete?')" method="post">
                                 <input type="text" name="id" hidden value="<?php echo $e["id"] ?>">
                                 <input type="text" name="img_path" hidden value="<?php echo $e["img_path"] ?>">
                                 <input type="text" name="pdf_path" hidden value="<?php echo $e["pdf_path"] ?>">

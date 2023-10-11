@@ -13,7 +13,7 @@
                                 <input type="file" name="fileToUpload[]" id="fileToUpload">
                                 <input type="submit" value="Update" name="submit">
                             </form>
-                            <form action="../actions/remove_images.php" method="post">
+                            <form action="../actions/remove_images.php" onsubmit="return confirm('Do you really want to delete?')" method="post">
                                 <input type="text" name="id[]" hidden value="<?php echo $intro_facility[$i]["id"] ?>">
                                 <input type="text" name="id[]" hidden value="<?php echo $intro_facility[$i+1]["id"] ?>">
                                 <input type="text" name="path[]" hidden value="<?php echo $intro_facility[$i]["path"] ?>">

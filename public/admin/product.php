@@ -18,7 +18,7 @@
                 name="content"><?php echo str_replace("<p>", "\n", $e["des"]); ?></textarea>
             <input type="submit" value="Save" name="submit">
         </form>
-        <form action="../actions/delete_product.php" method="post">
+        <form action="../actions/delete_product.php" onsubmit="return confirm('Do you really want to delete?')" method="post">
             <input type="text" name="id" hidden value="<?php echo $e["id"] ?>">
             <input type="text" name="img_path" hidden value="<?php echo $e["img_path"] ?>">
             <input type="submit" value="Delete" name="submit">
