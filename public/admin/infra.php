@@ -34,15 +34,24 @@
                                 <input type="text" name="fileName[]" hidden value="<?php echo $infra[$i+6]["path"] ?>">
                                 <input type="text" name="fileName[]" hidden value="<?php echo $infra[$i+7]["path"] ?>">
                                 <input type="text" name="fileName[]" hidden value="<?php echo $infra[$i+8]["path"] ?>">
-                                <input type="file" name="fileToUpload[]" id="fileToUpload">
-                                <input type="file" name="fileToUpload[]" id="fileToUpload">
-                                <input type="file" name="fileToUpload[]" id="fileToUpload">
-                                <input type="file" name="fileToUpload[]" id="fileToUpload">
-                                <input type="file" name="fileToUpload[]" id="fileToUpload">
-                                <input type="file" name="fileToUpload[]" id="fileToUpload">
-                                <input type="file" name="fileToUpload[]" id="fileToUpload">
-                                <input type="file" name="fileToUpload[]" id="fileToUpload">
-                                <input type="file" name="fileToUpload[]" id="fileToUpload">
+                                <label>1</label>
+                                <input type="file" name="fileToUpload[]" id="fileToUpload"><br/>
+                                <label>2</label>
+                                <input type="file" name="fileToUpload[]" id="fileToUpload"><br/>
+                                <label>3</label>
+                                <input type="file" name="fileToUpload[]" id="fileToUpload"><br/>
+                                <label>4</label>
+                                <input type="file" name="fileToUpload[]" id="fileToUpload"><br/>
+                                <label>5</label>
+                                <input type="file" name="fileToUpload[]" id="fileToUpload"><br/>
+                                <label>6</label>
+                                <input type="file" name="fileToUpload[]" id="fileToUpload"><br/>
+                                <label>7</label>
+                                <input type="file" name="fileToUpload[]" id="fileToUpload"><br/>
+                                <label>8</label>
+                                <input type="file" name="fileToUpload[]" id="fileToUpload"><br/>
+                                <label>9</label>
+                                <input type="file" name="fileToUpload[]" id="fileToUpload"><br/>
                                 <input type="submit" value="Update" name="submit">
                             </form>
                             <form action="../actions/remove_images.php" onsubmit="return confirm('Do you really want to delete?')" method="post">
@@ -69,26 +78,35 @@
                             <div class="d-flex">
                                 <div class="col-xl-4" style="overflow: hidden">
                                     <img class="m-1" style="height: 300px" src="../images/<?php echo $infra[$i]["path"] ?>">
+                                    1
                                 </div>
                                 <div class="col-xl-4" style="overflow: hidden">
+                                    2
                                     <img class="m-1" style="height: 150px" src="../images/<?php echo $infra[$i+1]["path"] ?>">
                                     <img style="height: 150px" src="../images/<?php echo $infra[$i+2]["path"] ?>">
+                                    3
                                 </div>
                                 <div class="col-xl-4" style="overflow: hidden">
                                     <img class="m-1" style="height: 300px" src="../images/<?php echo $infra[$i+3]["path"] ?>">
+                                    4
                                 </div>
                             </div>
                             <div class="d-flex">
                                 <div class="col-xl-4" style="overflow: hidden">
+                                    5
                                     <img class="m-1" style="height: 150px" src="../images/<?php echo $infra[$i+4]["path"] ?>">
                                     <img class="m-1" style="height: 150px" src="../images/<?php echo $infra[$i+5]["path"] ?>">
+                                    6
                                 </div>
                                 <div class="col-xl-4" style="overflow: hidden">
                                     <img class="m-1" style="height: 300px" src="../images/<?php echo $infra[$i+6]["path"] ?>">
+                                    7
                                 </div>
                                 <div class="col-xl-4" style="overflow: hidden">
+                                    8
                                     <img class="m-1" style="height: 150px" src="../images/<?php echo $infra[$i+7]["path"] ?>">
                                     <img class="m-1" style="height: 150px" src="../images/<?php echo $infra[$i+8]["path"] ?>">
+                                    9
                                 </div>
                             </div>
                         </div>

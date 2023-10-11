@@ -9,8 +9,10 @@
                                 </h3>
                                 <input type="text" name="fileName[]" hidden value="<?php echo $intro_facility[$i]["path"] ?>">
                                 <input type="text" name="fileName[]" hidden value="<?php echo $intro_facility[$i+1]["path"] ?>">
-                                <input type="file" name="fileToUpload[]" id="fileToUpload">
-                                <input type="file" name="fileToUpload[]" id="fileToUpload">
+                                <label>1</label>
+                                <input type="file" name="fileToUpload[]" id="fileToUpload"><br/>
+                                <label>2</label>
+                                <input type="file" name="fileToUpload[]" id="fileToUpload"><br/>
                                 <input type="submit" value="Update" name="submit">
                             </form>
                             <form action="../actions/remove_images.php" onsubmit="return confirm('Do you really want to delete?')" method="post">
@@ -21,7 +23,9 @@
                                 <input type="submit" value="Delete" name="submit">
                             </form>
                             <div class="d-flex">
+                                1
                                 <img class="col-xl-6" style="height: 150px; overflow: hidden" src="../images/<?php echo $intro_facility[$i]["path"] ?>">
+                                2
                                 <img class="col-xl-6" style="height: 150px; overflow: hidden" src="../images/<?php echo $intro_facility[$i+1]["path"] ?>">
                             </div>
                             

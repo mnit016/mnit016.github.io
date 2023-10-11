@@ -53,17 +53,17 @@ if (!isset($_SESSION['CREATED'])) {
     <div id="index" class="home-video pt-4 pb-4">
         <div class="container p-0">
             <div class="row">
-                <video width="100%" height="auto" controls autoplay muted>
+                <!-- <video width="100%" height="auto" controls autoplay muted>
                     <source src="./images/main.MOV" type="video/mp4">
                     Your browser does not support the video tag.
-                </video>
-                <!-- <iframe width="100%" 
-                    src="https://www.youtube.com/embed/48mL3jer5Do?si=ROYMYkCYXwTXMjiO" 
+                </video> -->
+                <iframe width="100%" 
+                    src="<?php echo $home_main[0]["path"] ?>" 
                     title="YouTube video player" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                     allowfullscreen>
-                </iframe> -->
+                </iframe>
             </div>
         </div>
     </div>

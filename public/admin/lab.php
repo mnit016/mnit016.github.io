@@ -31,11 +31,16 @@
                                 <input type="text" name="fileName[]" hidden value="<?php echo $lab[$i+2]["path"] ?>">
                                 <input type="text" name="fileName[]" hidden value="<?php echo $lab[$i+3]["path"] ?>">
                                 <input type="text" name="fileName[]" hidden value="<?php echo $lab[$i+4]["path"] ?>">
-                                <input type="file" name="fileToUpload[]" id="fileToUpload">
-                                <input type="file" name="fileToUpload[]" id="fileToUpload">
-                                <input type="file" name="fileToUpload[]" id="fileToUpload">
-                                <input type="file" name="fileToUpload[]" id="fileToUpload">
-                                <input type="file" name="fileToUpload[]" id="fileToUpload">
+                                <label>1</label>
+                                <input type="file" name="fileToUpload[]" id="fileToUpload"><br/>
+                                <label>2</label>
+                                <input type="file" name="fileToUpload[]" id="fileToUpload"><br/>
+                                <label>3</label>
+                                <input type="file" name="fileToUpload[]" id="fileToUpload"><br/>
+                                <label>4</label>
+                                <input type="file" name="fileToUpload[]" id="fileToUpload"><br/>
+                                <label>5</label>
+                                <input type="file" name="fileToUpload[]" id="fileToUpload"><br/>
                                 <input type="submit" value="Update" name="submit">
                             </form>
                             <form action="../actions/remove_images.php" onsubmit="return confirm('Do you really want to delete?')" method="post">
@@ -53,15 +58,20 @@
                             </form>
                             <div class="d-flex">
                                 <div class="col-xl-4" style="overflow: hidden">
+                                    1
                                     <img class="m-1" style="height: 150px" src="../images/<?php echo $lab[$i]["path"] ?>">
                                     <img class="m-1" style="height: 150px" src="../images/<?php echo $lab[$i+1]["path"] ?>">
+                                    2
                                 </div>
                                 <div class="col-xl-4" style="overflow: hidden">
                                     <img class="m-1" style="height: 300px" src="../images/<?php echo $lab[$i+2]["path"] ?>">
+                                    3
                                 </div>
                                 <div class="col-xl-4" style="overflow: hidden">
+                                    4
                                     <img class="m-1" style="height: 150px" src="../images/<?php echo $lab[$i+3]["path"] ?>">
                                     <img class="m-1" style="height: 150px" src="../images/<?php echo $lab[$i+4]["path"] ?>">
+                                    5
                                 </div>
                             </div>
                         </div>
