@@ -20,7 +20,7 @@
                         <?php
                             for ($i=0; $i < count($sustain); $i+=2) { ?>
                             <div class="carousel-item <?php if ($i == 0) { ?>active <?php } ?>">
-                                <div class="row" style="height: 315px">
+                                <div class="row" style="height: 378px">
                                     <div class="col-6 pr-2 pl-0">
                                         <div class="h-100 background-image" style="background-image: url(./images/<?php echo $sustain[$i]["path"] ?>);">
                                         </div>
