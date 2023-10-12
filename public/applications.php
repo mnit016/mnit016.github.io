@@ -9,7 +9,7 @@
         </div>
         <div class="pt-2 euro-font-book">
             <?php echo $fetchData[5]["content"] ?>
-            <div class="row" style="height: 366px">
+            <div class="row" style="height: 426px">
                 <div class="col-4 p-0 h-100 background-image" style="background-image: url(./images/<?php echo $applications[0]["path"] ?>);">
                 </div>
                 <div class="col-4 pr-0 h-100">
