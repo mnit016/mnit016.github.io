@@ -6,7 +6,7 @@
         </div>
     </div>
 </section>
-<section class="products mt-4 mb-5">
+<section class="products mt-4 mb-4">
     <div class="container p-0">
         <div class="row">
             <div class="col-4 pl-0">

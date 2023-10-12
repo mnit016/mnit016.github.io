@@ -16,7 +16,7 @@ function fetch_data($db, $tableName, $columns) {
         $msg= "Table Name is empty";
     } else {
         $columnName = implode(", ", $columns);
-        $query = "SELECT ".$columnName." FROM $tableName";
+        $query = "SELECT ".$columnName." FROM $tableName order by id";
         $result = $db->query($query);
         if ($result== true) { 
             if ($result->num_rows > 0) {

@@ -149,9 +149,11 @@ require("../includes/query_img.php");
                 <hr />
                 <?php include './infra.php' ?>
                 <?php include './bruckner.php' ?>
+                <?php include './applications.php' ?>
                 <?php include './accreditations.php' ?>
                 <?php include './partner.php' ?>
                 <?php include './lab.php' ?>
+                <?php include './sustainability.php' ?>
                 
                 <h2 class="dropdown-custom-item background-grey" style="border-bottom: none !important" onclick="expandMenu(this)">
                     Contact image</h2>

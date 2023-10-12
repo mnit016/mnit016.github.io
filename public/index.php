@@ -102,9 +102,11 @@ if (!isset($_SESSION['CREATED'])) {
 
     <?php include "./infra.php" ?>
     <?php include "./products.php" ?>
+    <?php include "./applications.php" ?>
     <?php include "./lab.php" ?>
     <?php include "./accreditations.php" ?>
     <?php include "./partners.php" ?>
+    <?php include "./sustainabilities.php" ?>
     <?php include "./contact.php" ?>
 
     <footer>
