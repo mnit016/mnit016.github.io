@@ -1,7 +1,8 @@
 ---
 deployment:
   tasks:
-    # - /bin/rm -rf public/images
-    # - /bin/cp -a public/. /home/eurofilm/public_html/
-    - /bin/rsync -av --progress public /home/eurofilm/public_html --exclude images --exclude accreditations
+    - /bin/rm -rf public/images
+    - /bin/rm -rf public/accreditations
+    - /bin/cp -a public/. /home/eurofilm/public_html/
+    - /bin/git checkout .
     
