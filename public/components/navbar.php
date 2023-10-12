@@ -16,10 +16,16 @@
                                 <a class="nav-link " href="#products"><?= _NAV_PRODUCTS ?></a>
                             </li>
                             <li class="">
+                                <a class="nav-link " href="#applications"><?= _NAV_APPLICATIONS ?></a>
+                            </li>
+                            <li class="">
                                 <a class="nav-link" href="#lab"><?= _NAV_LAB ?></a>
                             </li>
                             <li class="">
                                 <a class="nav-link" href="#accreditations"><?= _NAV_ACCREDITATIONS ?></a>
+                            </li>
+                            <li class="">
+                                <a class="nav-link" href="#sustainabilities"><?= _NAV_SUSTAINABILITIES ?></a>
                             </li>
                             <li class="">
                                 <a class="nav-link" href="#contact-us"><?= _NAV_CONTACT_US ?></a>

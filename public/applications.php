@@ -1,4 +1,4 @@
-<section class="mb-5 euro-text-background-vertical">
+<section id="applications" class="mb-5 euro-text-background-vertical">
     <div class="container p-0">
         <div class="row">
             <div class="col-4 pl-0">
