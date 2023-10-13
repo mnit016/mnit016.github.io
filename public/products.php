@@ -73,7 +73,7 @@
                                 if (!$swap) {
                             ?>
                             <div class="col-4 pl-0 pr-2">
-                                <div class="p-2 h-100 background-grey">
+                                <div class="p-2 h-100">
                                     <div class="background-image h-100"
                                         style="background-image: url('./images/<?php echo $product_list[$i]["img_path"] ?>');">
 
@@ -101,7 +101,7 @@
                                 if ($swap) {
                             ?>
                             <div class="col-4 pl-2 pr-0">
-                                <div class="p-2 h-100 background-grey">
+                                <div class="p-2 h-100">
                                     <div class="background-image h-100"
                                         style="background-image: url('./images/<?php echo $product_list[$i]["img_path"] ?>');">
                                     </div>
