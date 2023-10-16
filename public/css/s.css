@@ -25,11 +25,11 @@ nav .col-3 {
   align-items: center;
 }
 nav img {
-  height: 80px;
+  height: 90px;
   width: auto;
 }
 nav .col-12 {
-  height: 80px;
+  height: 120px;
   padding-left: 0 !important;
   padding-right: 0 !important;
   display: flex;
@@ -57,12 +57,12 @@ nav .col-12 li img {
   margin-left: -10px;
 }
 nav .col-12 a {
-  color: #9a2c31;
+  color: #fff;
   font-weight: bold;
 }
 nav .col-12 button,
 nav .col-12 input {
-  border: solid 2px #9a2c31;
+  border: solid 2px #fff;
 }
 nav .col-12 .nav-item {
   border: none;

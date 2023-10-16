@@ -93,6 +93,10 @@ textarea {
     background-size: cover;
 }
 
+.background-image-bot {
+    background-position: bottom !important;
+}
+
 .dropdown-icon-after::after {
     content: "\f0d7";
     font-family: FontAwesome;
