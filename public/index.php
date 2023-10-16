@@ -11,23 +11,6 @@ else
 
 include("includes/query_contents.php");
 include("includes/query_img.php");
-if (!isset($_SESSION['loggedin'])) {
-    $_SESSION['redirect_url']="/";
-	header('Location: /admin/login');
-	exit;
-}
-
-if (!isset($_SESSION['CREATED'])) {
-    $_SESSION['CREATED'] = time();
-} else if (time() - $_SESSION['CREATED'] > 1800) {
-    // session started more than 30 minutes ago
-    session_unset();
-    session_destroy();
-    session_start();  
-    $_SESSION['redirect_url']= "/";
-	header('Location: /admin/login');
-	exit;
-}
 
 ?>
 <!DOCTYPE html>
@@ -111,6 +94,9 @@ if (!isset($_SESSION['CREATED'])) {
 
     <footer>
         <?php include "./components/footer.php" ?>
+        <div class="text-center" style="background-color: black">
+            Copyright &#169; 2023 Eurofilm, Inc. All rights reserved - Developed by illusion.
+        </div>
     </footer>
     <script src="https://kit.fontawesome.com/4e75f15372.js" crossorigin="anonymous"></script>
     <script src="lib/js/jquery.min.js"></script>

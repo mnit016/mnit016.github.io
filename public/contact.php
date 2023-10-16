@@ -19,10 +19,7 @@
                         <div class="d-flex">
                             <img class="float-left" style="height: 1.5rem;" src="./icon/address-black.png">
                             <p class="float-right text-black">
-                                Lô F2, Cặp đường số 1 và số 6,
-                                Khu công nghiệp Lợi Bình Nhơn,
-                                Xã Lợi Bình Nhơn, Thành phố Tân
-                                An, Tỉnh Long An, Việt Nam
+                            LOT F2, PAIR STREET NO 1 AND 6, LOI BINH NHON INDUSTRIAL ZONE, LOI BINH NHON WARD, TAN AN CITY, LONG AN PROVINCE, VIETNAM
                             </p>
                         </div>
                         <div class="d-flex">

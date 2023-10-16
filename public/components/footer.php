@@ -6,8 +6,7 @@
                 <div class="d-flex">
                     <img class="float-left" style="height: 1.5rem;" src="./icon/address.png">
                     <p class="float-right text-white">
-                        Lô F2, Cặp đường số 1 và số 6, Khu công nghiệp Lợi Bình Nhơn, Xã Lợi Bình Nhơn, Thành phố Tân
-                        An, Tỉnh Long An, Việt Nam
+                    LOT F2, PAIR STREET NO 1 AND 6, LOI BINH NHON INDUSTRIAL ZONE, LOI BINH NHON WARD, TAN AN CITY, LONG AN PROVINCE, VIETNAM
                     </p>
                 </div>
                 <div class="d-flex">
@@ -27,12 +26,14 @@
         <div class="col-2">
             <h3 class="euro-font-content-black mb-3"><?= _FT_SITEMAP ?></h3>
             <ul class="euro-font-content-book">
-                <li class="mb-1"><a href="#about-us">About Us</a></li>
-                <li class="mb-1"><a href="#facilities">Facilities</a></li>
-                <li class="mb-1"><a href="#products">Products</a></li>
-                <li class="mb-1"><a href="#lab">Lab</a></li>
-                <li class="mb-1"><a href="#accreditations">Accreditations</a></li>
-                <li class="mb-1"><a href="#contact-us">Contact Us</a></li>
+                <li class="mb-1"><a href="#about-us"><?= _NAV_ABOUT_US ?></a></li>
+                <li class="mb-1"><a href="#facilities"><?= _NAV_FACILITIES ?></a></li>
+                <li class="mb-1"><a href="#products"><?= _NAV_PRODUCTS ?></a></li>
+                <li class="mb-1"><a href="#applications"><?= _NAV_APPLICATIONS ?></a></li>
+                <li class="mb-1"><a href="#lab"><?= _NAV_LAB ?></a></li>
+                <li class="mb-1"><a href="#accreditations"><?= _NAV_ACCREDITATIONS ?></a></li>
+                <li class="mb-1"><a href="#sustainabilities"><?= _NAV_SUSTAINABILITIES ?></a></li>
+                <li class="mb-1"><a href="#contact-us"><?= _NAV_CONTACT_US ?></a></li>
             </ul>
         </div>
         <div class="col-4 social">
