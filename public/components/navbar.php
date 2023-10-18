@@ -7,28 +7,28 @@
                     <div class="d-flex">
                         <ul class="d-flex align-items-center mb-0 text-white">
                             <li class="">
-                                <a class="nav-link" href="#about-us"><?= _NAV_ABOUT_US ?><span class="sr-only">(current)</span></a>
+                                <a class="nav-link" onclick="scrollToId('#about-us')"><?= _NAV_ABOUT_US ?><span class="sr-only">(current)</span></a>
                             </li>
                             <li class=""> 
-                                <a class="nav-link" href="#facilities"><?= _NAV_FACILITIES ?></a>
+                                <a class="nav-link" onclick="scrollToId('#facilities')"><?= _NAV_FACILITIES ?></a>
                             </li>
                             <li class="">
-                                <a class="nav-link " href="#products"><?= _NAV_PRODUCTS ?></a>
+                                <a class="nav-link " onclick="scrollToId('#products')"><?= _NAV_PRODUCTS ?></a>
                             </li>
                             <li class="">
-                                <a class="nav-link " href="#applications"><?= _NAV_APPLICATIONS ?></a>
+                                <a class="nav-link " onclick="scrollToId('#applications')"><?= _NAV_APPLICATIONS ?></a>
                             </li>
                             <li class="">
-                                <a class="nav-link" href="#lab"><?= _NAV_LAB ?></a>
+                                <a class="nav-link" onclick="scrollToId('#lab')"><?= _NAV_LAB ?></a>
                             </li>
                             <li class="">
-                                <a class="nav-link" href="#accreditations"><?= _NAV_ACCREDITATIONS ?></a>
+                                <a class="nav-link" onclick="scrollToId('#accreditations')"><?= _NAV_ACCREDITATIONS ?></a>
                             </li>
                             <li class="">
-                                <a class="nav-link" href="#sustainabilities"><?= _NAV_SUSTAINABILITIES ?></a>
+                                <a class="nav-link" onclick="scrollToId('#sustainabilities')"><?= _NAV_SUSTAINABILITIES ?></a>
                             </li>
                             <li class="">
-                                <a class="nav-link" href="#contact-us"><?= _NAV_CONTACT_US ?></a>
+                                <a class="nav-link" onclick="scrollToId('#contact-us')"><?= _NAV_CONTACT_US ?></a>
                             </li>
                         </ul>
 

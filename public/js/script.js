@@ -24,3 +24,9 @@ $(document).ready(function(){
     });
 
 });
+
+function scrollToId(id) {
+    var offset = $(id).offset();
+    var scrollto = offset.top - 136; // minus fixed header height
+    $('html, body').animate({scrollTop:scrollto}, 0);
+}

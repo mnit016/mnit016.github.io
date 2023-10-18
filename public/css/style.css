@@ -72,3 +72,9 @@
     font-size: 0.7rem;
     margin-top: .5rem;
 }
+
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    z-index: 1020;
+}

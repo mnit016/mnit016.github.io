@@ -12,43 +12,6 @@
             <div class="col-4 pl-0">
                 <div class="h-100">
                     <h1 class="p-2 pl-4 background-red text-white euro-font-title"><?= _CATEGORY ?></h1>
-                    <ul class="dropdown-custom euro-font-content">
-                        <li class="dropdown-custom-item" onclick="expandMenu(this)">
-                            PLAIN AND EMBOSSED FILM
-                        </li>
-                        <ul class="list-unstyled" style="display: none;">
-                            <li><a class="btn-link text-black" href="#">LOREM IPSUM</a></li>
-                            <li><a class="btn-link text-black" href="#">LOREM IPSUM</a></li>
-                        </ul>
-                        <li class="dropdown-custom-item" onclick="expandMenu(this)">
-                            MATT OR GLOSS FILM
-                        </li>
-                        <ul class="list-unstyled" style="display: none;">
-                            <li><a class="btn-link text-black" href="#">LOREM IPSUM</a></li>
-                            <li><a class="btn-link text-black" href="#">LOREM IPSUM</a></li>
-                        </ul>
-                        <li class="dropdown-custom-item" onclick="expandMenu(this)">
-                            PEARLISED BOPP FILM
-                        </li>
-                        <ul class="list-unstyled" style="display: none;">
-                            <li><a class="btn-link text-black" href="#">LOREM IPSUM</a></li>
-                            <li><a class="btn-link text-black" href="#">LOREM IPSUM</a></li>
-                        </ul>
-                        <li class="dropdown-custom-item" onclick="expandMenu(this)">
-                            PEVA FILM
-                        </li>
-                        <ul class="list-unstyled" style="display: none;">
-                            <li><a class="btn-link text-black" href="#">LOREM IPSUM</a></li>
-                            <li><a class="btn-link text-black" href="#">LOREM IPSUM</a></li>
-                        </ul>
-                        <li class="dropdown-custom-item" onclick="expandMenu(this)">
-                            POLY BAG
-                        </li>
-                        <ul class="list-unstyled" style="display: none;">
-                            <li><a class="btn-link text-black" href="#">LOREM IPSUM</a></li>
-                            <li><a class="btn-link text-black" href="#">LOREM IPSUM</a></li>
-                        </ul>
-                    </ul>
                 </div>
             </div>
             <div class="col-8">

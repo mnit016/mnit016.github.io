@@ -26,14 +26,14 @@
         <div class="col-2">
             <h3 class="euro-font-content-black mb-3"><?= _FT_SITEMAP ?></h3>
             <ul class="euro-font-content-book">
-                <li class="mb-1"><a href="#about-us"><?= _NAV_ABOUT_US ?></a></li>
-                <li class="mb-1"><a href="#facilities"><?= _NAV_FACILITIES ?></a></li>
-                <li class="mb-1"><a href="#products"><?= _NAV_PRODUCTS ?></a></li>
-                <li class="mb-1"><a href="#applications"><?= _NAV_APPLICATIONS ?></a></li>
-                <li class="mb-1"><a href="#lab"><?= _NAV_LAB ?></a></li>
-                <li class="mb-1"><a href="#accreditations"><?= _NAV_ACCREDITATIONS ?></a></li>
-                <li class="mb-1"><a href="#sustainabilities"><?= _NAV_SUSTAINABILITIES ?></a></li>
-                <li class="mb-1"><a href="#contact-us"><?= _NAV_CONTACT_US ?></a></li>
+                <li class="mb-1"><a onclick="scrollToId('#about-us')"><?= _NAV_ABOUT_US ?></a></li>
+                <li class="mb-1"><a onclick="scrollToId('#facilities')"><?= _NAV_FACILITIES ?></a></li>
+                <li class="mb-1"><a onclick="scrollToId('#products')"><?= _NAV_PRODUCTS ?></a></li>
+                <li class="mb-1"><a onclick="scrollToId('#applications')"><?= _NAV_APPLICATIONS ?></a></li>
+                <li class="mb-1"><a onclick="scrollToId('#lab')"><?= _NAV_LAB ?></a></li>
+                <li class="mb-1"><a onclick="scrollToId('#accreditations')"><?= _NAV_ACCREDITATIONS ?></a></li>
+                <li class="mb-1"><a onclick="scrollToId('#sustainabilities')"><?= _NAV_SUSTAINABILITIES ?></a></li>
+                <li class="mb-1"><a onclick="scrollToId('#contact-us')"><?= _NAV_CONTACT_US ?></a></li>
             </ul>
         </div>
         <div class="col-4 social">
