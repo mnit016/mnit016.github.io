@@ -13,7 +13,7 @@
                                 <input type="file" required name="fileToUpload[]" id="fileToUpload">
                                 <input type="submit" value="Update" name="submit">
                             </form>
-                        <img style="height: 150px" src="../images/<?php echo $e["path"] ?>">
+                        <img loading="lazy" style="height: 150px" src="../images/<?php echo $e["path"] ?>">
                         </div>
                         <?php
                     }

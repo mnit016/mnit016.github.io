@@ -1,9 +1,9 @@
-<nav class="euro-font-nav w-100 background-image pt-2 pb-2" style="font-size: 1rem; background-image: url(./images/nav/nav-bg.JPG);">
+<nav class="sticky-top euro-font-nav w-100 background-image pt-2 pb-2" style="font-size: 1rem; background-image: url(./images/nav/nav-bg.JPG);">
     <div class="container-xl p-0">
         <div class="font-weight-bold">
             <div class="row col-12 p-0">
                 <div class="col-12 d-flex justify-content-between">
-                    <a class="nav-link p-0" href="#index"><img src="./icon/logo-15.png" alt=""></a>
+                    <a class="nav-link p-0"  onclick="scrollToId('#index')"><img loading="lazy" src="./icon/logo-15.png" alt=""></a>
                     <div class="d-flex">
                         <ul class="d-flex align-items-center mb-0 text-white">
                             <li class="">

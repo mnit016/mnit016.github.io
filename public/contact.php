@@ -17,25 +17,25 @@
                         </div>
                         <h1 class="text-red euro-font-title pt-3" style="font-size: 3rem;">EUROFILM</h1>
                         <div class="d-flex">
-                            <img class="float-left" style="height: 1.5rem;" src="./icon/address-black.png">
+                            <img loading="lazy" class="float-left" style="height: 1.5rem;" src="./icon/address-black.png">
                             <p class="float-right text-black">
                             LOT F2, PAIR STREET NO 1 AND 6, LOI BINH NHON INDUSTRIAL ZONE, LOI BINH NHON WARD, TAN AN CITY, LONG AN PROVINCE, VIETNAM
                             </p>
                         </div>
                         <div class="d-flex">
-                            <img class="float-left" style="height: 1.5rem;" src="./icon/mail-black.png">
+                            <img loading="lazy" class="float-left" style="height: 1.5rem;" src="./icon/mail-black.png">
                             <p class="float-right text-black">
                                 info@eurofilm.com.vn
                             </p>
                         </div>
                         <div class="d-flex">
-                            <img class="float-left" style="height: 1.5rem;" src="./icon/phone-black.png">
+                            <img loading="lazy" class="float-left" style="height: 1.5rem;" src="./icon/phone-black.png">
                             <p class="float-right text-black">
                                 0935247171
                             </p>
                         </div>
                         <div class="d-flex">
-                            <img class="float-left" style="height: 1.5rem;" src="./icon/web-black.png">
+                            <img loading="lazy" class="float-left" style="height: 1.5rem;" src="./icon/web-black.png">
                             <p class="float-right text-black">
                                 eurofilm.com.vn
                             </p>

@@ -11,7 +11,7 @@
                                 <input type="file" required name="fileToUpload[]" id="fileToUpload">
                                 <input type="submit" value="Update" name="submit">
                             </form>
-                        <img style="height: 150px" src="../images/<?php echo $e["path"] ?>">
+                        <img loading="lazy" style="height: 150px" src="../images/<?php echo $e["path"] ?>">
                         </div>
                         <?php
                     }
@@ -41,9 +41,9 @@
                             </form>
                             <div class="d-flex">
                                 1
-                                <img class="col-xl-6" style="height: 150px; overflow: hidden" src="../images/<?php echo $sustain[$i]["path"] ?>">
+                                <img loading="lazy" class="col-xl-6" style="height: 150px; overflow: hidden" src="../images/<?php echo $sustain[$i]["path"] ?>">
                                 2
-                                <img class="col-xl-6" style="height: 150px; overflow: hidden" src="../images/<?php echo $sustain[$i+1]["path"] ?>">
+                                <img loading="lazy" class="col-xl-6" style="height: 150px; overflow: hidden" src="../images/<?php echo $sustain[$i+1]["path"] ?>">
                             </div>
                             
                         </div>

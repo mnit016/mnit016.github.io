@@ -14,15 +14,15 @@ $(document).ready(function(){
     var width = document.getElementById('web-body').offsetWidth;
     var windowWidth = $(document).outerWidth();
     var r = windowWidth / width
-
-    $('#web-body').css({
-        '-webkit-transform': 'scale(' + r + ')',
-        '-moz-transform': 'scale(' + r + ')',
-        '-ms-transform': 'scale(' + r + ')',
-        '-o-transform': 'scale(' + r + ')',
-        'transform': 'scale(' + r + ')'
-    });
-
+    if (r < 1) {
+        $('html').css({
+            '-webkit-transform': 'scale(' + r + ')',
+            '-moz-transform': 'scale(' + r + ')',
+            '-ms-transform': 'scale(' + r + ')',
+            '-o-transform': 'scale(' + r + ')',
+            'transform': 'scale(' + r + ')'
+        });
+    }
 });
 
 function scrollToId(id) {
