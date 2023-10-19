@@ -6,7 +6,7 @@
                 <div class="d-flex">
                     <img class="float-left" style="height: 1.5rem;" src="./icon/address.png">
                     <p class="float-right text-white">
-                    LOT F2, PAIR STREET NO 1 AND 6, LOI BINH NHON INDUSTRIAL ZONE, LOI BINH NHON WARD, TAN AN CITY, LONG AN PROVINCE, VIETNAM
+                    Lot F2, Paris Street No 1 And 6, Loi Binh Nhon Industrial Zone, Loi Binh Nhon Ward, Tan Aa City, Long An Province, Viet Nam
                     </p>
                 </div>
                 <div class="d-flex">
