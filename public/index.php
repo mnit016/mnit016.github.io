@@ -31,8 +31,9 @@ include("includes/query_img.php");
 </head>
 
 <body id="web-body">
+    <div class="sticky-top">
     <?php include "./components/navbar.php" ?>
-
+    </div>
     <div id="index" class="home-video pt-4 pb-4">
         <div class="container p-0">
             <div class="row">
