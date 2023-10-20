@@ -19,7 +19,9 @@
                         <div class="d-flex">
                             <img loading="lazy" class="float-left" style="height: 1.5rem;" src="./icon/address-black.png">
                             <p class="float-right text-black">
-                            LOT F2, PAIR STREET NO 1 AND 6, LOI BINH NHON INDUSTRIAL ZONE, LOI BINH NHON WARD, TAN AN CITY, LONG AN PROVINCE, VIETNAM
+                            Slot F2, Street No.1 , Loi Binh Nhon Industrial Zone, 
+                            Loi Binh Nhon Commune, Tan An City, 
+                            Long An Province, Vietnam
                             </p>
                         </div>
                         <div class="d-flex">
