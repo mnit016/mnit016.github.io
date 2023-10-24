@@ -4,7 +4,7 @@ include("db_connect.php");
 $db=$conn;
 $tableName="img";
 $columns=['id', 'name', 'path', 'des'];
-$home_main=fetch_img($db, $tableName, $columns, "where type='home'");
+$home_main=fetch_img($db, $tableName.$_SESSION["LANG"], $columns, "where type='home'");
 $why_euro=fetch_img($db, $tableName, $columns, "where type='why_euro'");
 $intro_product=fetch_img($db, $tableName, $columns, "where type='intro_product'");
 $intro_facility=fetch_img($db, $tableName, $columns, "where type='intro_facility'");

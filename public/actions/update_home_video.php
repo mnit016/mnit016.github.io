@@ -1,7 +1,7 @@
 <?php
 include("../includes/db_connect.php");
 
-$query= "UPDATE img SET path='$_POST[url]' WHERE id='$_POST[id]'";
+$query= "UPDATE img$_SESSION[LANG] SET path='$_POST[url]' WHERE id='$_POST[id]'";
 $result = $conn->query($query);
 if ($result== true) { 
     $msg="Updated  home video url successfully";
