@@ -50,7 +50,7 @@
                                 <div class="h-100 background-grey">
                                     <div class="ml-4 mr-4 pt-2 euro-font-content-title">
                                         <h3 class="w-100 border-dashed-bottom-1 text-red euro-font-title pb-1 mb-1"><?php echo $product_list[$i]["name"] ?></h3>
-                                        <p class="border-dashed-bottom-1 text-black text-small euro-font-content pb-1 mb-1">
+                                        <p class="border-dashed-bottom-1 text-black text-small euro-font-content-book pb-1 mb-1">
                                             DESCRIPTIONS
                                         </p>
                                         <div class="product-des">
