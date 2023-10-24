@@ -15,17 +15,17 @@
         </div>
         <div class="row">
             <div class="col-7 pl-0">
-                <div class="carousel slide h-100" data-ride="carousel">
-                    <div class="carousel-inner h-100">
+                <div class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
                         <?php
                             for ($i=0; $i < count($sustain); $i+=2) { ?>
-                            <div class="carousel-item h-100 <?php if ($i == 0) { ?>active <?php } ?>">
-                                <div class="row h-100" style="min-height: 378px">
-                                    <div class="col-6 pr-2 pl-0">
+                            <div class="carousel-item <?php if ($i == 0) { ?>active <?php } ?>">
+                                <div class="row pr-5">
+                                    <div class="col-12 p-0 pb-3" style="min-height: 366px">
                                         <div class="h-100 background-image" style="background-image: url(./images/<?php echo $sustain[$i]["path"] ?>);">
                                         </div>
                                     </div>
-                                    <div class="col-6 pl-2 pr-0">
+                                    <div class="col-12 p-0 pt-3" style="min-height: 366px">
                                         <div class="h-100 background-image" style="background-image: url(./images/<?php echo $sustain[$i+1]["path"] ?>);">
                                         </div>
                                     </div>
