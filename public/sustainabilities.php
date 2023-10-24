@@ -14,7 +14,7 @@
             </h1>
         </div>
         <div class="row">
-            <div class="col-7 pl-0 h-100">
+            <div class="col-7 pl-0">
                 <div class="carousel slide h-100" data-ride="carousel">
                     <div class="carousel-inner h-100">
                         <?php
