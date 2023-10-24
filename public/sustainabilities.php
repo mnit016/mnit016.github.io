@@ -14,13 +14,13 @@
             </h1>
         </div>
         <div class="row">
-            <div class="col-7 pl-0">
-                <div class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
+            <div class="col-7 pl-0 h-100">
+                <div class="carousel slide h-100" data-ride="carousel">
+                    <div class="carousel-inner h-100">
                         <?php
                             for ($i=0; $i < count($sustain); $i+=2) { ?>
-                            <div class="carousel-item <?php if ($i == 0) { ?>active <?php } ?>">
-                                <div class="row" style="height: 378px">
+                            <div class="carousel-item h-100 <?php if ($i == 0) { ?>active <?php } ?>">
+                                <div class="row h-100" style="min-height: 378px">
                                     <div class="col-6 pr-2 pl-0">
                                         <div class="h-100 background-image" style="background-image: url(./images/<?php echo $sustain[$i]["path"] ?>);">
                                         </div>
