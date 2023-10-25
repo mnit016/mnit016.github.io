@@ -9,7 +9,7 @@ define("_NAV_LAB", "Lab");
 define("_NAV_ACCREDITATIONS", "Chứng Nhận");
 define("_NAV_SUSTAINABILITIES", "Bền Vững");
 define("_NAV_CONTACT_US", "Liên Hệ");
-define("_WHY_EURO", "WHY EURO FILM");
+define("_WHY_EURO", "GIỚI THIỆU");
 define("_FACILITIES", "CƠ SỞ VẬT CHẤT");
 define("_BRUCKNER", "BRUCKNER");
 define("_PRODUCTS", "SẢN PHẨM");
