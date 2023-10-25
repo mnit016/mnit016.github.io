@@ -32,7 +32,7 @@ include("includes/query_img.php");
     <link rel="stylesheet" href="./css/s.css" />
 </head>
 <body id="web-body">
-    <?php include "./components/navbar.php" ?>
+    <?php require "./components/navbar.php" ?>
     <div id="index" class="home-video pt-4 pb-4">
         <div class="container p-0">
             <div class="row">
@@ -83,17 +83,17 @@ include("includes/query_img.php");
         </div>
     </div>
 
-    <?php include "./infra.php" ?>
-    <?php include "./products.php" ?>
-    <?php include "./applications.php" ?>
-    <?php include "./lab.php" ?>
-    <?php include "./accreditations.php" ?>
-    <?php include "./partners.php" ?>
-    <?php include "./sustainabilities.php" ?>
-    <?php include "./contact.php" ?>
+    <?php require "./infra.php" ?>
+    <?php require "./products.php" ?>
+    <?php require "./applications.php" ?>
+    <?php require "./lab.php" ?>
+    <?php require "./accreditations.php" ?>
+    <?php require "./partners.php" ?>
+    <?php require "./sustainabilities.php" ?>
+    <?php require "./contact.php" ?>
 
     <footer>
-        <?php include "./components/footer.php" ?>
+        <?php require "./components/footer.php" ?>
         <div class="text-center" style="background-color: black">
             Copyright &#169; 2023 Eurofilm, Inc. All rights reserved - Developed by illusion.
         </div>
