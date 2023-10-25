@@ -18,11 +18,13 @@
                 name="content"><?php echo str_replace("<p>", "\n", $e["des"]); ?></textarea>
             <input type="submit" value="Save" name="submit">
         </form>
+        <?php if (count($product_list) > 1) {?>
         <form action="../actions/delete_product.php" onsubmit="return confirm('Do you really want to delete?')" method="post">
             <input type="text" name="id" hidden value="<?php echo $e["id"] ?>">
             <input type="text" name="img_path" hidden value="<?php echo $e["img_path"] ?>">
             <input type="submit" value="Delete" name="submit">
         </form>
+        <?php } ?>
     </div>
         <hr />
     <?php

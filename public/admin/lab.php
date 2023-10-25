@@ -43,6 +43,7 @@
                                 <input type="file" name="fileToUpload[]" id="fileToUpload"><br/>
                                 <input type="submit" value="Update" name="submit">
                             </form>
+                            <?php if (count($lab) > 5) {?>
                             <form action="../actions/remove_images.php" onsubmit="return confirm('Do you really want to delete?')" method="post">
                                 <input type="text" name="id[]" hidden value="<?php echo $lab[$i]["id"] ?>">
                                 <input type="text" name="id[]" hidden value="<?php echo $lab[$i+1]["id"] ?>">
@@ -56,6 +57,7 @@
                                 <input type="text" name="path[]" hidden value="<?php echo $lab[$i+4]["path"] ?>">
                                 <input type="submit" value="Delete" name="submit">
                             </form>
+                            <?php } ?>
                             <div class="d-flex">
                                 <div class="col-xl-4" style="overflow: hidden">
                                     1

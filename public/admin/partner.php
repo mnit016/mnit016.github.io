@@ -13,11 +13,13 @@
                                 <input type="file" required name="fileToUpload[]" id="fileToUpload">
                                 <input type="submit" value="Update" name="submit">
                             </form>
+                            <?php if (count($partner) > 1) {?>
                             <form action="../actions/remove_image.php" onsubmit="return confirm('Do you really want to delete?')" method="post">
                                 <input type="text" name="id" hidden value="<?php echo $e["id"] ?>">
                                 <input type="text" name="path" hidden value="<?php echo $e["path"] ?>">
                                 <input type="submit" value="Delete" name="submit">
                             </form>
+                            <?php } ?>
                         <img style="height: 150px" src="../images/<?php echo $e["path"] ?>">
                         </div>
                         <?php

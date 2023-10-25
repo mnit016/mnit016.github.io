@@ -17,12 +17,14 @@
                                 <input id="fileToUploadPdf" type="file" name="fileToUploadPdf" id="fileToUpload">
                                 <input type="submit" value="Update" name="submit">
                             </form>
+                            <?php if (count($accreditations) > 1) {?>
                             <form action="../actions/remove_accreditation.php" onsubmit="return confirm('Do you really want to delete?')" method="post">
                                 <input type="text" name="id" hidden value="<?php echo $e["id"] ?>">
                                 <input type="text" name="img_path" hidden value="<?php echo $e["img_path"] ?>">
                                 <input type="text" name="pdf_path" hidden value="<?php echo $e["pdf_path"] ?>">
                                 <input type="submit" value="Delete" name="submit">
                             </form>
+                            <?php } ?>
                         <img style="height: 150px" src="../images/<?php echo $e["img_path"] ?>">
                         </div>
                         <?php
