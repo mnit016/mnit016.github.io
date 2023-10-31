@@ -81,7 +81,7 @@ require("../includes/query_img.php");
                         <form action="../actions/save_content.php" method="post" style="display: none;">
                             <input type="text" name="name" hidden value="<?php echo $e["name"] ?>">
                             <textarea class="w-100 smaller" rows="5" type="text"
-                                name="content"><?php echo str_replace("<p>", "\n", $e["content"]); ?></textarea>
+                                name="content"><?php echo str_replace(["<br/>","<p>"], "\n", $e["content"]); ?></textarea>
                             <input type="submit" value="Save" name="submit">
                         </form>
                     </div>
