@@ -25,11 +25,11 @@ nav .col-3 {
   align-items: center;
 }
 nav img {
-  height: 90px;
+  height: 105px;
   width: auto;
 }
 nav .col-12 {
-  height: 120px;
+  height: 105px;
   padding-left: 0 !important;
   padding-right: 0 !important;
   display: flex;
