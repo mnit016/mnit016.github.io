@@ -1,4 +1,4 @@
-<nav class="sticky-top euro-font-nav w-100 background-image pt-1 pb-1" style="font-size: 1rem; background-image: url(./images/nav/nav-bg.JPG);">
+<nav class="sticky-top euro-font-nav w-100 background-image pt-1 pb-1" style="font-size: 0.9rem; background-image: url(./images/nav/nav-bg.JPG);">
     <div class="container-xl p-0">
         <div class="font-weight-bold">
             <div class="row col-12 p-0">
